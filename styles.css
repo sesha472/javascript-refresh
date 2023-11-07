@@ -1,0 +1,210 @@
+/* .box_container1{
+    border: 2px solid rgb(120, 36, 36) ;
+
+}
+
+
+.box1{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(203, 27, 27);
+
+
+
+
+
+}
+
+.box2{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(13, 0, 255);
+
+
+
+}
+
+.box3{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(17, 219, 78);
+
+
+
+
+
+}
+.box4{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(186, 166, 107);
+
+
+
+}
+
+
+.box5{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+
+
+
+}
+.box6{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(42, 96, 117);
+
+
+} */
+
+.box_container2{
+    background-color: rgb(103, 15, 109);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    justify-content: space-between;
+    align-items:center;
+    height: 300px;
+
+}
+
+.box1{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(203, 27, 27);
+
+}
+
+.box2{
+    height: 100px;
+    width: 100px;
+    background-color:orange;
+
+
+
+
+}
+
+.box3{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(0, 255, 255);
+
+
+
+
+
+
+}
+.box4{
+    height: 100px;
+    width : 100px;
+    background-color: green;
+
+
+
+
+}
+
+
+.box5{
+    height:100px;
+    width :100px;
+    background-color: blue;
+
+
+
+}
+.box6{
+    height: 100px;
+    width : 100px;
+    background-color: indigo;
+
+
+}
+.box7{
+    height: 100px;
+    width: 100px;
+    background-color: violet;
+
+
+
+}
+
+.box8{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(180, 122, 29);
+    
+
+
+
+
+
+
+}
+.box9{
+    height: 100px;
+    width : 100px;
+    background-color:limegreen;
+
+
+
+
+}
+
+
+.box10{
+    height: 100px;
+    width : 100px;
+    background-color: aliceblue;
+
+
+
+}
+.box11 {
+    height: 100px;
+    width: 100px;
+    background-color: teal;
+    
+
+}
+
+ .box1:hover,.box2:hover,.box3:hover{
+    background-color: yellow;
+    height: 200px;
+    width: 200px;
+    transform: scale(1.15);
+    transition-duration: 1s;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+/* .boxa{
+    width: 100px;
+    height: 100px;
+    background-color:yellow; */
+    /* transition-delay: 1s;
+    transition-duration: 2s; */
+/* }
+
+ .boxa:hover{
+    height: 200px;
+    width: 200px;
+    background-color: aqua;
+    transition: 0.5s; 
+
+}
+ */
+

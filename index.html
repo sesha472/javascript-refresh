@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="webtech.js"></script>
+    <link rel="stylesheet" href="/styles.css" />
+    
+
+  </head>
+
+  <body>
+     <!-- first operation converting all text to capital
+    <div class="conatiner">
+      <input type="text" id="text" placeholder=" enter trxt"/><br>
+      <button onclick="convertcapital()" >click</button>
+      <button onclick="firstcapital()" >firstcapital</button>
+      <button onclick="firstwordletter()" >wordscapital</button>
+      <p id="result"></p>
+      <p id="result2"></p>
+      <p id="result3"></p>
+    </div> -->
+
+    <div class="container">
+      <input type="text" id="inputtext" placeholder="enter text"><br><br>
+      <button onclick="palindrome()">click</button>
+      <p id="para"> </p>
+
+    </div>
+    <script>
+      function palindrome(){
+        let inputtext1=document.getElementById('inputtext').value;
+        let result=inputtext1.split('').reverse().join('');
+        const answer=result===inputtext1?'this is palindrome!':'this is not'
+         document.getElementById('para').innerText=answer;
+
+      }
+
+    </script>
+
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- <div class="box_container1">
+        <div class="box1" > </div>
+        <div class="box2" > </div>
+        <div class="box3" > </div>
+        <div class="box4" > </div>
+        <div class="box5" > </div>
+        <div class="box6" > </div>
+      </div> -->
+
+       <!-- <div class="box_container2">
+        <div class="box1" > </div>
+        <div class="box2" > </div>
+        <div class="box3" > </div>
+        <div class="box4" > </div>
+        <div class="box5" > </div>
+        <div class="box6" > </div>
+        <div class="box7" > </div>
+        <div class="box8" > </div>
+        <div class="box9" > </div>
+        <div class="box10" > </div>
+        <div class="box11" > </div>
+      </div> -->
+
+      <!-- <div class="boxa">
+
+      </div> -->
+
+
+
+  </body>
+</html>
