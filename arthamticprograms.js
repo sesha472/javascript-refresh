@@ -1,5 +1,37 @@
-// //  findnig factorial 
+     
 
+       
+
+
+        
+     
+
+  //  is prime number or not 
+
+  // const isprime=(n)=>{
+  //   let c=0;
+  //   if(n == 1 || n==0){
+  //   console.log("\n");
+  //   return `${n} is not prime`
+  //   }
+  //   for(i=1; i<=n; i++){
+  //     if(n%i == 0){
+  //       c++;
+  //     }
+  //   }
+  //   console.log("\n");
+     
+  //   return c>2?`${n}'is not prime'`:`${n}"is prime"`;
+  // }
+
+  // // isprime();
+
+  // for (let i = 0; i < 30; i++) {
+  //   console.log(isprime(i));
+  // }
+
+
+// findnig factorial 
 
 // var n=3;
 // var fact=1;
@@ -96,23 +128,23 @@
 // }
 
 
-const obj1={
-    name:"sesha",
-      age :"31",
-  }
+// const obj1={
+//     name:"sesha",
+//       age :"31",
+//   }
   
-  const obj2={
-    height:"5.5",
-    weight:"65",
-  }
+//   const obj2={
+//     height:"5.5",
+//     weight:"65",
+//   }
       
      
   
 //   const obj3={...obj1,obj2};
 //   console.log(obj3);
 
-  let a=[10,20,30,40];
-  let b=[...a];
-  b[1]=9;
-  console.log(a);
-  console.log(b);
+  // let a=[10,20,30,40];
+  // let b=[...a];
+  // b[1]=9;
+  // console.log(a);
+  // console.log(b);
