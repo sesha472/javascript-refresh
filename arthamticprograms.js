@@ -43,15 +43,15 @@
 
 // }
 
-var n=3;
-var x=0,y=1,z=0
+// var n=3;
+// var x=0,y=1,z=0
 
-for(i=0; i<=n; i++){
-  z=x+y;
-  x=z;
+// for(i=0; i<=n; i++){
+//   z=x+y;
+//   x=z;
   
   
-}
+// }
 
 
 
@@ -79,3 +79,40 @@ for(i=0; i<=n; i++){
 //   return t;
 // }
 //  console.log(fib(9));
+
+
+
+// console.log(99);
+// let x=[1,2,3];
+// let y =x.indexOf(3)*2;
+// console.log(y);
+
+// console.log("namasthey sesha sai");
+// let a=10;
+
+// for(i=0; i<5; i++){
+//     console.log( "from firt log "+a);
+//     setTimeout(()=>console.log(i),1000)
+// }
+
+
+const obj1={
+    name:"sesha",
+      age :"31",
+  }
+  
+  const obj2={
+    height:"5.5",
+    weight:"65",
+  }
+      
+     
+  
+//   const obj3={...obj1,obj2};
+//   console.log(obj3);
+
+  let a=[10,20,30,40];
+  let b=[...a];
+  b[1]=9;
+  console.log(a);
+  console.log(b);
