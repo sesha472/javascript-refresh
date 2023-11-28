@@ -66,8 +66,47 @@
 
 
 
-
-
-3 
+// const person={
  
+//     name:"sai",
+//     age:"30"
+// }
+
+
+// console.log(Object.entries(person));
+
+// let a="sesha";
+// let reverse=" ";
+// // console.log(a.split("").reverse().join(""));
+// for(let i=a.length-1; i>=0; i--){
+//  reverse=reverse+a[i];
+
+// }
+
+// console.log(reverse);
+
+// var a=[10,20,30,40];
+// let b=[...a];
+// b[3]=99;
+// console.log(a);
+// console.log(b);
+
+// var a=[10,20,30,40,[50,60]];
+// let b=[...a];
+// b[4][0]=99;
+// console.log(a);
+// console.log(b);
+
+// the bellow is deep copy 
+
+// let a=[10,20,30,40,[50,60]];
+// let b= JSON.parse(JSON.stringify(a))
+// b[4][0]=99;
+// console.log(a);
+// console.log(b);
+
+// let originalObject = { a: 1, b: { c: 2 } };
+// let deepCopy = JSON.parse(JSON.stringify(originalObject));
+// deepCopy.b.c = 3;
+// console.log(originalObject.b.c); // Output: 2
 
