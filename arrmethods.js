@@ -13,6 +13,8 @@
 // console.log(result);
 
 
+let arr1=[10,20,30,40];
+
 
 
 // let arr1=[10,20,30,40];
