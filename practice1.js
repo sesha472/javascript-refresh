@@ -6,7 +6,7 @@
 //   a=100
 //   console.log(a);
 
-const { func } = require("prop-types");
+const { func, object } = require("prop-types");
 
 //   let b;
 //    b=20
@@ -442,8 +442,30 @@ const { func } = require("prop-types");
 
 // with property will return modifed copied new arry wiit h replaced values 
 
-const arr=['s','r','t'];
-console.log(arr.slice(1,"t"));//['s', 't', 't'] it only works in browser not in node js local setup 
+// const arr=['s','r','t'];
+// console.log(arr.slice(1,"t"));//['s', 't', 't'] it only works in browser not in node js local setup 
 
 
 
+// if comparing two arrays it become false becuase its checks its adress if string it check its values 
+
+// a1=[2,3,43];
+// a2=[2,3,43];
+// console.log(a1==a2);//false
+
+
+// ->emprty array o f any empthy object become true values 
+// in js  undefinde,null ,nan ,0 " " (empty string all are false values )
+
+
+// we can give json object second propetry as array of prop values of objcet to send thinss json data 
+// let product={
+//   name:"sony",
+//   price:"100000",
+//   ram:"4gb"
+// }
+// if we want to send jsob data to backend 
+// let result=JSON.stringify(product,["ram","name"]);
+// console.log(result);//"ram":"4gb","name":"sony"} its converts in string form only given props in json 2nd propetry arrys elemnts 
+
+// with method will return the new cpoied array with relaced value in given array 
