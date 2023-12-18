@@ -6,7 +6,9 @@
 //   a=100
 //   console.log(a);
 
-const { func, object } = require("prop-types");
+
+
+// const { func, object, array } = require("prop-types");
 
 //   let b;
 //    b=20
@@ -451,7 +453,9 @@ const { func, object } = require("prop-types");
 
 // a1=[2,3,43];
 // a2=[2,3,43];
-// console.log(a1==a2);//false
+// // console.log(a1==a2);//false
+// // if we want check content we have to covert arrays into strings using stringfy after we can checkk
+// console.log(JSON.stringify(a1)==JSON.stringify(a2));//true
 
 
 // ->emprty array o f any empthy object become true values 
@@ -469,3 +473,114 @@ const { func, object } = require("prop-types");
 // console.log(result);//"ram":"4gb","name":"sony"} its converts in string form only given props in json 2nd propetry arrys elemnts 
 
 // with method will return the new cpoied array with relaced value in given array 
+
+// let arr=[2,3,4,5,6,3,2,2];
+// console.log(arr.splice(4,2,"k"));//[ 6, 3 ]index poition, delt count,adding elements...
+// console.log(arr); //[ 2,   3, 4, 5,'k', 2, 2]
+
+// let arr=[2,3,4,5,6,3,2,2];
+// console.log(Array.isArray(arr));//true
+// console.log(arr instanceof Array);//true we can check is it array or not by using tehse two methods 
+
+// how to remove dublicat ein array using single line is using set methods
+// let arr=[2,3,4,5,6,3,2,2];
+// console.log(new Set(arr));//Set(5) { 2, 3, 4, 5, 6 }
+// console.log([...new Set(arr)]);//[ 2, 3, 4, 5, 6 ]
+
+// how to finde min number and max number in array usni g single line 
+
+// let arr=[2,3,4,5,6,99,3,2,1,2];
+// console.log(Math.max(...arr));
+// console.log(Math.min(...arr));
+
+// object .reez method only freez the direct object properties not netsted object peoperties 
+
+// let obj={
+//           name:"laptop",
+//           price:"900",
+//           colo:"yellow",
+//           adress:{
+//             state:"ap",
+//             city:"nellore"
+//           }
+//       }
+
+// Object.freeze(obj)
+// obj.name="sesha"
+// console.log(obj);//not changed to sesha 
+// obj.adress.state="tn";
+// console.log(obj); //changed to tn because freez method wont freez nested objects
+
+
+// the argumets returns object of elemnts wit index 0 to given number of elemnts 
+// function sum(num1,num2){
+//   console.log(arguments);//[Arguments] { '0': 10, '1': 20 }
+// }
+// sum(10,20)
+
+//  let sum=(num1,num2)=>{
+//   console.log(arguments);
+// }
+// sum(10,20)//eroor coes it qont work in arrayow functions 
+
+
+// console.log("100"+10+10);
+
+
+
+// cheking if the given word is there or not i means case insensetive
+// let name="its a programing languange";
+// console.log(/LANGUANGE/.test(name));//false
+// console.log(/LANGUANGE/i.test(name));//true
+
+// finding the date gap betwin two dates 
+// let fdate="11/10/2023";
+// let sdate="11/25/2023";
+// let dobj1=new Date(fdate)
+// let dobj2=new Date(sdate)
+// console.log(dobj1);
+// console.log(dobj2);//Sat Nov 25 2023 00:00:00 GMT+0530 (India Standard Time)
+// let diff=Math.abs(dobj1-dobj2);
+// console.log(diff);//1296000000
+// let days=diff/(24*60*60*1000)
+// console.log(days); 
+
+
+// ->Array is collection of values 
+// ->Set is collection of unique values 
+// Set a class in js 
+
+// let s1=new Set();
+// console.log(s1);//Set(0) {}
+// s1.add(10);//using add methdos we can add elemnts 
+// console.log(s1);//Set(1) { 10 } 0 index 10 elemnt is there 
+// s1.add(20).add(30).add(9);
+// console.log(s1);//Set(4) { 10, 20, 30, 9 }
+
+
+
+// Prints 3 3 3 after 1 sec
+// for (var i = 0; i < 3; i++) {
+//   setTimeout(()=> console.log(i), 1000);
+// }
+// The variable has its own copy using let, 
+//and the variable has shared copy using var.
+// Prints 0, 1 and 2, after 1sec
+// for (let j = 0; j < 3; j++) { 
+//   setTimeout(_ => console.log(j), 1000);
+// }
+
+// let a=[68,9,90];
+
+// console.log(a.shift());
+// for (i = 0; i < 10; i++) {
+//   if ((i<3)||(i>7)) { continue; }
+//   console.log(i);
+
+// }
+
+// for (let i = 0; i < 2; i += 1) {
+//   for (let j = 0; j < 3; j += 1) {
+//     console.log(`${i}-${j}`);
+//   }
+// }
