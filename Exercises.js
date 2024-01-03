@@ -52,29 +52,29 @@
 // console.log(`${d}-${m}-${y} ,${d}/${m}/${y}`);
 
 // finde duplicate sin array 
-let arr = [9,9,9];
-let duplicates=arr.filter((item,index ,arr)=>arr.indexOf(item)!==index );//12
-let nonduplicates=arr.filter((item,index ,arr)=>arr.indexOf(item)==index );//12
-console.log(duplicates);//12
-console.log(nonduplicates);//12345
+// let arr = [9,9,9];
+// let duplicates=arr.filter((item,index ,arr)=>arr.indexOf(item)!==index );//12
+// let nonduplicates=arr.filter((item,index ,arr)=>arr.indexOf(item)==index );//12
+// console.log(duplicates);//12
+// console.log(nonduplicates);//12345
 
 
 
   
 
-let b=[]
-for(i=0; i<arr.length; i++){
-    for(j=0; j<arr.length; j++){
-        if(arr[i]===arr[j]){
-          b.push(arr[i])
-          break;
-        //   arr.splice(j,1)
+// let b=[]
+// for(i=0; i<arr.length; i++){
+//     for(j=0; j<arr.length; j++){
+//         if(arr[i]===arr[j]){
+//           b.push(arr[i])
+//           break;
+//         //   arr.splice(j,1)
           
-        }
-    }
-}
-console.log(b);
-console.log(arr);
+//         }
+//     }
+// }
+// console.log(b);
+// console.log(arr);
 
 // function findDuplicates(array) {
 //     const duplicates = [];
@@ -95,3 +95,49 @@ console.log(arr);
 // console.log(duplicateElements);
 
 
+// finding how many letetrs in string 
+// let data="apple is a good fruite and my a aim is to eat"//finde how many a's in this text
+// let result =data.split("a");
+// console.log(result.length-1); 
+
+
+// let data="apple is good"//finde how many a's in this text
+// let result =data.split(" ");
+// console.log(result);
+// const data=[ ];
+// console.log(typeof data);
+// console.log(Array.isArray(data));
+
+// let data=7 
+// while(data>=0) {
+//      if(data<=5) { 
+//     data--; 
+//     continue; 
+// } 
+// console.log(data);
+//  data--; }
+
+// reverseing the string 
+// let data="sesha";
+// let result=data.split("").reverse().join("")
+// console.log(result);
+
+
+function arrayReverse(arr) {
+    var temp;
+    var n = arr.length;
+    var mid = n / 2;
+ 
+    for (var i = 0; i < mid; i++) {
+       temp = arr[i]
+       arr[i] = arr[n - i - 1];
+       arr[n - i - 1] = temp;
+    }
+ 
+    return arr;
+ }
+ 
+
+ const names = ['German', 'Nicolas', 'Martin', 'Micaela', 'Mateo', 'Matias', 'John', 'Gonzalo', 'Esteban', 'Paula', 'Victoria', 'Bautista', 'Carolina', 'Analia', 'Edward', 'Mirtha'];
+const foo = names.filter((name) => name.toUpperCase().startsWith('M'));
+console.log(foo);
