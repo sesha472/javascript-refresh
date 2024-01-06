@@ -295,6 +295,26 @@
         //            }
     
         // }
+        function arrayReverse(arr) {
+            var temp;
+            var n = arr.length;
+            var mid = n / 2;
+         
+            for (var i = 0; i < mid; i++) {
+               temp = arr[i]
+               arr[i] = arr[n - i - 1];
+               arr[n - i - 1] = temp;
+            }
+         
+            return arr;
+         }
+         
+        
+         const names = ['German', 'Nicolas', 'Martin', 'Micaela', 'Mateo', 'Matias', 'John', 'Gonzalo', 'Esteban', 'Paula', 'Victoria', 'Bautista', 'Carolina', 'Analia', 'Edward', 'Mirtha'];
+        const foo = names.filter((name) => name.toUpperCase().startsWith('M'));
+        console.log(foo);
+        
+        console.log("this is good ");
     
         // let sesha =new Bank("sesha",null,"savings");
         // console.log(sesha.getname());
