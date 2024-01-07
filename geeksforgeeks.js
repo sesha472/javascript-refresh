@@ -134,3 +134,17 @@
 
 
 
+let a=[10,24,23,4,5,63,2,6,6,322,5,6,3];
+let swap;
+let bubblesortedarry=[];
+for(i=0; i<a.length; i++){
+  for(j=0;j<a.length; j++){
+    if(a[j]>a[j+1]){
+      swap=a[j];
+      a[j]=a[j+1];
+      a[j+1]=swap;
+    }
+  }
+}
+
+console.log(a); //[2, 3,  4,  5,  5,  6,6, 6, 10, 23, 24, 63,  322]
