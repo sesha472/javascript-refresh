@@ -123,3 +123,75 @@
 // console.log(result);
 
 
+// destructuring types 
+
+// let person1 = { firstName: 'sesha', lastName: 'sai'};
+// let person2 = { firstName: 'sesha', lastName: 'sai', middleName: 'kumar' }
+
+// let tellname=( {firstName,lastName,middleName ="alternatename"} )=>{
+//     console.log("this is my full name "+ firstName+" "+lastName+" "+middleName);
+// }
+
+// tellname(person1) //this is my full name sesha sai alternatename
+// tellname(person2) //this is my full name sesha sai kumar
+
+// // the above is very useful in react using props 
+
+// // object destructuring
+// function foo ( { x, y } ) {
+//     console.log(x, y);
+// }
+
+// foo({y: 1, x: 2})  // -> 2 1
+
+// foo({y: 1})  //  undefined 1
+
+// foo({}) // undefined undefined
+
+// // array destructuring
+
+// let fullname =['sesha','sai'];
+
+// let [firstname,lastname]=fullname;
+
+// console.log(firstname,lastname);//sesha sai
+
+
+// let arr= ['Mango',"Apple",'Bananna','Guva']
+
+// let [mango,apple,bananna,guva]=arr;
+// console.log(mango,bananna,apple,guva);//Mango Bananna Apple Guva
+
+// let myObj = {
+
+//     name: "Luke",
+//     age: 25,
+//     hobbies: "music"
+
+// };
+
+// let { hobbies, ...rest } = myObj;  // => Luke 25 music
+
+// console.log(hobbies, rest)  // => music { name: 'Luke', age: 25 }
+
+// console.log(hobbies, rest.age)  // => music 25
+
+var persons = [
+    {id : 1, name : "John", tags : "javascript"}, 
+    {id : 2, name : "Alice", tags : "javascript"}, 
+    {id : 3, name : "Roger", tags : "java"},
+    {id : 4, name : "Adam", tags : "javascript"},
+    {id : 5, name : "Alex", tags : "java"}
+  ];
+  
+  var uniqueTags = persons.reduce((acc, personObj) => {
+    // console.log(acc);
+    // console.log(acc[personObj.tags] );
+      acc[personObj.tags] = 1;
+      console.log(acc);
+      return acc;
+  },{});
+  
+//   console.log(uniqueTags);;
+//   console.log(Object.keys(uniqueTags))
+  
