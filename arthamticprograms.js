@@ -2,13 +2,83 @@
 
        
 
+// flattnenig array using flat method using depth 
+// const arr1=[2,[34,[90,98,[97,90],99],44],[23,[87,98],[36,86,[32,65,[43,74]]]]];
+// const flatenarray=arr1.flat(5);
+// console.log(flatenarray);
 
-        
-     
+const { array, element, func } = require("prop-types");
+
+
+      //  flat the array using recursive function 
+      // const arr = [
+      //   2,
+      //   [34, [90, 98, [97, 90], 99], 44],
+      //   [23, [87, 98], [36, 86, [32, 65, [43, 74]]]],
+      // ];
+      // const newarray = [];
+      // const flatarry = (arrayargumentr) => {
+      //   for (let i = 0; i < arrayargumentr.length; i++) {
+      //     if (Array.isArray(arrayargumentr[i])) {
+      //       flatarry(arrayargumentr[i]);
+      //     } else {
+      //       newarray.push(arrayargumentr[i]);
+      //     }
+      //   }
+      // };
+
+      // flatarry(arr);
+      // console.log(newarray);
+
+
+
+      // check given string is palindroem or not 4
+
+      // const name="mom";
+      // const isPalindrome=(str)=> str.split("").reverse().join("") === str ;
+      // console.log(isPalindrome(name));  //true
+
+
+      // Write a function that takes an array of numbers and returns a new array with only the even numbers
+
+      // const arr=[2,3,2,1,2,,6,7,4,32,2,7,9,3,42,342,2,];
+      // const evenarray=(aarrargument)=>{
+      //   const resultarray= aarrargument.filter((element)=>element%2 == 0 );
+      //   return resultarray;
+      // }
+      // console.log(evenarray(arr));
+       
+      // factorial of a given number. 
+        // const factnum= (n)=> {
+        //   if ((n ===0)  || (n ===1)){
+        //     return n
+        //   }else{
+        //     return n* factnum(n-1)
+        //   }
+        // }
+        // console.log(factnum(3));
+
+
+
 
   //  is prime number or not 
+  // function findeprimenumbers(num) { 
 
-  // const isprime=(n)=>{
+  //   if (num <= 1) return false; 
+  
+  //   for (let i = 2; i <= Math.sqrt(num); i++) { 
+  
+  //     if (num % i === 0) return false; 
+  
+  //   } 
+  
+  //   return true; 
+  
+  // } 
+
+  //  fiding prime numbers from 0 to given number
+
+  // const findeprimenumbers=(n)=>{
   //   let c=0;
   //   if(n == 1 || n==0){
   //   console.log("\n");
@@ -24,10 +94,10 @@
   //   return c>2?`${n}'is not prime'`:`${n}"is prime"`;
   // }
 
-  // // isprime();
+  // findeprimenumbers(7);
 
   // for (let i = 0; i < 30; i++) {
-  //   console.log(isprime(i));
+  //   console.log(findeprimenumbers(i));
   // }
 
 

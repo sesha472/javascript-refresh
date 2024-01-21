@@ -1,4 +1,32 @@
 
+// pure functions are those dont hav eany side effects 
+// const addtwovalues=(a,b)=> console.log(a+b);
+// addtwovalues(2,3)
+// addtwovalues(5,6)
+
+// impure functions example these function produe diffrent output for the same input 
+// let total=0;
+//  function addwithtotal(n){
+//   total += n;
+//    return total;
+// }
+// console.log(addwithtotal(9));//9
+// console.log(addwithtotal(9));  //18
+
+
+// funcion currying 
+ function operation (n){
+   return function  (t){
+        return n+t
+    }
+    
+ }
+const double = operation(2);
+const addwithfour = operation(4);
+console.log(double(3));//5
+console.log(addwithfour(3));//7
+
+ 
 
 // 1array.from method coverts string to array
 // 2.we can create empty array with length we can fill with push method
