@@ -4,6 +4,8 @@
 // addtwovalues(2,3)
 // addtwovalues(5,6)
 
+const { array } = require("prop-types");
+
 // impure functions example these function produe diffrent output for the same input 
 // let total=0;
 //  function addwithtotal(n){
@@ -15,19 +17,93 @@
 
 
 // funcion currying 
- function operation (n){
-   return function  (t){
-        return n+t
-    }
+//  function operation (n){
+//    return function  (t){
+//         return n+t
+//     }
     
- }
-const double = operation(2);
-const addwithfour = operation(4);
-console.log(double(3));//5
-console.log(addwithfour(3));//7
+//  }
+// const double = operation(2);
+// const addwithfour = operation(4);
+// console.log(double(3));//5
+// console.log(addwithfour(3));//7
 
- 
+// console.log("9"+9+"9");
+// console.log(2*"8");
+// console.log(5*"8");
 
+// for (var i = 0; i < 5; i++) {
+//     setTimeout(function() {
+//       console.log(i);
+//     }, 1000);
+//   }//55555 this is because of block scope
+
+
+//   for (let i = 0; i < 5; i++) {
+//     setTimeout(function() {
+//       console.log(i);
+//     }, 1000);
+//   } //01234
+
+// var func = [];
+// for (var i = 0; i < 5; i++) {
+//   func[i] = function() {
+//   console.log(i);
+//   };
+// }
+// func[3]();//5
+// func[0]();//5 
+
+// var func = [];
+// for (let i = 0; i < 5; i++) {
+//   func[i] = function() {
+//     console.log(i);
+//   };
+// }
+// func[3]();
+
+// With let in the loop declaration (for (let i = 0; i < 5; i++)),
+//  each iteration of the loop creates a new binding for i. Therefore, .
+//  when each function is created and stored in the func array, it captures the value of i at that particular iteration.
+// So, when func[3]() is called, it will output 3, as expected, because i was 3 when the function was created during the loop iteration.
+
+// (function() {
+//     var a = b = 5;
+//   })();
+//   console.log(b);
+//   console.log(a); //error b is global variable a cant acces out side of functiin iffe
+
+
+// var m = [
+//     [0,  1,  2,  3,  4],
+//     [5,  6,  7,  8,  9],
+//     [10, 11, 12, 13, 14],
+//     [15, 16, 17, 18, 19]
+//   ];
+  
+//   var spiral = function (m) {
+//           const result=m.flat();
+//           return result;
+//   };
+
+//   console.log(spiral(m));
+
+//   //[
+//     0,  1,  2,  3,  4,  5,  6,
+//     7,  8,  9, 10, 11, 12, 13,
+//    14, 15, 16, 17, 18, 19
+//  ]
+
+// function flattenArray(arr) {
+//     return arr.reduce((acc, val) => Array.isArray(val) ? acc.concat(flattenArray(val)) : acc.concat(val), []);
+// }
+
+// const arr = [1, 2, [3, 4, [5, 6]]];
+// const flatArr = flattenArray(arr);
+
+// const arr = [1, 2, [3, 4, [5, 6]]];
+// const flatArr = [].concat(...arr);
+// console.log(flatArr);
 // 1array.from method coverts string to array
 // 2.we can create empty array with length we can fill with push method
 

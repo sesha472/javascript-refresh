@@ -108,10 +108,11 @@
 //   }
 // }
 
+
+
+
 // const person1 = new Bank("raju", null, "savings");
 // const person2 = new Bank("rani", null, "bussiness");
-
-
 // for(i=0;i<5;i++){
 //     let j=i;
 //     setTimeout(() => {
@@ -121,3 +122,5 @@
 // }
 
 // person1.getaccounttype();
+
+
