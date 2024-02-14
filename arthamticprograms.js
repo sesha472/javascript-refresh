@@ -78,27 +78,27 @@ const { array, element, func } = require("prop-types");
 
   //  fiding prime numbers from 0 to given number
 
-  // const findeprimenumbers=(n)=>{
-  //   let c=0;
-  //   if(n == 1 || n==0){
-  //   console.log("\n");
-  //   return `${n} is not prime`
-  //   }
-  //   for(i=1; i<=n; i++){
-  //     if(n%i == 0){
-  //       c++;
-  //     }
-  //   }
-  //   console.log("\n");
+  const findeprimenumbers=(n)=>{
+    let c=0;
+    if(n == 1 || n==0){
+    console.log("\n");
+    return `${n} is not prime`
+    }
+    for(i=1; i<=n; i++){
+      if(n%i == 0){
+        c++;
+      }
+    }
+    console.log("\n");
      
-  //   return c>2?`${n}'is not prime'`:`${n}"is prime"`;
-  // }
+    return c>2?`${n}'is not prime'`:`${n}"is prime"`;
+  }
 
-  // findeprimenumbers(7);
+  findeprimenumbers(7);
 
-  // for (let i = 0; i < 30; i++) {
-  //   console.log(findeprimenumbers(i));
-  // }
+  for (let i = 0; i < 30; i++) {
+    console.log(findeprimenumbers(i));
+  }
 
 
 // findnig factorial 

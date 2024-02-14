@@ -13,7 +13,44 @@
 // console.log(result);
 
 
-let arr1=[10,20,30,40];
+// let arr1=[10,20,30,40];
+
+// let courses = ["HTML", "CSS", "Javascript", "React", "Node.js"];
+// console.log("Original Array: " + courses);
+ 
+// let lastElement = courses.pop();
+// console.log("After Removed the last elements: " + courses);
+ 
+// let firstElement = courses.shift();
+// console.log("After Removed the First elements: " + courses);
+ 
+// courses.splice(1, 2);
+// console.log("After Removed 2 elements starting from index 1: " + courses);
+
+// let num=10;
+// let num2=10;
+// console.log(num===num2);
+
+
+// findong the are of traiangle using base and height 
+
+// let baseof_triangle=10;
+// let heightof_traiangle=20;
+
+// let area =(baseof_triangle*heightof_traiangle)/2
+// console.log(area);
+
+// // using fromule with help of sides of traiangle 
+// let a=3,b=4,c=5;
+// let s =( (a+b+c)/2);
+// let area2= Math.sqrt(s*(s-a) *(s-b)*(s-c))
+// console.log(area2);
+
+
+
+
+
+
 
 
 
