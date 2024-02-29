@@ -4,16 +4,17 @@
 // addtwovalues(2,3)
 // addtwovalues(5,6)
 
-const { array } = require("prop-types");
+// const { array } = require("prop-types");
 
 // impure functions example these function produe diffrent output for the same input 
 // let total=0;
 //  function addwithtotal(n){
 //   total += n;
-//    return total;
+//    console.log(total);
 // }
-// console.log(addwithtotal(9));//9
-// console.log(addwithtotal(9));  //18
+
+// addwithtotal(9);//9
+// addwithtotal(9);//18
 
 
 // funcion currying 

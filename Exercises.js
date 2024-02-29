@@ -176,21 +176,21 @@
 
 // console.log(hobbies, rest.age)  // => music 25
 
-var persons = [
-    {id : 1, name : "John", tags : "javascript"}, 
-    {id : 2, name : "Alice", tags : "javascript"}, 
-    {id : 3, name : "Roger", tags : "java"},
-    {id : 4, name : "Adam", tags : "javascript"},
-    {id : 5, name : "Alex", tags : "java"}
-  ];
+// var persons = [
+//     {id : 1, name : "John", tags : "javascript"}, 
+//     {id : 2, name : "Alice", tags : "javascript"}, 
+//     {id : 3, name : "Roger", tags : "java"},
+//     {id : 4, name : "Adam", tags : "javascript"},
+//     {id : 5, name : "Alex", tags : "java"}
+//   ];
   
-  var uniqueTags = persons.reduce((acc, personObj) => {
-    // console.log(acc);
-    // console.log(acc[personObj.tags] );
-      acc[personObj.tags] = 1;
-      console.log(acc);
-      return acc;
-  },{});
+//   var uniqueTags = persons.reduce((acc, personObj) => {
+//     // console.log(acc);
+//     // console.log(acc[personObj.tags] );
+//       acc[personObj.tags] = 1;
+//       console.log(acc);
+//       return acc;
+//   },{});
   
 //   console.log(uniqueTags);;
 //   console.log(Object.keys(uniqueTags))

@@ -1,33 +1,33 @@
 
-// toString() method conver number to string 
+// toString() method convert number to string 
 
-// let a=123;
-// console.log( typeof a.toString());
+let a=123;
+console.log( typeof a.toString());
 
 
 
-// let x=9.456;
-// console.log(x.toExponential(2)); 
-// 9.46e+0
+let x=9.456;
+console.log(x.toExponential(2)); 
+9.46e+0
 
 // toFixed method retun string with a specified nof  decimals 
-// let y=9.4555;
-// console.log(y.toFixed(2));
-// 9.46
+let y=9.4555;
+console.log(y.toFixed(2));
+9.46
 
 // toPrecision
 //  retuns a string with specified number 
-// let z=6.73673;
-// console.log(z.toPrecision(3)); //6.74
-// console.log(z.toPrecision(2)); //6.7
-// console.log(z.toPrecision(1)); //1e+0 it transfer like this
+let z=6.73673;
+console.log(z.toPrecision(3)); //6.74
+console.log(z.toPrecision(2)); //6.7
+console.log(z.toPrecision(1)); //1e+0 it transfer like this
 
-// number method can conver js expresson into number
+// number method can conver js expresson into numberthi
 
-// console.log(Number(true)); //1
-// console.log(Number('10')); //10
-// console.log(Number('sai')); //NaN we can give number string not a alphabet string
-// console.log(Number('10.99')); 10.99
+console.log(Number(true)); //1
+console.log(Number('10')); //10
+console.log(Number('sai')); //NaN we can give number string not a alphabet string
+console.log(Number('10.99')); 10.99
 
 
 

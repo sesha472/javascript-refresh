@@ -16,15 +16,21 @@
 //     alert('your are not women');
 //  }
 
+
+
 //***/ type conversion : conveting one data type into anothe dt
 
-// var a='45';
-// var b=55;
+var a='45';
+var b=55;
+// lets conver string into number using parseInt
+var x=parseInt(a);
+//  lets convert string into number
+var y= String(b);
+console.log(typeof y);
 
-// // lets conver string into number using parseInt
-// var x=parseInt(a);
-// //  lets convert string into number
-// var y= String(b);
+
+
+
 
 // document.write(typeof x +"<br>"+"<br>"); //number
 
