@@ -3,7 +3,7 @@
 //   re assiging value is posible in var .,let ,but not posbile in const
 // with const we have to asign and declare at same time
 
-const { any } = require("prop-types");
+// const { any } = require("prop-types");
 
 
 // var a=10;
@@ -213,9 +213,24 @@ const { any } = require("prop-types");
 //  }
 //  isPalindrome("racecar");
 
-// remove duplicate elemnts
+// const a = new Set([1, 2, 3]);
+// const b = new Set([2,4,5]);
+// console.log(a.size); //3
+// a.add(6,45); //it only adds one element
+// console.log(a); //{ 1, 2, 3, 6 }
+// console.log(a.size); //4
+// // a.clear(); //remoes all elemnts from set
+// // console.log(a); //0
+
+// console.log(a.has(4));
+
+
+// remove duplicate elemnts from array 
 
 // let arr=[1,2,3,4,5,5,5,3];
+//  console.log( [...new Set(arr)]);
+//  console.log( [...new Set(arr)]);
+
 // console.log([...new Set(arr)]);
 
 // let arr=[1,2,3,43,3,3,3,65,5,5,3];
@@ -384,23 +399,71 @@ const { any } = require("prop-types");
 // the above code gives out of 3 functions after 2 sec same time if we want one by one 
 
 
-function getData(getid,getnextDta){
+// function getData(getid,getnextDta){
 
-    setTimeout(() => {
+//     setTimeout(() => {
 
-        console.log("data: "+ getid);
-        if(getnextDta){
-        getnextDta();
-        }
-    }, 2000);
-}
-getData(27,()=>{
-    getData(9,()=>{
-        getData(81);
-    });
+//         console.log("data: "+ getid);
+//         if(getnextDta){
+//         getnextDta();
+//         }
+//     }, 2000);
+// }
+// getData(27,()=>{
+//     getData(9,()=>{
+//         getData(81);
+//     });
 
-})
+// })
 
 // this is the look of the bbody function 
+
+// const str="hellow";
+// str.length=10;
+// console.log(str.length);
+// console.log(str);
+
+
+
+// function fact(n){
+    
+//     if(n=== 1 || n===0 ){
+//         //becaus factorial of 0 is 1
+//         return 1;
+//     }
+    
+//     return n * fact(n-1);
+   
+// }
+// console.log(fact(5));
+// let fact =(n)=>{
+//     if(n===0 || n===1 ){
+//         return 1;
+//     }
+//     return n * fact(n-1);
+// }
+// console.log(fact(5));
+
+
+// removie white spaces from string 
+
+//   let str = "hellow removie whote spaces  from string ";
+//   console.log(str.length);
+
+//    let strarry=str.split("").filter((item)=>{
+//      if(item !== " "){
+//        return item;
+//    }
+// } );
+
+// let result= strarry.join("");
+// console.log(result.length);
+// console.log(result);
+
+// using regular expressions 
+//   let str = "hellow removie whote spaces  from string ";
+//   console.log(str.replace(/\s/g," "));
+
+
 
 
