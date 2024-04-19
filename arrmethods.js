@@ -195,10 +195,42 @@
 
 // console.log(found);
 
+// practice programs git hub page
+// https://github.com/MehedilslamRipon/Problem-solving-with-JavaScript/blob/master/problem-18.js
 
 
 
+// var username='a';
 
+// var foo=(function (username){
+//     username="b";
+//     return username;
+// })(username);
+
+// console.log(username);
+
+
+// function getusers(){
+//     fetch("https://jsonplaceholder.typicode.com/users")
+//     .then(response=> (response.json()))
+//     .then(data=>console.log(data.map(item=>item.name).forEach(element => {
+//         console.log(element);
+//     })))
+
+// }
+
+// getusers()
+
+
+// using axios 
+
+
+
+//  const axios=require('axios');
+// axios.get("https://jsonplaceholder.typicode.com/users").then(
+//     response=>console.log(response.data.map(item=>item.name).forEach(element => {
+//               console.log(element);
+//           })))
 
 
 

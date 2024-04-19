@@ -1,4 +1,14 @@
-// // console.log(9);
+// console.log(9);
+
+let normalstr="apple";
+let objstr = new String ("bananna")
+
+let objtypestr=objstr.valueOf() 
+//converts objct typed string into primitive one
+console.log(typeof normalstr);//string
+console.log(typeof objstr);//object
+console.log(typeof objtypestr);//string
+console.log( objtypestr);//bananna
 
 // // js program to disply date 
 // // date object pratice 
@@ -194,4 +204,4 @@
   
 //   console.log(uniqueTags);;
 //   console.log(Object.keys(uniqueTags))
-  
+

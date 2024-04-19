@@ -3,11 +3,30 @@
        
 
 // flattnenig array using flat method using depth 
+
 // const arr1=[2,[34,[90,98,[97,90],99],44],[23,[87,98],[36,86,[32,65,[43,74]]]]];
 // const flatenarray=arr1.flat(5);
 // console.log(flatenarray);
 
-const { array, element, func } = require("prop-types");
+// finde largest number in nested Array 
+// const mainarray=[[3,4,5],[5,2,4],[3,4,556],[67,88,8]];
+// const findelargnum=(arr1)=>{
+//   let largnum=arr1[0][0];
+//    for (const nestarr of arr1) {
+//     for (const item of nestarr) {
+//       if(item>largnum){
+//         largnum=item;
+//       }
+//     }
+//    }
+//    return largnum
+// }
+// console.log(findelargnum(mainarray));
+
+
+
+
+// const { array, element, func } = require("prop-types");
 
 
       //  flat the array using recursive function 
@@ -78,27 +97,27 @@ const { array, element, func } = require("prop-types");
 
   //  fiding prime numbers from 0 to given number
 
-  const findeprimenumbers=(n)=>{
-    let c=0;
-    if(n == 1 || n==0){
-    console.log("\n");
-    return `${n} is not prime`
-    }
-    for(i=1; i<=n; i++){
-      if(n%i == 0){
-        c++;
-      }
-    }
-    console.log("\n");
+  // const findeprimenumbers=(n)=>{
+  //   let c=0;
+  //   if(n == 1 || n==0){
+  //   console.log("\n");
+  //   return `${n} is not prime`
+  //   }
+  //   for(i=1; i<=n; i++){
+  //     if(n%i == 0){
+  //       c++;
+  //     }
+  //   }
+  //   console.log("\n");
      
-    return c>2?`${n}'is not prime'`:`${n}"is prime"`;
-  }
+  //   return c>2?`${n}'is not prime'`:`${n}"is prime"`;
+  // }
 
-  findeprimenumbers(7);
+  // findeprimenumbers(7);
 
-  for (let i = 0; i < 30; i++) {
-    console.log(findeprimenumbers(i));
-  }
+  // for (let i = 0; i < 30; i++) {
+  //   console.log(findeprimenumbers(i));
+  // }
 
 
 // findnig factorial 

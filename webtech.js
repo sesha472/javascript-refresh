@@ -20,13 +20,15 @@
 
 //***/ type conversion : conveting one data type into anothe dt
 
-var a='45';
-var b=55;
-// lets conver string into number using parseInt
-var x=parseInt(a);
-//  lets convert string into number
-var y= String(b);
-console.log(typeof y);
+// var a='45';
+// var b=55;
+// // lets conver string into number using parseInt
+// var x=parseInt(a);
+// //  lets convert string into number
+// var y= String(b);
+// console.log(typeof y);
+
+
 
 
 
