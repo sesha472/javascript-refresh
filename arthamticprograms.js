@@ -8,7 +8,10 @@
 // const flatenarray=arr1.flat(5);
 // console.log(flatenarray);
 
+
+
 // finde largest number in nested Array 
+
 // const mainarray=[[3,4,5],[5,2,4],[3,4,556],[67,88,8]];
 // const findelargnum=(arr1)=>{
 //   let largnum=arr1[0][0];
@@ -27,7 +30,6 @@
 
 
 // const { array, element, func } = require("prop-types");
-
 
       //  flat the array using recursive function 
       // const arr = [
@@ -52,7 +54,6 @@
 
 
       // check given string is palindroem or not 4
-
       // const name="mom";
       // const isPalindrome=(str)=> str.split("").reverse().join("") === str ;
       // console.log(isPalindrome(name));  //true

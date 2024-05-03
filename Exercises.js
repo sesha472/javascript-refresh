@@ -1,14 +1,42 @@
-// console.log(9);
+// // console.log(9);
 
-let normalstr="apple";
-let objstr = new String ("bananna")
+// console.log(a);
 
-let objtypestr=objstr.valueOf() 
-//converts objct typed string into primitive one
-console.log(typeof normalstr);//string
-console.log(typeof objstr);//object
-console.log(typeof objtypestr);//string
-console.log( objtypestr);//bananna
+// console.log(b);
+
+// var  a = b = 5;
+
+// function foo(){
+//     console.log(this.name);
+// }
+// foo.call({name:"sai"}); //sai
+
+//  let foo=()=>{
+//         console.log(this.name);
+//     }
+//     foo.call({name:"sai"}); //undefined because arrow function this ferer to window objcet
+
+
+// let normalstr="apple";
+// let objstr = new String ("bananna")
+
+// let objtypestr=objstr.valueOf() 
+
+// //converts objct typed string into primitive one
+// console.log(typeof normalstr);//string
+// console.log(typeof objstr);//object
+// console.log(typeof objtypestr);//string
+// console.log( objtypestr);//bananna
+
+// let obj = {
+//     valueOf: function() {
+//         return 42; // Custom implementation of valueOf
+//     }
+// };
+
+// console.log(obj.valueOf()); // Output: 42
+// console.log(Number(obj));   // Output: 42
+// console.log(obj + 1);       // Output: 43
 
 // // js program to disply date 
 // // date object pratice 
@@ -106,14 +134,16 @@ console.log( objtypestr);//bananna
 
 
 // finding how many letetrs in string 
+
 // let data="apple is a good fruite and my a aim is to eat"//finde how many a's in this text
 // let result =data.split("a");
 // console.log(result.length-1); 
 
 
-// let data="apple is good"//finde how many a's in this text
-// let result =data.split(" ");
-// console.log(result);
+// let data="apple is goopd"//finde how many a's in this text
+// let result =data.split("p");
+// console.log(result.length-1);
+
 // const data=[ ];
 // console.log(typeof data);
 // console.log(Array.isArray(data));
@@ -121,11 +151,13 @@ console.log( objtypestr);//bananna
 // let data=7 
 // while(data>=0) {
 //      if(data<=5) { 
-//     data--; 
-//     continue; 
+//         break;
+//     // data--; 
+//     // continue; 
 // } 
 // console.log(data);
 //  data--; }
+
 
 // reverseing the string 
 // let data="sesha";
