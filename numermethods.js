@@ -1,33 +1,47 @@
 
 // toString() method convert number to string 
 
-let a=123;
-console.log( typeof a.toString());
+// let a=123;
+// console.log( typeof a.toString());
 
+// diff parseInt and number 
 
+// console.log(parseInt("32px")); //32 it take only 32 ingnore px string 
+// console.log(Number("32px")); //NaN it not pure nuber string so it cant conver px thats y nan
 
-let x=9.456;
-console.log(x.toExponential(2)); 
-9.46e+0
+// // console.log("5"+3);
+//  console.log("5"-3);
+  
+//   const showmsg=(marks)=>{
+//      let msg= marks || "absent";
+//      console.log(msg);
+//   }
+
+//   showmsg(0);
+// let x=9.456;
+// console.log(x.toExponential(2)); 
+// 9.46e+0
 
 // toFixed method retun string with a specified nof  decimals 
-let y=9.4555;
-console.log(y.toFixed(2));
-9.46
+// let y=9.4555;
+// console.log(y.toFixed(2));
+// 9.46
 
 // toPrecision
 //  retuns a string with specified number 
 let z=6.73673;
-console.log(z.toPrecision(3)); //6.74
+console.log(typeof z);
+console.log(z.toPrecision(3));//stringtype 6.74
+console.log(Number (z.toPrecision(3))); //6.74 number
 console.log(z.toPrecision(2)); //6.7
 console.log(z.toPrecision(1)); //1e+0 it transfer like this
 
 // number method can conver js expresson into numberthi
 
-console.log(Number(true)); //1
-console.log(Number('10')); //10
-console.log(Number('sai')); //NaN we can give number string not a alphabet string
-console.log(Number('10.99')); 10.99
+// console.log(Number(true)); //1
+// console.log(Number('10')); //10
+// console.log(Number('sai')); //NaN we can give number string not a alphabet string
+// console.log(Number('10.99')); 10.99
 
 
 

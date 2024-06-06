@@ -1,3 +1,11 @@
+// let a=[1,2,3,4,5,[1,2,3,4,[1,2,3,4,5]]];
+// let b=JSON.parse(JSON.stringify(a));
+// a[5][4][0]=10
+// console.log(a);
+// console.log(b);
+
+
+
 // how to finde duplicate elements in array 
 
 // const arr=[2,3,4,5,2];

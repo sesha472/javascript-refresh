@@ -31,21 +31,28 @@
 
 // console.log("9"+9+"9");
 // console.log(2*"8");
-// console.log(5*"8");
+// let a=(5*"8")  //45
+// console.log(typeof(a)); //number
 
+// task 
 // for (var i = 0; i < 5; i++) {
 //     setTimeout(function() {
 //       console.log(i);
 //     }, 1000);
-//   }//55555 this is because of block scope
+//   }//55555 this is
 
 
 //   for (let i = 0; i < 5; i++) {
 //     setTimeout(function() {
 //       console.log(i);
 //     }, 1000);
-//   } //01234
+//   } //01234This is because let has block scope,
+//                 so each iteration of the loop
+                //  captures the value of i at that point in time
 
+
+                let firstarray=[];
+                
 // var func = [];
 // for (var i = 0; i < 5; i++) {
 //   func[i] = function() {

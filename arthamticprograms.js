@@ -12,7 +12,7 @@
 
 // finde largest number in nested Array 
 
-// const mainarray=[[3,4,5],[5,2,4],[3,4,556],[67,88,8]];
+// const mainarray=[[3,4,905],[5,2,4],[3,4,556],[67,88,8999]];
 // const findelargnum=(arr1)=>{
 //   let largnum=arr1[0][0];
 //    for (const nestarr of arr1) {
@@ -54,8 +54,9 @@
 
 
       // check given string is palindroem or not 4
-      // const name="mom";
+      // const name="momo";
       // const isPalindrome=(str)=> str.split("").reverse().join("") === str ;
+      // console.log(name.split("").reverse().join(''));
       // console.log(isPalindrome(name));  //true
 
 
