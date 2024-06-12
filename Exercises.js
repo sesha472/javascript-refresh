@@ -1,11 +1,9 @@
-// // console.log(9);
-
-// console.log(a);
-
-// console.log(b);
-
+// console.log(9);
+// console.log(a); //undefinded
+// console.log(b); //error
 // var  a = b = 5;
 
+// 1.this arrow function 
 // function foo(){
 //     console.log(this.name);
 // }
@@ -16,6 +14,8 @@
 //     }
 //     foo.call({name:"sai"}); //undefined because arrow function this ferer to window objcet
 
+
+// 2.valueOf() method 
 
 // let normalstr="apple";
 // let objstr = new String ("bananna")
@@ -28,6 +28,7 @@
 // console.log(typeof objtypestr);//string
 // console.log( objtypestr);//bananna
 
+
 // let obj = {
 //     valueOf: function() {
 //         return 42; // Custom implementation of valueOf
@@ -37,16 +38,18 @@
 // console.log(obj.valueOf()); // Output: 42
 // console.log(Number(obj));   // Output: 42
 // console.log(obj + 1);       // Output: 43
+ 
 
 // // js program to disply date 
 // // date object pratice 
+
 // const timer=()=>{
 // let today=new Date();
 
 
-// // today.setHours("")
-// // today.setMinutes("1")
-// // today.setSeconds("1")
+// today.setHours("")
+// today.setMinutes("")
+// today.setSeconds("")
 
 
 // let arrday=["sun","mon","tue","wed","thur","fryday","saturdat"]
@@ -65,10 +68,10 @@
 // seconds=(seconds<10)?`0${seconds}`:seconds;
 
 
+
 // console.log("today is : "+arrday[today.getDay()]);
 // console.log("Current time is : "+hours+":"+minutes+":"+seconds+":"+amorpm); //Current time is : 11:42:53:am
 // }
-
 // timer();
 
 // printing the current page
@@ -89,12 +92,12 @@
 
 // console.log(`${d}-${m}-${y} ,${d}/${m}/${y}`);
 
-// finde duplicate sin array 
-// let arr = [9,9,9];
-// let duplicates=arr.filter((item,index ,arr)=>arr.indexOf(item)!==index );//12
-// let nonduplicates=arr.filter((item,index ,arr)=>arr.indexOf(item)==index );//12
-// console.log(duplicates);//12
-// console.log(nonduplicates);//12345
+// finde duplicate numbers in  array ?
+// let arr = [1,2,4,5,2,4,8];
+// let duplicates=arr.filter((item,index ,arr)=>arr.indexOf(item)==index );//1,2,4,5,8
+// let nonduplicates=arr.filter((item,index ,arr)=>arr.indexOf(item)!==index );//2,4
+// console.log(duplicates);
+// console.log(nonduplicates);
 
 
 

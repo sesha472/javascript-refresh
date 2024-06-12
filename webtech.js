@@ -57,7 +57,7 @@
 // console.log(arr);
 
 // const arr = ['a','b','c','d'];
-// console.log(arr.pop());  // d ,remove lst elemnt  in array ,retuns deleted elemnt
+// console.log(arr.pop());  // d ,remove last elemnt  in array ,retuns deleted elemnt
 // console.log(arr); //['a', 'b', 'c']
 
 // const arr = ['a','b','c','d'];

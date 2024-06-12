@@ -97,6 +97,7 @@
 
 
 
+
 // checks evry elemnt in the array passed a test or not 
 // let a=[2,4,6,5];
 // console.log(a.every(i=>i%2==0));
@@ -163,30 +164,7 @@
 // printName({name: 'Max', age: 28}); // prints 'Max')
 
 
-// Truncate a string to a certain number of words
-// truncateWithWordLimit("JavaScript is simple", 3) returns "JavaScript is simple"
-// const str = 'JavaScript is simple but not easy to master';
-// const wordLimit = 3;
 
-// let array=str.split(" ");
-// let arr2=[];
-// for (let index = 0; index < 3; index++) {
-//      arr2.push(array[index]);
-    
-// };
-// let result=arr2.join(" ");
-
-// console.log(result); //JavaScript is simple
-// // another way
-
-// const str = 'JavaScript is simple but not easy to master';
-// const wordLimit = 3;
-
-// function truncateWithWordLimit(str, wordLimit) {
-//    return str.split(' ').slice(0, wordLimit).join(' ');
-// }
-
-// console.log(`${truncateWithWordLimit(str, wordLimit)}`);
 
 
 // const array1 = [5, 12, 8, 130, 44];
@@ -234,10 +212,9 @@
 
 
 
-let courses = ["HTML", "CSS", "Javascript", "React", "Node.js"];
-
-console.log(courses.pop());
-console.log(courses.length);
+// let courses = ["HTML", "CSS", "Javascript", "React", "Node.js"];
+// console.log(courses.pop());
+// console.log(courses.length);
 
 
 
