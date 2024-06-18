@@ -29,12 +29,12 @@
 
 // toPrecision
 //  retuns a string with specified number 
-let z=6.73673;
-console.log(typeof z);
-console.log(z.toPrecision(3));//stringtype 6.74
-console.log(Number (z.toPrecision(3))); //6.74 number
-console.log(z.toPrecision(2)); //6.7
-console.log(z.toPrecision(1)); //1e+0 it transfer like this
+// let z=6.73673;
+// console.log(typeof z);
+// console.log(z.toPrecision(3));//stringtype 6.74
+// console.log(Number (z.toPrecision(3))); //6.74 number
+// console.log(z.toPrecision(2)); //6.7
+// console.log(z.toPrecision(1)); //1e+0 it transfer like this
 
 // number method can conver js expresson into numberthi
 

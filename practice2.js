@@ -1,10 +1,10 @@
 
 // pure functions are those dont hav eany side effects 
+
 // const addtwovalues=(a,b)=> console.log(a+b);
 // addtwovalues(2,3)
 // addtwovalues(5,6)
 
-// const { array } = require("prop-types");
 
 // impure functions example these function produe diffrent output for the same input 
 // let total=0;
@@ -51,7 +51,7 @@
                 //  captures the value of i at that point in time
 
 
-                let firstarray=[];
+                // let firstarray=[];
                 
 // var func = [];
 // for (var i = 0; i < 5; i++) {

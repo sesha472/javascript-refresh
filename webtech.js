@@ -1,3 +1,103 @@
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+//  const obj={
+//   cal(){
+//     console.log("salary percentage ");
+//   },
+//     name:"harahara",
+//     age:"30",
+//     city:"nellore",
+//     state :"ap"
+//  }
+
+//  let  fulldetails={
+//      salary :90000
+//  }
+
+
+//  fulldetails.__proto__=obj;
+
+//  let entriesproperies=Object.entries(obj).filter(([key,value])=> key!== "city")
+//  let result=Object.fromEntries(entriesproperies)
+//  console.log(entriesproperies);
+//  console.log(result);
+
+//  let resultkeys = Object.keys(obj)
+//  let resultvalues = Object.values(obj)
+//  let resultentire=Object.entries(obj)
+
+//  for (const [key,value] in Object.entries(obj)) {
+//    console.log(key,value);
+//  }
+// console.log(resultkeys);
+// console.log(resultvalues);
+// console.log(resultentire);
+
+
+
+
+
+
+
+
+
+
+
+// const entries = [
+//     ['name', 'Alice'],
+//     ['age', 30],
+//     ['occupation', 'Engineer']
+//   ];
+  
+//   const person = Object.fromEntries(entries);
+//   console.log(person);
+  // Output: { name: 'Alice', age: 30, occupation: 'Engineer' }
+  
+
+
+
+//   const person = {
+//     name: "Alice",
+//     age: 30,
+//     occupation: "Engineer"
+//   };
+  
+// //   for (const [key,value] in Object.entries(person)) {
+//     for (const key in person) {
+//     console.log(`${key}: `);
+//   }
+
+
+
+
+
+
+//   const obj={
+//     name:"harahara",
+//     age:"30",
+//     city:"nellore",
+//     state :"ap"
+//  }
+
+//  let result=Object.entries(obj)
+
+//  let result2=new URLSearchParams(result).toString()
+//  console.log(result);
+//  console.log(result2);
+
+
+
+
+
+
+
+
+
 //   let a=10;
 //   document.write('result:  ', a )
 
@@ -94,9 +194,20 @@
 // console.log(arr.splice(0,2,'x','y'));  //['a', 'b']
 // console.log(arr); //['c', 'd']
 
-// remove duplicate elemnts form array
+// finde duplicate elemnts form array
+// var array = [4, 90,9,3, 4, 6, 3, 8, 9];
+// let unique_elements =[];
+// let duplicate_elements=[]
+// for (let index = 0; index < array.length; index++) {     
+//       array.indexOf(array[index])===index ?unique_elements.push(array[index]):duplicate_elements.push(array[index])
+// }
+// console.log(unique_elements);
+// console.log(duplicate_elements);
+     
 
-// var a = [4, 3, 4, 6, 3, 8, 9];
+      
+
+
 // const b = [];
 // for (let i = 0; i < a.length; i++) {
 //   if (a.indexOf(a[i]) === i) {

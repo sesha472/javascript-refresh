@@ -555,3 +555,16 @@
 // console.log(b); //25
 
 
+// findong the are of traiangle using base and height 
+
+// let baseof_triangle=10;
+// let heightof_traiangle=20;
+
+// let area =(baseof_triangle*heightof_traiangle)/2
+// console.log(area);
+
+// // using fromule with help of sides of traiangle 
+// let a=3,b=4,c=5;
+// let s =( (a+b+c)/2);
+// let area2= Math.sqrt(s*(s-a) *(s-b)*(s-c))
+// console.log(area2);

@@ -46,22 +46,24 @@
 
 
 // //04. Default Parametrs
-
 // function add(x = 10, y = 20) {
 //   console.log(x + y);
 // }
-// add(30, 40);
+// add();
+// add(30,60)
 
 
 // //05. repeat()
-
-//     var cat = {
-// 		 meow(times){
-// 			 console.log("meow ".repeat(times));
-// 		 }
-// 	};
-//     cat.meow(2); 
+    // var cat = {
+    //   meow(times) {
+    //     console.log("meow ".repeat(times));
+    //   },
+    // };
+    // cat.meow(2);
+    // let str = "namsthey ";
+    // console.log(str.repeat(5));
     
+
 
 // //06. Arrow Function
 
@@ -90,6 +92,17 @@
 // };
 // person.printActions();
 
+// const person={
+//     name:"king",
+//   actions: ["bike", "hike", "ski", "surf"],
+//    printactions:function(){
+//        this.actions.forEach(item=>{
+//         console.log(`${this.name} likes ${item}`);
+//        })
+//    }   
+// }
+// person.printactions()
+ 
 // //ES-6
 // var person = {
 //   first: "Pradeep",
@@ -104,7 +117,6 @@
 
 
 // //08. Destructing Assignment
-
 // var phone = {
 //   title: "iPhone",
 //   price: 800,
@@ -121,17 +133,31 @@
 
 // console.log(title);
 
+
 // //09. Generators
 
 // /*** Calling a generator function does not execute its body immediately ***/
 
-// 	function* generator(i) {
-// 		yield i;
-// 		yield i + 10;
-// 	}
-// 	var gen = generator(10);
-// 	console.log(gen.next().value); 
-//     console.log(gen.next().value); 
+	// function* generator(i) {
+	// 	yield i;
+	// 	yield i + 10
+	// 	yield i + 20;
+	// }
+	// var gen = generator(10);
+    // console.log(gen.next());
+	// console.log(gen.next().value); //10
+    // console.log(gen.next().value); //20
+    // console.log(gen.next().value); //30
+
+    // function* getmultipIeVaIues() {
+    //   yield 18;
+    //   yield 243;
+    // }
+    // const result = getmultipIeVaIues();
+    // //the result.next()returns object of all values in function then if we want one by one we have call .value one by one
+    // console.log(result.next().value);
+    // console.log(result.next().value);
+        
     
 
 // //10. Symbols
@@ -216,3 +242,24 @@
 // githubRequest('eveporcello');
 // githubRequest('jjulian');
 // githubRequest('seshasai');
+
+
+// function createcounter() {
+//     let counter =0;
+//     return function(){
+//         counter++;
+//         return counter
+//     }
+// }
+
+// let counter1=createcounter();
+// console.log(counter1());
+// console.log(counter1());
+// console.log(counter1());
+// console.log(counter1());
+// console.log(counter1());
+
+//  counter2=createcounter();
+// console.log(counter2());
+
+console.log(9);

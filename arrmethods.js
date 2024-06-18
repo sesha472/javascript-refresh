@@ -1,5 +1,6 @@
 
 
+
 //  let arr1=[10,20,30,40];
 // let arr2=[50,60,70,80];
 //  let arr3=arr1.concat(arr2);
@@ -32,19 +33,6 @@
 // console.log(num===num2);
 
 
-// findong the are of traiangle using base and height 
-
-// let baseof_triangle=10;
-// let heightof_traiangle=20;
-
-// let area =(baseof_triangle*heightof_traiangle)/2
-// console.log(area);
-
-// // using fromule with help of sides of traiangle 
-// let a=3,b=4,c=5;
-// let s =( (a+b+c)/2);
-// let area2= Math.sqrt(s*(s-a) *(s-b)*(s-c))
-// console.log(area2);
 
 
 
@@ -55,7 +43,96 @@
 // console.log(res);
 
 
+// let num=123;
+// console.log(num.toString());
 
+// //  let arr1=[10,20,30,40];
+// //  console.log(typeof arr1.toString()); //strin
+// //  console.log(typeof arr1);//obj
+// //  console.log(arr1.toString());//10,20,30,40
+// let num = 123;
+// console.log(num.toString());      // Output: "123"
+// console.log(num.toString(2));     // Output: "1111011" (binary)
+// console.log(num.toString(16));    // Output: "7b" (hexadecimal)
+
+// let arr = [1, 2, 3, 4];
+// console.log(arr.toString());      // Output: "1,2,3,4"
+
+// let arr = [1, 2, 3];
+// console.log(arr.toSource()); // Output: "[1, 2, 3]"
+
+// let num = new Number(42);
+// console.log(num.toSource()); // Output: "(new Number(42))"
+
+// let regex = /abc/g;
+// console.log(regex.toSource()); // Output: "/abc/g"
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const obj = {
+//     name: 'Alice',
+//     friends: ['Bob', 'Charlie'],
+//     printFriends: function() {
+//         this.friends.forEach(friend => {
+//             console.log(`${friend} is friends with ${this.name}`);
+//         });
+//     }
+// };
+// obj.printFriends();
+
+// const obj = {
+//     name: 'Alice',
+
+//     greet: ()=>{
+//         setTimeout( ()=>{
+//             console.log("this "+this.name);
+//         })
+        
+//     }
+        
+//     }
+// ;
+// obj.greet()
+
+
+//  console.log( obj.greet());
+
+
+
+//       function prime(num){
+//     if (num<=1){
+//         return "not prime number "
+//     }for(i=2 ; i<num; i++){
+//      if(num %2==0){
+//         return "not prime "
+//      }
+//      else{
+//         return "its prime number "
+//      }
+
+    
+// }}
+
+// console.log(prime(5));
+// console.log(prim
+
+
+
+
+
+
+// let bool = true;
+// console.log(bool.valueOf());     // Output: "true"
 // let arr1=[10,20,30,40];
 // let   arr2=[];
 

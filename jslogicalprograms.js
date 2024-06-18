@@ -295,19 +295,19 @@
         //            }
     
         // }
-        function arrayReverse(arr) {
-            var temp;
-            var n = arr.length;
-            var mid = n / 2;
+        // function arrayReverse(arr) {
+        //     var temp;
+        //     var n = arr.length;
+        //     var mid = n / 2;
          
-            for (var i = 0; i < mid; i++) {
-               temp = arr[i]
-               arr[i] = arr[n - i - 1];
-               arr[n - i - 1] = temp;
-            }
+        //     for (var i = 0; i < mid; i++) {
+        //        temp = arr[i]
+        //        arr[i] = arr[n - i - 1];
+        //        arr[n - i - 1] = temp;
+        //     }
          
-            return arr;
-         }
+        //     return arr;
+        //  }
          
         
          const names = ['German', 'Nicolas', 'Martin', 'Micaela', 'Mateo', 'Matias', 'John', 'Gonzalo', 'Esteban', 'Paula', 'Victoria', 'Bautista', 'Carolina', 'Analia', 'Edward', 'Mirtha'];

@@ -4,10 +4,14 @@
 // console.log(a);
 // console.log(b);
 
+// function convertcapital(){
+//        let inputvalue= document.getElementById("text").value;
+//         document.getElementById("result").innerText=inputvalue.split('').reverse().join("");
+//     }
 
 
-// how to finde duplicate elements in array 
 
+// 1.how to finde duplicate elements in array 
 // const arr=[2,3,4,5,2];
 // const result =arr.filter((item,index,array)=> {
 //     return  array.indexOf(item)!==index ? item:null //[2]
@@ -18,19 +22,19 @@
 
 
 
-// how to find max and min value in array 
+// 2.how to find max and min value in array 
 
-const arr=[3,45,56,933,565,4];
-
+// const arr=[3,45,56,933,565,4];
 // let maxnumber= arr.sort((a,b)=>b-a)[0]
 // console.log(maxnumber);
-//  or
 
+               //  or
 
 // let result=Math.max(...arr)
 //   console.log(result);
 
-//    or  using reduce method
+//            or  using reduce method
+
 //    let result=arr.reduce((acc,curent)=>{
 //     console.log(`accumulator : ${acc} ,cuurentvalue:${curent}`);
 //           if(curent>=acc){
@@ -40,10 +44,11 @@ const arr=[3,45,56,933,565,4];
 //           }
 //    },-Infinity);
 //    console.log(result);
-    // or
+
+                       // or
 
 //   let result= arr.reduce((acc,cur)=>{
-//     return acc>=cur?acc:cur;
+//     return acc>=cur ? acc : cur;
 //   },-Infinity)
 //   console.log(result);
 //    or 
@@ -65,6 +70,7 @@ const arr=[3,45,56,933,565,4];
 //   console.log(value);
 
 
+
 // const result=arr.reduce((acc,cur)=> {
 //     return Math.max(acc,cur);
 // },-Infinity)
@@ -77,11 +83,15 @@ const arr=[3,45,56,933,565,4];
 
 
 
-// how to finde second largest value in array 
+// 3.how to finde second largest value in array 
 
-// const arr=[3,45,56,93,56,4];
-// let result= arr.sort((a,b)=>b-a);
-// console.log(result);//56
+// const arr=[3,45,56,93,56,93,4];
+// let uniquearry=[... new Set(arr)];
+// let result= uniquearry.sort((a,b)=>b-a);
+// console.log(result);
+// console.log(result[1]);
+
+
 
              // or 
 
@@ -106,19 +116,66 @@ const arr=[3,45,56,933,565,4];
 
 
 
-
-
-
-
-// findning missing intiger in given arry of 1 to 10 
+//4. findning missing intiger in given arry of 1 to 10 
 
 // const arr= [1,2,3,4,5,8,9,10];
+//     let newarr=Array.from({length:10},(value,index)=>index+1);
+//     const missingelmets=newarr.filter((item,index)=>{
+//        return  arr.includes(item) ?null:item
+//     })
+//     console.log(arr);
+//     console.log(newarr);
+//     console.log(missingelmets);
+
+
+//    function missingelemnts (inputarry){
+//    const uniquearry=[...new Set(inputarry)]
+//     const givenarraylength=uniquearry.length
+//     let newarr=Array.from({length:givenarraylength},(value,index)=>index+1);
+//     const missingelmets=newarr.filter((item)=>{
+//        return  uniquearry.includes(item) ?null:item
+//     })
+//     console.log(inputarry);
+//     console.log();
+//     console.log(newarr);
+//     console.log(missingelmets);
+//    }
+
+//    missingelemnts([1,2,5,6,7,8,98,6,])
+
+        
+// 5.reverse the sentence words 
+    // let str = "welcome to js interview";   // output should be :emoclew ot sj weivretni
+    // let result=str.split(" ")
+    // console.log(result);
+    // let result2=result.map((item=>{ return item.split("").reverse().join("")})).join(" ")
+    // console.log(result2);
+    // let strarr=str.split(" ");
+    // console.log(strarr); 
+    // console.log(strarr.map(item=>item.split("").reverse().join("")).join(" "));
+
+// 6.conver the text first word into capital remiang into lower case 
+    // let str = "namsthey";
+    // let splitedarry = str.split("");
+    // let firstletter = splitedarry.splice(0, 1).join("").toLocaleUpperCase();
+    // let remaingword = splitedarry.join("").toLocaleLowerCase();
+    // console.log(firstletter);
+    // console.log(remaingword);
+    // let finaloutput = firstletter + remaingword;
+    // console.log(finaloutput);
+
+
+
+
+
+
+
 
 // console.log(42+"42"); //4242
 // console.log(true +4); //5
 
-// console.log(true == "textstring"); //bollen with string numbers cosiders number 
-
+// console.log(true == "s"); //bollen with string numbers cosiders number 
+// console.log(true=='1');
 
 // console.log(6 + 3*2 + (6-3)); //15
 
@@ -173,16 +230,10 @@ const arr=[3,45,56,933,565,4];
 
     // person.printage()
 
-    // reverse the sentence words 
-    // let str = "welcome to js interview";   //emoclew ot sj weivretni
-    // let result=str.split(" ")
-    // console.log(result);
-    // let result2=result.map((item=>{ return item.split("").reverse().join("")})).join(" ")
-    // console.log(result2);
-    // let strarr=str.split(" ");
-    // console.log(strarr); 
-    // console.log(strarr.map(item=>item.split("").reverse().join("")).join(" "));
+    
 
+
+ 
     // how to empty an array 
     // let arr=["a","b","v","h"];
     // arr=[]
@@ -229,11 +280,25 @@ const arr=[3,45,56,933,565,4];
 
 // myfun(1,2,3,4)
 
-function myfun(){
-        let arr=[];
-        for(i=0; i<arguments.length; i++){
-            arr.push(i);
-        }
-    }
+// function myfun(){
+    //     let arr=[];
+    //     for(let i=0; i<arguments.length; i++){
+    //         arr.push(arguments[i]);
+    //     }
+    //     return arr;
+    // }
     
-    myfun(1,2,3,4)
+    // console.log( myfun(18,2,3,4));
+
+    // function add(){
+    //     let arr= arguments
+    //     let result=0;
+    //    for(let i=0; i<arr.length; i++){
+    //      result= result + arr[i];
+    //    }
+    //    return result;
+    // }  
+    // console.log(add(2,3,4));
+    
+
+  
