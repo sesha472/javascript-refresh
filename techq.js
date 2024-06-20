@@ -14,9 +14,9 @@
 // 1.how to finde duplicate elements in array 
 // const arr=[2,3,4,5,2];
 // const result =arr.filter((item,index,array)=> {
-//     return  array.indexOf(item)!==index ? item:null //[2]
+//     return  array.indexOf(item)!==index ? item : null //[2]
 //// or for non duplicates logic
-//     return  array.indexOf(item)===index ? item:null //[2,3,4,5]
+//     return  array.indexOf(item)===index ? item : null //[2,3,4,5]
 // })
 // console.log(result); //[2]
 
@@ -300,5 +300,32 @@
     // }  
     // console.log(add(2,3,4));
     
+// let x=4;
+// console.log(x++ + ++x); //10
 
-  
+
+//   let arr=[4,2,2,6,8,9,99]
+// let result =arr.sort((a,b)=>b-a)
+// console.log(result);
+
+
+//   let arr=[4,2,2,6,8,9,99]
+//   arr=[];
+//   console.log(arr);
+// class Person {
+//     name = 'Max';
+//     printMyName = () => {
+//         console.log(this.name);
+//     }
+// }
+ 
+// const person = new Person();
+// person.printMyName();
+
+// finde  the total of object values 
+// const objects = [{ x: 1 }, { x: 2 }, { x: 3 }];
+// let result =objects.reduce((acc,cur)=>{
+//     return acc+cur.x
+// },0)
+// console.log(result);
+

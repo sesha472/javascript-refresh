@@ -1,65 +1,70 @@
 
 
 
-//  let arr1=[10,20,30,40];
+// let arr1=[10,20,30,40];
 // let arr2=[50,60,70,80];
 //  let arr3=arr1.concat(arr2);
 //  console.log(arr3);
 //  console.log(arr1);
 //  console.log(arr2);
 
+
 // copyWithin(target-index,start-indexe,end-index(not frequires));
 // let array1 = ['a', 'b', 'c', 'd', 'e'];
 // let result=array1.copyWithin(0,3);
 // console.log(result);
 
+// const array1 = [5, 12, 8, 130, 44];
+// const found = array1.find((element) => element > 1000);
 
-// let arr1=[10,20,30,40];
 
-// let courses = ["HTML", "CSS", "Javascript", "React", "Node.js"];
-// console.log("Original Array: " + courses);
  
 // let lastElement = courses.pop();
-// console.log("After Removed the last elements: " + courses);
- 
+// console.log(`After Removed the last elements  ${courses}`);
+
+
 // let firstElement = courses.shift();
 // console.log("After Removed the First elements: " + courses);
  
-// courses.splice(1, 2);
-// console.log("After Removed 2 elements starting from index 1: " + courses);
-
-// let num=10;
-// let num2=10;
-// console.log(num===num2);
-
-
-
-
-
-
 
 // const a=[5,7,3,9,36];
-// let res=a.forEach((item,index)=>console.log(item))//undefinde because foreatch wont return anything we can do operations on eatch elemnt in arry
+// let res=a.forEach((item,index)=>(item))//undefinde because foreatch wont return anything we can do operations on eatch elemnt in arry
 // console.log(res);
 
 
-// let num=123;
-// console.log(num.toString());
+// let courses = ["HTML", "CSS", "Javascript", "React", "Node.js"];
+// courses.splice(1, 2); //Html react node.js
+// console.log("After Removed 2 elements starting from index 1: " + courses);
+
+
+// let fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+// let result=fruits.slice(1,3); //starting index endning index which is exclued 
+// console.log(result);  //[ 'Orange', 'Lemon' ]
+
+// let fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+// let result =fruits.slice()//it create copy of that array
+
+
+
+// let num=[1,3,5,7,9];
+// console.log(num.toString()); //1,3,5,7,9
+
 
 // //  let arr1=[10,20,30,40];
 // //  console.log(typeof arr1.toString()); //strin
 // //  console.log(typeof arr1);//obj
 // //  console.log(arr1.toString());//10,20,30,40
+
+
 // let num = 123;
 // console.log(num.toString());      // Output: "123"
 // console.log(num.toString(2));     // Output: "1111011" (binary)
 // console.log(num.toString(16));    // Output: "7b" (hexadecimal)
 
-// let arr = [1, 2, 3, 4];
-// console.log(arr.toString());      // Output: "1,2,3,4"
+
 
 // let arr = [1, 2, 3];
-// console.log(arr.toSource()); // Output: "[1, 2, 3]"
+// console.log(arr.toSource()); // Output: "[1, 2, 3]" 
 
 // let num = new Number(42);
 // console.log(num.toSource()); // Output: "(new Number(42))"
@@ -92,11 +97,10 @@
 
 // const obj = {
 //     name: 'Alice',
-
 //     greet: ()=>{
 //         setTimeout( ()=>{
-//             console.log("this "+this.name);
-//         })
+//             console.log("this "+this.name); //undefinde
+//         },1000)
         
 //     }
         
@@ -195,58 +199,7 @@
 
 
 
-// let obj1={fname:"sachin",lname: "tendulkar",age:"27"};
 
-// function fullname({fname,lname}){
-//     console.log(fname);
-//     console.log(lname);
-// }
-
-// fullname(obj1)
-
-// console.log("Hellow" == "Hellow");
-// function handleTimeout(){
-//     console.log("normal function");
-// }
-
-// const handleTimeout2=()=>{
-//     console.log("arrow function..");
-
-
-// }
-//   setTimeout(handleTimeout,2000);
-// //   setTimeout(handleTimeout2,3000);
-// // setTimeout(() => {
-// //     console.log("set timeout function...");
-// // },5000 );
-
-// function init (){
-//     function greet (){
-//         console.log("hi");
-//     }
-//     return greet();
-// }
-// init();
-
-// const printName = (personObj) => {
-//     console.log(personObj.name);
-// }
-// printName({name: 'Max', age: 28}); // prints 'Max'
-
-
-// this is how distructuring works 
-// const printName = ({name}) => {
-//     console.log(name);
-// }
-// printName({name: 'Max', age: 28}); // prints 'Max')
-
-
-
-
-
-// const array1 = [5, 12, 8, 130, 44];
-  
-// const found = array1.find((element) => element > 1000);
 
 // console.log(found);
 

@@ -5,6 +5,7 @@
  
  
  
+ 
 //  const obj={
 //   cal(){
 //     console.log("salary percentage ");
