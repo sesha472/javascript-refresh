@@ -245,15 +245,7 @@
 
     // console.log(arr);
 
-    // how to finde diffrence betwin dates 
-    // let date1=new Date('6/9/2024');
-    // let date2=new Date()
-    // let diffdate=Math.abs((date2-date1))
-    // let days=diffdate/(1000*60*60*24)
-    // console.log(date1);
-    // console.log(date2);
-    // console.log(diffdate);
-    // console.log(Math.ceil(days));
+   
 
     // let a= moment([2022,10]);
     // let b= moment([2023,10]);
@@ -267,8 +259,7 @@
     //      (i !==n) ? console.log(i++):clearInterval(printnum);
     // },i*1000);
     
-    // let dt=new Date ();
-    // console.log(dt.toUTCString());
+    
 
  
 // console.log(9);
@@ -329,3 +320,101 @@
 // },0)
 // console.log(result);
 
+
+
+// const mainarray=[[3,4,905],[5,2,4],[3,4,556],[67,88,8999]];
+//        let flatarry=mainarray.flat().sort()
+//     //    console.log(flatarry);
+//     //    let maxelt=  Math.max(...flatarry)
+//     //    console.log(maxelt);
+//         let uniquearry=[... new Set(flatarry)]        
+//        console.log(uniquearry);
+//        let maxelt=  Math.max(...uniquearry)
+//           console.log(maxelt);
+
+// flat the array using recursive function?
+// const arr = [2,[34, [90, 98, [97, 90], 99], 44], [23, [87, 98], [36, 86, [32, 65, [43, 74]]]],];
+//          let result = arr.flat(Infinity);
+//          console.log( result);
+
+
+
+
+// const arr = [2,[34, [90, 98, [97, 90], 99], 44], [23, [87, 98], [36, 86, [32, 65, [43, 74]]]],];
+          
+    // const flatenarry = (arrayarg) => {
+    //     let result = [];
+    //   arrayarg.forEach((item) => {
+    //     if (Array.isArray(item)) {
+    //       result = result.concat(flatenarry(item));
+    //     } else{
+    //         result.push(item)
+    //     }
+    //   });
+    //   return result;
+    // };
+    // console.log(flatenarry(arr));
+
+    // const flatarry=(arrayarg)=>{
+    //        let result=[];
+    //        arrayarg.forEach((item) => {
+    //           if(Array.isArray(item)){
+    //             result=result.concat(flatarry(item))
+    //           }else{
+    //              result.push(item)
+    //           }
+    //        } 
+    //     );
+    //     return result;
+    // }
+
+    // console.log( flatarry(arr));
+
+
+    // truncateWithWordLimit("JavaScript is simple but not easy", 3)
+
+    // let str="JavaScript is simple but not easy";
+    //  let limiit=3;
+
+    //  let result= str.split(" ").slice(0,limiit).join(" ")
+    //  console.log(result);
+
+//5. Write a function that takes an array of numbers and returns a new array with only the even numbers
+
+// const arr=[2,3,2,1,2,,6,7,4,32,2,7,9,3,42,342,2,9];
+//   let result = arr.filter(item=>item%2 ===0)
+//   console.log(result);
+
+
+//   const factorial=(num)=>{
+//          if(num == 1 || num==0){
+//         return num;
+//          }else{
+//         return num * factorial(num-1)
+//          }
+//   }
+//   console.log(factorial(0));
+//   console.log(factorial(1));
+
+    //   let num =7;
+    //   const primenum =(num )=>{
+    //     if(num <= 1){
+    //         return "not prime" ;
+    //     }
+    //     for(i=2; i<=Math.sqrt(num); i++){
+    //         if(num % i==0 ){
+    //             return "its prime"
+    //         }
+    //    }
+    //    return "its prime"
+    //   }
+
+    //   console.log(primenum(3));
+
+
+    // function sayhi(){
+    //     return (()=>0)();
+    // }
+    // console.log(typeof sayhi());
+
+    

@@ -1,5 +1,6 @@
 
 
+
 // // convertTo24HrsFormat("12:10AM") returns "00:10"
 // // convertTo24HrsFormat("5:00AM") returns "05:00"
 // // convertTo24HrsFormat("12:33PM") returns "12:33"
@@ -77,6 +78,7 @@
 // addtwovalues(2,3)
 // addtwovalues(5,6)
 
+ 
 
 // impure functions example these function produe diffrent output for the same input 
 // let total=0;
@@ -87,7 +89,6 @@
 
 // addwithtotal(9);//9
 // addwithtotal(9);//18
-
 
 // funcion currying 
 //  function operation (n){
@@ -188,45 +189,9 @@
 // 2.we can create empty array with length we can fill with push method
 
 
-// let a="apple";
-// console.log(Array.from(a));//[ 'a', 'p', 'p', 'l', 'e' ]
-
-// let b=Array.from({length:2}); //if we put empty string 
-// console.log(b);//[ undefined, undefined ]
-// oe we can use this method to fill with index values 
-// let c=Array.from({length:5},(value,index)=>index)
-// console.log(c);//[ 0, 1, 2, 3, 4 ]
-
-// console.log(typeof c );//objbect
-
-// console.log( Array.isArray(c)); //true
 
 
-// usange of filter map reduce method 
-// let orders =[
-//     {name:"raju",
-//     purchased:30,
-//      },
-//      {name:"shiva",
-//     purchased:30,
-//     },
-//     {name:"vishnu",
-//     purchased:30,
-//     },
-//     {name:"raju",
-//     purchased:150,
-//      },
-//     {name:"hanuman",
-//     purchased:30,
-//     }
-// ];
 
-// let result=orders.filter((item,index)=>{
-//     if (item.name==="raju"){
-//         return item;
-//     }
-// }).map((vale,index)=>vale.purchased).reduce((acc,curentvalue)=>acc+curentvalue,0);
-// console.log(result);
 
 // flat method falts the arry 
 
@@ -312,19 +277,10 @@
 // console.log(removed);
 
 
-// let arr = ["I", "study", "JavaScript"];
 
-// arr.splice(arr.length, 0, "complex", "language");
-// console.log(arr);
 
-// let arr = [1, 2, 5];
-// let a=arr.splice(-1, 0,3);
-// console.log(arr);
-// console.log(a);
 
-// let arr = ["t", "e", "s", "t"];
 
-// console.log( arr.slice(1, 3) );//[ 'e', 's' ]
 
 
 
@@ -350,15 +306,14 @@
 
 // console.log( arr.concat(arrayLike) );//[ 1, 2, 'something', 'else' ]
 
-// console.log("Hellow" == "Hellow");
 
 // function init (){
 //     function greet (){
 //         console.log("hi");
 //     }
-//      greet();
+//       greet();
 // }
-// init();
+// init(); //hi
 
 // function handleTimeout(){
 //     console.log("normal function");
@@ -374,3 +329,19 @@
 
 
 
+// const resultpromis=new Promise((resolve,reject)=>{
+//     setTimeout(()=>{
+//         let num = Math.round(Math.random()*10)
+//          if(num <5){
+//             resolve(`resoved num ${num}` )
+//          }
+//          else{
+//             reject(`num is rjected num is  ${num}`)
+//          }
+//     },1000)
+// })
+//  resultpromis.then((data)=>{
+//     console.log(data);
+//  }).catch((err)=>{
+//   console.log(err);
+//  })

@@ -483,17 +483,7 @@
 // console.log(/LANGUANGE/.test(name));//false
 // console.log(/LANGUANGE/i.test(name));//true
 
-// finding the date gap betwin two dates
-// let fdate="11/10/2023";
-// let sdate="11/25/2023";
-// let dobj1=new Date(fdate)
-// let dobj2=new Date(sdate)
-// console.log(dobj1);
-// console.log(dobj2);//Sat Nov 25 2023 00:00:00 GMT+0530 (India Standard Time)
-// let diff=Math.abs(dobj1-dobj2);
-// console.log(diff);//1296000000
-// let days=diff/(24*60*60*1000)
-// console.log(days);
+
 
 // ->Array is collection of values
 // ->Set is collection of unique values
@@ -563,8 +553,22 @@
 // let area =(baseof_triangle*heightof_traiangle)/2
 // console.log(area);
 
-// // using fromule with help of sides of traiangle 
-// let a=3,b=4,c=5;
-// let s =( (a+b+c)/2);
-// let area2= Math.sqrt(s*(s-a) *(s-b)*(s-c))
-// console.log(area2);
+
+// function getusers(){
+//     fetch("https://jsonplaceholder.typicode.com/users")
+//     .then(response=> (response.json()))
+//     .then(data=>console.log(data.map(item=>item.name).forEach(element => {
+//         console.log(element);
+//     })))
+// }
+// getusers()
+
+
+
+// using axios 
+
+//  const axios=require('axios');
+// axios.get("https://jsonplaceholder.typicode.com/users").then(
+//     response=>console.log(response.data.map(item=>item.name).forEach(element => {
+//               console.log(element);
+//           })))

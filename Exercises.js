@@ -3,6 +3,7 @@
 // console.log(b); //error
 // var  a = b = 5;
 
+
 // 1.this arrow function 
 // function foo(){
 //     console.log(this.name);
@@ -12,7 +13,7 @@
 //  let foo=()=>{
 //         console.log(this.name);
 //     }
-//     foo.call({name:"sai"}); //undefined because arrow function this ferer to window objcet
+//  foo.call({name:"sai"}); //undefined because arrow function this ferer to window objcet
 
 
 // 2.valueOf() method 
@@ -40,39 +41,7 @@
 // console.log(obj + 1);       // Output: 43
  
 
-// // js program to disply date 
-// // date object pratice 
 
-// const timer=()=>{
-// let today=new Date();
-
-
-// today.setHours("")
-// today.setMinutes("")
-// today.setSeconds("")
-
-
-// let arrday=["sun","mon","tue","wed","thur","fryday","saturdat"]
-
-// let hours=today.getHours();
-// let amorpm=hours>=12?"pm":"am";
-
-// // console.log(hours); Convertimg 24 hour format to 12 hour format
-//  hours = (hours >= 12) ? hours - 12 : hours;
-//  hours=(hours==0)?12:hours; //if hourse is become 0 i am setting it to 12am like that
-// // console.log(amorpm);
-
-// let minutes=today.getMinutes();
-// minutes=(minutes<10)?`0${minutes}`:minutes;
-// let seconds=today.getSeconds();
-// seconds=(seconds<10)?`0${seconds}`:seconds;
-
-
-
-// console.log("today is : "+arrday[today.getDay()]);
-// console.log("Current time is : "+hours+":"+minutes+":"+seconds+":"+amorpm); //Current time is : 11:42:53:am
-// }
-// timer();
 
 // printing the current page
 
@@ -81,23 +50,8 @@
 // }
 // print_current_window();
 
-// let date=new Date();
-// date.setDate(1);
 
-// let d=date.getDate();
-// d=(d<10)?`0${d}`:d
 
-// let m=date.getMonth()+1;
-// let y=date.getFullYear()
-
-// console.log(`${d}-${m}-${y} ,${d}/${m}/${y}`);
-
-// finde duplicate numbers in  array ?
-// let arr = [1,2,4,5,2,4,8];
-// let duplicates=arr.filter((item,index ,arr)=>arr.indexOf(item)==index );//1,2,4,5,8
-// let nonduplicates=arr.filter((item,index ,arr)=>arr.indexOf(item)!==index );//2,4
-// console.log(duplicates);
-// console.log(nonduplicates);
 
 
 

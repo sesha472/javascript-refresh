@@ -32,23 +32,84 @@
 // console.log(res);
 
 
+
+
 // let courses = ["HTML", "CSS", "Javascript", "React", "Node.js"];
 // courses.splice(1, 2); //Html react node.js
 // console.log("After Removed 2 elements starting from index 1: " + courses);
+// let arr = [1, 2, 5];
+// let a=arr.splice(-1, 0,3);
+// console.log(arr);[1,2,5,3]
+// console.log(a); //[]
+
+
+// let arr = ["I", "study", "JavaScript"];
+// arr.splice(arr.length, 0, "complex", "language");
+// console.log(arr); //[ 'I', 'study', 'JavaScript', 'complex', 'language' ]
+
 
 
 // let fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
 // let result=fruits.slice(1,3); //starting index endning index which is exclued 
 // console.log(result);  //[ 'Orange', 'Lemon' ]
 
+// let arr = ["t", "e", "s", "t"];
+// console.log( arr.slice(1, 3) );//[ 'e', 's' ]
+
 // let fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
 // let result =fruits.slice()//it create copy of that array
 
 
 
+// checks evry elemnt in the array passed a test or not 
+// let a=[2,4,6,5];
+// console.log(a.every(i=>i%2==0));
+// let a=[2,14,455,4,6,5];
+// console.log(a.sort((a,b)=>a-b));
+
+// let a=[2,4,6,5];
+// console.log(a.includes(5));
+// var array=['s','a','i','k','u','m','a','r'];
+// console.log(array.join(""));
+
+// let num=[1,3,5,7,9];
+// console.log(num.indexOf(55));
+
+// usange of filter map reduce method 
+
+// finde the raju purchased total amount 
+// let orders =[
+//     {name:"raju",
+//     purchased:30,
+//      },
+//      {name:"shiva",
+//     purchased:30,
+//     },
+//     {name:"vishnu",
+//     purchased:30,
+//     },
+//     {name:"raju",
+//     purchased:150,
+//      },
+//     {name:"hanuman",
+//     purchased:30,
+//     }
+// ];
+
+// let result=orders.filter((item,index)=>{
+//     if (item.name==="raju"){
+//         return item;
+//     }
+// }).map((vale,index)=>vale.purchased).reduce((acc,curentvalue)=>acc+curentvalue,0);
+// console.log(result);
+
+
+
+
+//  to string 
+
 // let num=[1,3,5,7,9];
 // console.log(num.toString()); //1,3,5,7,9
-
 
 // //  let arr1=[10,20,30,40];
 // //  console.log(typeof arr1.toString()); //strin
@@ -62,7 +123,7 @@
 // console.log(num.toString(16));    // Output: "7b" (hexadecimal)
 
 
-
+// to source 
 // let arr = [1, 2, 3];
 // console.log(arr.toSource()); // Output: "[1, 2, 3]" 
 
@@ -74,8 +135,20 @@
 
 
 
+// Array.from() 
 
+// let a="apple";
+// console.log(Array.from(a));//[ 'a', 'p', 'p', 'l', 'e' ]
 
+// let b=Array.from({length:2}); //if we put empty string 
+// console.log(b);//[ undefined, undefined ]
+// oe we can use this method to fill with index values 
+// let c=Array.from({length:5},(value,index)=>index)
+// console.log(c);//[ 0, 1, 2, 3, 4 ]
+
+// console.log(typeof c );//objbect
+
+// console.log( Array.isArray(c)); //true
 
 
 
@@ -95,43 +168,16 @@
 // };
 // obj.printFriends();
 
-// const obj = {
-//     name: 'Alice',
-//     greet: ()=>{
-//         setTimeout( ()=>{
-//             console.log("this "+this.name); //undefinde
-//         },1000)
-        
-//     }
-        
-//     }
-// ;
-// obj.greet()
-
-
-//  console.log( obj.greet());
-
-
-
-//       function prime(num){
-//     if (num<=1){
-//         return "not prime number "
-//     }for(i=2 ; i<num; i++){
-//      if(num %2==0){
-//         return "not prime "
-//      }
-//      else{
-//         return "its prime number "
-//      }
-
-    
-// }}
-
-// console.log(prime(5));
-// console.log(prim
-
-
-
+    //   const obj = {
+    //     name: "Alice",
+    //     greet: () => {
+    //       setTimeout(() => {
+    //         console.log("this " + this.name); //undefinde
+    //       }, 1000);
+    //     },
+    //   };
+    //   obj.greet();
+    //   console.log(obj.greet());
 
 
 
@@ -139,16 +185,15 @@
 // console.log(bool.valueOf());     // Output: "true"
 // let arr1=[10,20,30,40];
 // let   arr2=[];
-
 // let result=arr1.entries();
 // for (const [key,value] in arr1) {
 //     arr2.push(key);
-
 // }
 // console.log(arr2);
 
-//  sorting array elemnts 
 
+
+//  sorting array elemnts 
 // let point = [30, 200, 2, 3, 15, 10];
 // let b=point.sort((a,b)=>{return b-a});
 // console.log(b);
@@ -160,11 +205,15 @@
 // }));
 
 
-// var array=['s','a','i','k','u','m','a','r'];
-// for(let i of array.keys()){
-//     console.log(i);
+// let array=['s','a','i','k','u','m','a','r'];
+//    for (const iterator of array.keys()) {
+//     console.log(iterator);
+//    }
 
-// }
+// let array=['s','a','i','k','u','m','a','r'];
+// console.log(Object.keys(array));
+
+
 
 // let a=[5];
 // let r=a.find(i=>i%2==0);
@@ -174,21 +223,12 @@
 // console.log(fruits.constructor); 
 
 // var arr = new Array( "Geeks", "for", "Geeks"); 
-//         console.log( arr.constructor);   
+//         console.log( arr.toLocaleString());   
 
 
 
 
-// checks evry elemnt in the array passed a test or not 
-// let a=[2,4,6,5];
-// console.log(a.every(i=>i%2==0));
-// let a=[2,14,455,4,6,5];
-// console.log(a.sort((a,b)=>a-b));
 
-// let a=[2,4,6,5];
-// console.log(a.includes(5));
-// var array=['s','a','i','k','u','m','a','r'];
-// console.log(array.join(""));
 
 
 
@@ -211,40 +251,21 @@
 // var username='a';
 
 // var foo=(function (username){
+//     console.log(" first "+username);
 //     username="b";
+//     console.log(username);
 //     return username;
 // })(username);
 
 // console.log(username);
 
 
-// function getusers(){
-//     fetch("https://jsonplaceholder.typicode.com/users")
-//     .then(response=> (response.json()))
-//     .then(data=>console.log(data.map(item=>item.name).forEach(element => {
-//         console.log(element);
-//     })))
-
-// }
-
-// getusers()
-
-
-// using axios 
 
 
 
-//  const axios=require('axios');
-// axios.get("https://jsonplaceholder.typicode.com/users").then(
-//     response=>console.log(response.data.map(item=>item.name).forEach(element => {
-//               console.log(element);
-//           })))
 
 
 
-// let courses = ["HTML", "CSS", "Javascript", "React", "Node.js"];
-// console.log(courses.pop());
-// console.log(courses.length);
 
 
 

@@ -426,16 +426,14 @@
 
 
 // function fact(n){
-    
 //     if(n=== 1 || n===0 ){
 //         //becaus factorial of 0 is 1
 //         return 1;
 //     }
-    
 //     return n * fact(n-1);
-   
 // }
 // console.log(fact(5));
+
 // let fact =(n)=>{
 //     if(n===0 || n===1 ){
 //         return 1;

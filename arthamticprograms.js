@@ -22,6 +22,12 @@
 // }
 // console.log(findelargnum(mainarray));
 
+//  another way 
+// const mainarray=[[3,4,905],[5,2,4],[3,4,596],[67,88,9999]];
+// let result= mainarray.flat().sort((a,b)=>b-a)[0];
+// console.log(result);
+
+
 
 // 2. flat the array using recursive function?
 // const arr = [
@@ -43,7 +49,20 @@
 // flatarry(arr);
 // console.log(newarray);
 
+// finde duplicate numbers in  array ?
+// let arr = [1,2,4,5,2,4,8];
+// let duplicates=arr.filter((item,index ,arr)=>arr.indexOf(item)==index );//1,2,4,5,8
+// let nonduplicates=arr.filter((item,index ,arr)=>arr.indexOf(item)!==index );//2,4
+// console.log(duplicates);
+// console.log(nonduplicates);
 
+// removie duplicates from arry 
+// let arr = [2,4,5,6,4,3,9,94,2,5];
+// let result=arr.filter((item,index,arr)=> arr.indexOf(item)==index);
+// console.log(result); 
+
+// let h=Math.round(Math.random()*10);  
+// console.log(h);
 
 // 3.Truncate a string to a certain number of words?
 // truncateWithWordLimit("JavaScript is simple but not easy", 3) returns "JavaScript is simple"
@@ -137,6 +156,20 @@
 // for (let i = 0; i < 30; i++) {
 //   console.log(findeprimenumbers(i));
 // }
+     
+
+//       function prime(num){
+//     if (num<=1){
+//         return "not prime number "
+//     }for(i=2 ; i<num; i++){
+//      if(num %2==0){
+//         return "not prime "
+//      }
+//      else{
+//         return "its prime number "
+//      }
+
+
 
 // findnig factorial
 

@@ -310,11 +310,11 @@
         //  }
          
         
-         const names = ['German', 'Nicolas', 'Martin', 'Micaela', 'Mateo', 'Matias', 'John', 'Gonzalo', 'Esteban', 'Paula', 'Victoria', 'Bautista', 'Carolina', 'Analia', 'Edward', 'Mirtha'];
-        const foo = names.filter((name) => name.toUpperCase().startsWith('M'));
-        console.log(foo);
+        //  const names = ['German', 'Nicolas', 'Martin', 'Micaela', 'Mateo', 'Matias', 'John', 'Gonzalo', 'Esteban', 'Paula', 'Victoria', 'Bautista', 'Carolina', 'Analia', 'Edward', 'Mirtha'];
+        // const foo = names.filter((name) => name.toUpperCase().startsWith('M'));
+        // console.log(foo);
         
-        console.log("this is good ");
+        // console.log("this is good ");
     
         // let sesha =new Bank("sesha",null,"savings");
         // console.log(sesha.getname());
