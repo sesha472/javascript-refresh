@@ -35,8 +35,8 @@
 
 
 // let courses = ["HTML", "CSS", "Javascript", "React", "Node.js"];
-// courses.splice(1, 2); //Html react node.js
-// console.log("After Removed 2 elements starting from index 1: " + courses);
+// console.log(courses.splice(1,2,"namsthey","good"));
+// console.log("After Removed 2 elements starting from index 1: " + courses);//Html react node.js
 // let arr = [1, 2, 5];
 // let a=arr.splice(-1, 0,3);
 // console.log(arr);[1,2,5,3]

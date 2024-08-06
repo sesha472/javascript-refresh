@@ -84,3 +84,57 @@
 // bankoperation.setname("sai")
 // console.log(bankoperation.getname());
 
+// functctinoal programing 
+
+// function fullname(name){
+//     name();
+//  return function b(){
+//     console.log("output from function b ");
+//  }
+// }
+
+// function name(){
+//     console.log("sesha sai ");
+// }
+
+// let c=fullname(name)
+// c()
+
+// function step1(value,callback) {
+//     callback(value+10,false)
+// }
+
+// function step2(value,callback) {
+
+//     callback(value+10,false)
+// }
+// function step3(value,callback) {
+
+//     callback(value+10,false)
+// }
+
+
+// step1(10,function(result,error){
+//    if(!error){ 
+//      step2(result,function(resultb,error){
+//         if(!error){
+//             // console.log(resultb);//30
+//             step3(resultb,function(resultc,error){
+//                 if(!error){
+//                     // console.log(resultc);//40
+//                 }
+//             })
+//         }
+//      })
+//    }
+// })
+
+
+// the above code leades to be callback hells thats y we use promises 
+
+// let promisdata=new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//         console.log("timeout");
+//     }, 1000);
+//       console.log("promis full filed ");
+// })

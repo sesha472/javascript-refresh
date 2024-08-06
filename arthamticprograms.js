@@ -64,6 +64,8 @@
 // let h=Math.round(Math.random()*10);  
 // console.log(h);
 
+
+
 // 3.Truncate a string to a certain number of words?
 // truncateWithWordLimit("JavaScript is simple but not easy", 3) returns "JavaScript is simple"
 
@@ -89,6 +91,8 @@
 // }
 
 // console.log(`${truncateWithWordLimit(str, wordLimit)}`);
+
+
 
 
 // 4.check given string is palindroem or not ?
@@ -253,9 +257,14 @@
 // console.log("namasthey sesha sai");
 // let a=10;
 
-// for(i=0; i<5; i++){
-//     console.log( "from firt log "+a);
-//     setTimeout(()=>console.log(i),1000)
+// for(let i=1; i<=5; i++){
+//     setTimeout(()=>console.log(i),i*1000)
+// }
+
+// for(var i=1; i<=5; i++){
+//     (function (i){
+//     setTimeout(()=>console.log(i),i*1000)
+//     })(i)
 // }
 
 // const obj1={
@@ -276,3 +285,18 @@
 // b[1]=9;
 // console.log(a);
 // console.log(b);
+
+
+// function name (arg){
+//     arg();
+
+//     console.log("name is sesha");
+// }
+
+// function role (){
+//     console.log("web developer ");
+// }
+
+// name( role);
+
+

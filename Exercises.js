@@ -90,11 +90,34 @@
 // console.log(duplicateElements);
 
 
-// finding how many letetrs in string 
 
-// let data="apple is a good fruite and my a aim is to eat"//finde how many a's in this text
-// let result =data.split("a");
-// console.log(result.length-1); 
+// print all numbers individuvally 
+// let num =1836;
+// let num2 = "";
+
+// // console.log(num%10);
+// // num=parseInt(num/10);
+// // console.log(num);
+//  while(num){
+//     console.log(num%10);
+//     let num3=num%10
+//     num2=num2+num3
+
+//     num=parseInt(num/10);
+//  }
+
+//  console.log(Number(num2));
+ 
+// while(num>0){
+
+//     // console.log(num%10);
+//     num%10
+//     num=parseInt(num/10)
+//     console.log(num);
+// }
+ 
+ 
+
 
 
 // let data="apple is goopd"//finde how many a's in this text
@@ -194,3 +217,18 @@
 //   console.log(uniqueTags);;
 //   console.log(Object.keys(uniqueTags))
 
+// closure
+// function outerfn(){
+//     let count=0;
+//     return function innerfn (){
+//          count++;
+//          return count
+//     }
+// }
+// let counter=outerfn();
+// let counter2=outerfn();
+// console.log(counter2());
+// console.log(counter());
+// console.log(counter());
+// console.log(counter());
+// console.log(counter2());

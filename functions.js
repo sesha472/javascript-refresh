@@ -79,7 +79,6 @@
 // addtwovalues(5,6)
 
  
-
 // impure functions example these function produe diffrent output for the same input 
 // let total=0;
 //  function addwithtotal(n){

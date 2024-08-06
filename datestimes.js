@@ -1,17 +1,22 @@
 
 
+// let date= Date.now()
+// let date2= new Date()
+// let milsec=date2.getTime()
+// console.log(date);
+// console.log(date2);
+// console.log(milsec);
 
-// // js program to disply date 
+
+// js program to disply date 
 // // date object pratice 
 
 // const timer=()=>{
 // let today=new Date();
 
-
-// today.setHours("")
-// today.setMinutes("")
-// today.setSeconds("")
-
+// // today.setHours("")
+// // today.setMinutes("")
+// // today.setSeconds("")
 
 // let arrday=["sun","mon","tue","wed","thur","fryday","saturdat"]
 
@@ -28,12 +33,37 @@
 // let seconds=today.getSeconds();
 // seconds=(seconds<10)?`0${seconds}`:seconds;
 
-
-
 // console.log("today is : "+arrday[today.getDay()]);
 // console.log("Current time is : "+hours+":"+minutes+":"+seconds+":"+amorpm); //Current time is : 11:42:53:am
 // }
 // timer();
+
+
+
+const date =new Date ();
+ let arrday=["sun","mon","tue","wed","thur","fryday","saturdat"];
+
+// date.setMinutes(9) for checking purpose
+
+let day=date.getDay();
+let hour=date.getHours();
+let minutes=date.getMinutes()
+let seconds=date.getSeconds();
+let milsec=date.getMilliseconds()
+
+hour= hour>12? hour-12 :hour
+hour = hour===0?12:hour
+ let amorpm=hour>=12?"PM":"AM";
+
+// let hours = hour >=12 ? hour-12 :hour;
+// hours=hours==0 ?12: hours ;
+// let amorpm=hours > 12 ? "PM" : "AM"
+
+ seconds = seconds <10 ? `0${seconds}`:seconds
+ minutes = minutes <10 ? `0${minutes}`:minutes
+
+console.log("today is "+arrday[day] +"day");
+console.log(`${hour}:${minutes}:${seconds}:${amorpm}`);
 
 
 // finding the date gap betwin two dates

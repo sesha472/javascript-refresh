@@ -144,3 +144,66 @@
 // for(i=0;i<s.length;i++){
 // console.log(Object.keys(s[i]));
 // }
+
+
+const obj=[{
+    key:"sample1",
+    data:"Data1",
+    },
+    {
+        key:"sample1",
+        data:"Data1",
+        },
+        {
+            key:"sample2",
+            data:"Data2",
+            },
+            {
+                key:"sample1",
+                data:"Data1",
+                },
+                {
+                    key:"sample3",
+                    data:"Data1",
+                    },
+                    {
+                        key:"sample4",
+                        data:"Data1",
+                        }
+];
+
+
+ let output={}
+     obj.forEach((item)=>{
+        if(output[item.key]){
+            //if key is avilable
+            console.log("true");
+            output[item.key].push(item)
+        }else{
+           console.log("false");
+            output[item.key]=[item]
+        }
+     })
+ console.log(output);
+
+
+// let sm1result =obj.filter((item,index)=>item.key==="sample1")
+// let sm2result =obj.filter((item,index)=>item.key==="sample2")
+// let sm3result =obj.filter((item,index)=>item.key==="sample3")
+// let sm4result =obj.filter((item,index)=>item.key==="sample4")
+
+// let output={
+//     sample1:sm1result,
+//     sample2:sm2result,
+//     sample3:sm3result,
+//     sample4:sm4result,
+// }
+// console.log(output);
+
+
+function app(){
+    element=document.createElement("h1");
+    element.textContent="sesha my name"
+    document.body.appendChild(element)
+}
+

@@ -28,8 +28,12 @@
 // console.log(mobile3.mobilename());
 
 //  ***ABSTARCTION***
-// // abscission is the process of hiding internal data and showing essential data to user
-// //  the below code is normal class in this the minimum balance is available to outside ,so anyone can access it and over ride to minum 0 so we have to keep to hide private so we can write this minimum balance in get amount function that has local scope
+
+// ABSTARCTION is the process of hiding internal data and showing essential data to user
+
+//  the below code is normal class in this,the minimum balance is available to outside ,
+// so anyone can access it and over ride to minum 0 so we have to keep to hide private
+//  so we can write this minimum balance in get amount function that has local scope
 //   class Atm {
 //   constructor(withdraw) {
 //     this.balnce = 1000;
@@ -76,8 +80,8 @@
 // // we can over ride varibale in class so we use abstraction method keep it hide in method
 //  person1.getamount();
 
-//  ENCAPSULATION :encapsulation is binding data members and functions into single unit  hiding data from outside
-// to make function and variable avilable we have to use this. or private we haveto use var let const in constructior function 
+//  ENCAPSULATION :encapsulation is binding data members and functions into single unit  hiding data from outside,
+// to make function and variable avilable we have to use "this" or ,private we haveto use var let const in constructior function 
 // 
 
 // class Bank {
@@ -125,5 +129,103 @@
 // }
 
 // person1.getaccounttype();
+
+
+
+
+// class Bank {
+//     constructor(name,accnum,acctype){
+//         this.name=name;
+//         this.accnum=accnum;
+//         this.acctype=acctype
+//     }
+    
+//     getname (){
+//         return this.name;
+//     }
+//     getaccnum(){
+//         return this.accnum;
+//     }
+//     getacctype(){
+//         return this.acctype;
+//     }
+
+//     setname(newname){
+//         this.name=newname
+//     }
+//     setaccnum(){
+//         this.accnum=Math.floor(Math.random()*900000)
+//     }
+
+//     }
+
+
+
+//     let  person1=new Bank("raju",null,"saving")
+    
+//     console.log( person1.getname() );
+//     person1.setname("newraju")
+//     console.log( person1.getname() );
+
+//     console.log( person1.getaccnum());
+//      person1.setaccnum()
+//     console.log( person1.getaccnum() );
+
+//    person1.accnum=123;   //hacker can accecs our acount numbet and change soo we use encapsulation 
+//    console.log( person1.getaccnum()); 
+  
+
+//  encapsulation  props ni hide chyedam, eyvna chnage chyalante set methods dwara matrame cheyali direct acces undadu
+class Bank {
+    constructor(name,accnum,acctype){
+        var name=name;
+        var accnum=accnum;
+        var acctype=acctype
+
+        this.getname=()=>{
+            return name;
+        }
+        this.getaccnum=()=>{
+            return accnum;
+        }
+        this.getacctype=()=>{
+            return acctype;
+        }
+    
+        this.setname=(newname)=>{
+            name=newname
+        }
+        this.setaccnum=()=>{
+            accnum=Math.floor(Math.random()*900000)
+        }
+    }
+    }
+
+
+
+    let  person1=new Bank("raju",null,"saving")
+    
+    console.log( person1.getname() );
+    person1.setname("newraju")
+    console.log( person1.getname() );
+
+    console.log( person1.getaccnum());
+     person1.setaccnum()
+    console.log( person1.getaccnum() );
+
+   person1.accnum=123;   //hacker can accecs our acount numbet and change soo we use encapsulation 
+   console.log( person1.getaccnum()); 
+
+
+
+
+
+
+
+
+
+
+
+
 
 
