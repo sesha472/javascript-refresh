@@ -18,7 +18,7 @@
 // const found = array1.find((element) => element > 1000);
 
 
- 
+
 // let lastElement = courses.pop();
 // console.log(`After Removed the last elements  ${courses}`);
 
@@ -61,7 +61,7 @@
 
 
 
-// checks evry elemnt in the array passed a test or not 
+// // checks evry elemnt in the array passed a test or not 
 // let a=[2,4,6,5];
 // console.log(a.every(i=>i%2==0));
 // let a=[2,14,455,4,6,5];
@@ -69,32 +69,38 @@
 
 // let a=[2,4,6,5];
 // console.log(a.includes(5));
+
 // var array=['s','a','i','k','u','m','a','r'];
 // console.log(array.join(""));
 
+
 // let num=[1,3,5,7,9];
-// console.log(num.indexOf(55));
+// console.log(num.indexOf(5));
+
 
 // usange of filter map reduce method 
-
 // finde the raju purchased total amount 
-// let orders =[
-//     {name:"raju",
-//     purchased:30,
-//      },
-//      {name:"shiva",
-//     purchased:30,
-//     },
-//     {name:"vishnu",
-//     purchased:30,
-//     },
-//     {name:"raju",
-//     purchased:150,
-//      },
-//     {name:"hanuman",
-//     purchased:30,
-//     }
-// ];
+let orders =[
+    {name:"raju",
+    purchased:30,
+     },
+     {name:"shiva",
+    purchased:30,
+    },
+    {name:"vishnu",
+    purchased:30,
+    },
+    {name:"raju",
+    purchased:150,
+     },
+    {name:"hanuman",
+    purchased:30,
+    }
+];
+
+// let result = orders.filter((item,index)=>item.name === "raju").map((item,index)=>item.purchased).reduce((acc,cur)=>acc+cur)
+// console.log(result);
+
 
 // let result=orders.filter((item,index)=>{
 //     if (item.name==="raju"){
@@ -110,6 +116,8 @@
 
 // let num=[1,3,5,7,9];
 // console.log(num.toString()); //1,3,5,7,9
+// console.log(num);
+
 
 // //  let arr1=[10,20,30,40];
 // //  console.log(typeof arr1.toString()); //strin
@@ -170,9 +178,9 @@
 
     //   const obj = {
     //     name: "Alice",
-    //     greet: () => {
+    //     greet:  ()=> {
     //       setTimeout(() => {
-    //         console.log("this " + this.name); //undefinde
+    //         console.log("this " + this); //undefinde
     //       }, 1000);
     //     },
     //   };
@@ -181,11 +189,18 @@
 
 
 
-// let bool = true;
-// console.log(bool.valueOf());     // Output: "true"
+// let bool = true ;
+// console.log(bool.valueOf());  // Output: "true"
+
 // let arr1=[10,20,30,40];
 // let   arr2=[];
 // let result=arr1.entries();
+//    for (let [index,item] of arr1.entries()){
+//     console.log(index ,item);
+//    }
+
+//  console.log(result);
+     
 // for (const [key,value] in arr1) {
 //     arr2.push(key);
 // }
@@ -193,7 +208,8 @@
 
 
 
-//  sorting array elemnts 
+//  sorting array elemnts
+
 // let point = [30, 200, 2, 3, 15, 10];
 // let b=point.sort((a,b)=>{return b-a});
 // console.log(b);
@@ -210,19 +226,28 @@
 //     console.log(iterator);
 //    }
 
+
+
 // let array=['s','a','i','k','u','m','a','r'];
+// console.log(Object.entries(array));
 // console.log(Object.keys(array));
+// console.log(Object.values(array));
 
 
 
-// let a=[5];
-// let r=a.find(i=>i%2==0);
+// let a=[5,4];
+// let r=a.find(i => i%2==0 ) ;
 // console.log(r);
+
+
+
+
 
 // var fruits = ["Banana", "Orange", "Apple", "Mango"];
 // console.log(fruits.constructor); 
 
 // var arr = new Array( "Geeks", "for", "Geeks"); 
+//         console.log( arr.toString());   
 //         console.log( arr.toLocaleString());   
 
 

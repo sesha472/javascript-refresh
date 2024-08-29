@@ -56,7 +56,7 @@
 
 
   
-
+// let arr= [2,3,4,5,7]
 // let b=[]
 // for(i=0; i<arr.length; i++){
 //     for(j=0; j<arr.length; j++){
@@ -70,6 +70,12 @@
 // }
 // console.log(b);
 // console.log(arr);
+
+
+//  finde duplicates in array 
+// const myArray = [9,2,9,3,8,7,3,2,2,8,9];
+//    let result =  [...new Set(myArray)]
+// console.log(result);
 
 // function findDuplicates(array) {
 //     const duplicates = [];
