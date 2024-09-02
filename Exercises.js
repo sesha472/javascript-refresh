@@ -3,8 +3,115 @@
 // console.log(b); //error
 // var  a = b = 5;
 
+// console.log(eval("3 + 4"));
 
-// 1.this arrow function 
+
+
+
+//  finde largets element in array
+// let mainarr= [1,4,3,9,2,9,994,7];
+//  let result = mainarr.sort((a,b)=>a-b);
+//  let largelment = result[result.length-1]
+//  console.log(largelment);
+
+
+
+
+//  finde second largelment in arr
+//  method 1 
+//  let mainarr= [1,4,3,9,2,4,7];
+//      let arr = mainarr.sort((a,b)=>a-b)
+//      let largnum = arr[arr.length-1];
+//      let secondlarg;
+//       for (i=arr.length-2; i>=0; i--){
+//             if(largnum !== arr[i]){
+//                 secondlarg=arr[i]
+//                 break;
+//             }
+//       }
+
+//       console.log(secondlarg);
+
+
+
+//  method 2 
+
+//  let mainarr= [1,4,6,9,2,4,7];
+//  let arr=mainarr.sort();
+//  let larg=-Infinity
+//  let secondlarg;
+//  for (let i =0; i<arr.length; i++){
+//     if(larg < arr[i]){
+//     larg= arr[i]
+//     }
+//  }
+//    for(i= arr.length-1; i>= 0; i--){
+//       if( larg >arr[i]){
+//              secondlarg= arr[i]
+//              break;
+//       }
+//    }
+//  console.log(larg);
+//  console.log(secondlarg);
+
+//  finde 3,4,5lasrgest elemnes byc hnaging count == 2,3,4 like this
+
+//  let arr= [1,4,6,9,2,4,7,7];
+//   let result= [...new Set(arr)].sort((a,b)=>a-b)
+//   let output = result[result.length-3]
+//    console.log(result);
+//    console.log(output);
+
+// using for loop
+//  let mainarr= [1,2,3,4,5,6];
+//  let arr = mainarr.sort((a,b)=>a-b);
+//  let larg = -Infinity
+//  let thirdlarg;
+//  let count=0;
+//  for (let i=0; i<arr.length; i++){
+//     if(larg < arr[i]){
+//     larg= arr[i]
+//     }
+//  }
+//  console.log(larg);
+
+//    for(i= arr.length-1; i>= 0; i--){
+//       if( larg >arr[i]){
+//         count++
+//          thirdlarg= arr[i]
+//           if(count ===2){
+//             break;
+//           }
+
+//       }
+//    }
+//  console.log(thirdlarg);
+
+// rotating array by2 possition left
+
+// let arr= [2,4,11,6,8,9];   // [11,6,8,9,2,4]
+// let rotatepositions=2;
+//  let result = arr.splice(0,rotatepositions);
+//  console.log(...result);
+//  arr.push(...result);
+//  console.log(arr);
+
+// using for loop
+
+// let arr= [2,4,11,6,8,9];   // [11,6,8,9,2,4]
+// //  let possitions u want to rotate
+// let positions=2;
+//  for(let i=0; i<positions; i++){
+
+//     let temp= arr[0];
+//     for(j=0; j<arr.length-1; j++){
+//         arr[j] = arr[j+1];
+//     }
+//     arr[arr.length-1]=temp;
+//  }
+//  console.log(arr);
+
+// 1.this arrow function
 // function foo(){
 //     console.log(this.name);
 // }
@@ -15,20 +122,18 @@
 //     }
 //  foo.call({name:"sai"}); //undefined because arrow function this ferer to window objcet
 
-
-// 2.valueOf() method 
+// 2.valueOf() method
 
 // let normalstr="apple";
 // let objstr = new String ("bananna")
 
-// let objtypestr=objstr.valueOf() 
+// let objtypestr=objstr.valueOf()
 
 // //converts objct typed string into primitive one
 // console.log(typeof normalstr);//string
 // console.log(typeof objstr);//object
 // console.log(typeof objtypestr);//string
 // console.log( objtypestr);//bananna
-
 
 // let obj = {
 //     valueOf: function() {
@@ -39,65 +144,68 @@
 // console.log(obj.valueOf()); // Output: 42
 // console.log(Number(obj));   // Output: 42
 // console.log(obj + 1);       // Output: 43
- 
-
-
 
 // printing the current page
 
-// const print_current_window=()=>{
+// const printcurrentwindow=()=>{
 //     window.print()
 // }
-// print_current_window();
+// printcurrentwindow();
 
+//  finde duplicates in array
 
+// using filter method
+// const myArray = [1,2,3,4,5,2,4,2,4];;
+//  let uniqueelements= myArray.filter((item,index,arr)=>arr.indexOf(item) == index )
+//  let dublicateelements= myArray.filter((item,index,arr)=>arr.indexOf(item) !== index )
+//  console.log(uniqueelements);
+//  console.log(dublicateelements);
 
+// using map method
+// const a = [1,2,3,4,5,2,4,2,4];
+// let uniqueelements= [];
+// let dublicateelements=[];
+//  a.map(item=>uniqueelements.includes(item) ? dublicateelements.push(item):uniqueelements.push(item))
+// console.log(a);
+// console.log(uniqueelements);
+// console.log(dublicateelements);
 
-
-
-  
-// let arr= [2,3,4,5,7]
-// let b=[]
-// for(i=0; i<arr.length; i++){
-//     for(j=0; j<arr.length; j++){
-//         if(arr[i]===arr[j]){
-//           b.push(arr[i])
-//           break;
-//         //   arr.splice(j,1)
-          
-//         }
-//     }
-// }
-// console.log(b);
-// console.log(arr);
-
-
-//  finde duplicates in array 
-// const myArray = [9,2,9,3,8,7,3,2,2,8,9];
-//    let result =  [...new Set(myArray)]
+// using Es6 Set method
+// let result =  [...new Set(myArray)]
 // console.log(result);
 
 // function findDuplicates(array) {
-//     const duplicates = [];
+//     const uniqueelements = [];
+//     const dupliacteelments =[]
+//       for(item of array) {
+//         if(uniqueelements.indexOf(item) == -1){
+//               uniqueelements.push(item)
 
-//     for (let i = 0; i < array.length; i++) {
-//         for (let j = i + 1; j < array.length; j++) {
-//             if (array[i] === array[j] ) {
-//                 duplicates.push(array[i]);
-//             }
 //         }
-//     }
-
-//     return duplicates;
+//         else{
+//             dupliacteelments.push(item)
+//         }
+//       }
+//     return {uniqueelements,dupliacteelments};
 // }
 
-// const myArray = [9,2,9,3,8,7,3,2,2,8,9];
-// const duplicateElements = findDuplicates(myArray);
-// console.log(duplicateElements);
+// const myArray =  [1,2,3,4,5,2,4,2,4];
+// console.log( findDuplicates(myArray));
 
+// const myArray = [9, 2, 9, 9, 2, 2];
+// const duplicates = [];
 
+// for (let i = 0; i < myArray.length; i++) {
+//     for (let j = i + 1; j < myArray.length; j++) {
+//         if (myArray[i] === myArray[j]) {
+//             duplicates.push(myArray[j]);
+//         }
+//     }
+// }
 
-// print all numbers individuvally 
+// console.log(duplicates);
+
+// print all numbers individuvally
 // let num =1836;
 // let num2 = "";
 
@@ -113,7 +221,7 @@
 //  }
 
 //  console.log(Number(num2));
- 
+
 // while(num>0){
 
 //     // console.log(num%10);
@@ -121,10 +229,6 @@
 //     num=parseInt(num/10)
 //     console.log(num);
 // }
- 
- 
-
-
 
 // let data="apple is goopd"//finde how many a's in this text
 // let result =data.split("p");
@@ -134,24 +238,22 @@
 // console.log(typeof data);
 // console.log(Array.isArray(data));
 
-// let data=7 
+// let data=7
 // while(data>=0) {
-//      if(data<=5) { 
+//      if(data<=5) {
 //         break;
-//     // data--; 
-//     // continue; 
-// } 
+//     // data--;
+//     // continue;
+// }
 // console.log(data);
 //  data--; }
 
-
-// reverseing the string 
+// reverseing the string
 // let data="sesha";
 // let result=data.split("").reverse().join("")
 // console.log(result);
 
-
-// destructuring types 
+// destructuring types
 
 // let person1 = { firstName: 'sesha', lastName: 'sai'};
 // let person2 = { firstName: 'sesha', lastName: 'sai', middleName: 'kumar' }
@@ -163,7 +265,7 @@
 // tellname(person1) //this is my full name sesha sai alternatename
 // tellname(person2) //this is my full name sesha sai kumar
 
-// // the above is very useful in react using props 
+// // the above is very useful in react using props
 
 // // object destructuring
 // function foo ( { x, y } ) {
@@ -183,7 +285,6 @@
 // let [firstname,lastname]=fullname;
 
 // console.log(firstname,lastname);//sesha sai
-
 
 // let arr= ['Mango',"Apple",'Bananna','Guva']
 
@@ -205,13 +306,13 @@
 // console.log(hobbies, rest.age)  // => music 25
 
 // var persons = [
-//     {id : 1, name : "John", tags : "javascript"}, 
-//     {id : 2, name : "Alice", tags : "javascript"}, 
+//     {id : 1, name : "John", tags : "javascript"},
+//     {id : 2, name : "Alice", tags : "javascript"},
 //     {id : 3, name : "Roger", tags : "java"},
 //     {id : 4, name : "Adam", tags : "javascript"},
 //     {id : 5, name : "Alex", tags : "java"}
 //   ];
-  
+
 //   var uniqueTags = persons.reduce((acc, personObj) => {
 //     // console.log(acc);
 //     // console.log(acc[personObj.tags] );
@@ -219,7 +320,7 @@
 //       console.log(acc);
 //       return acc;
 //   },{});
-  
+
 //   console.log(uniqueTags);;
 //   console.log(Object.keys(uniqueTags))
 
@@ -238,3 +339,21 @@
 // console.log(counter());
 // console.log(counter());
 // console.log(counter2());
+
+// let array= [5,7,9,13,15,17]
+// let count=0;
+//   for(i=0; i<array.length; i++){
+//     if(array[i]%2 !== 0 ){
+
+//         console.log("odd");
+
+//     }
+//   }
+
+// for(i=0; i<arr.length; i++){
+//     if()
+// }
+
+// let result =
+// console.log(null === null);
+// console.log(undefined === undefined);

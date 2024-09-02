@@ -8,6 +8,32 @@
 //  console.log(arr1);
 //  console.log(arr2);
 
+// console.log(9);
+
+
+// let arr= [1,2,3,4,2,2,3,4,5,9];
+// let result = Math.max(...arr);
+// console.log(result);
+
+
+
+
+
+// removie duplicare eelmnst from array 
+//  let arr= [1,2,3,4,2,2,3,4,5,2];
+//   let result = [...new Set(arr)]
+//   console.log(result );
+      
+//  let arr= [1,2,3,4,2,2,4,5,2,9,9];
+//  let result = arr.filter((item,index,arr)=>{
+//          return arr.indexOf(item) === index 
+//  })
+//     console.log(result);
+   
+
+ 
+    
+ 
 
 // copyWithin(target-index,start-indexe,end-index(not frequires));
 // let array1 = ['a', 'b', 'c', 'd', 'e'];
@@ -80,23 +106,23 @@
 
 // usange of filter map reduce method 
 // finde the raju purchased total amount 
-let orders =[
-    {name:"raju",
-    purchased:30,
-     },
-     {name:"shiva",
-    purchased:30,
-    },
-    {name:"vishnu",
-    purchased:30,
-    },
-    {name:"raju",
-    purchased:150,
-     },
-    {name:"hanuman",
-    purchased:30,
-    }
-];
+// let orders =[
+//     {name:"raju",
+//     purchased:30,
+//      },
+//      {name:"shiva",
+//     purchased:30,
+//     },
+//     {name:"vishnu",
+//     purchased:30,
+//     },
+//     {name:"raju",
+//     purchased:150,
+//      },
+//     {name:"hanuman",
+//     purchased:30,
+//     }
+// ];
 
 // let result = orders.filter((item,index)=>item.name === "raju").map((item,index)=>item.purchased).reduce((acc,cur)=>acc+cur)
 // console.log(result);

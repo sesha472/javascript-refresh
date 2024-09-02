@@ -122,21 +122,20 @@
 // }
 // console.log(factnum(3));
 
+
 //  is prime number or not
 // function findeprimenumbers(num) {
-
-//   if (num <= 1) return false;
-
+//   if (num <= 1) return "not prime";
 //   for (let i = 2; i <= Math.sqrt(num); i++) {
-
-//     if (num % i === 0) return false;
-
+//     if (num % i === 0) return "not prime";
 //   }
-
-//   return true;
-
+//   return "prime";
 // }
+//  console.log(findeprimenumbers(2));
 
+
+
+ 
 //  fiding prime numbers from 0 to given number
 
 // const findeprimenumbers=(n)=>{
@@ -155,12 +154,19 @@
 //   return c>2?`${n}'is not prime'`:`${n}"is prime"`;
 // }
 
+
 // findeprimenumbers(7);
 
-// for (let i = 0; i < 30; i++) {
+// for (let i = 0; i < 10; i++) { 
 //   console.log(findeprimenumbers(i));
 // }
-     
+      
+
+ 
+
+
+
+  
 
 //       function prime(num){
 //     if (num<=1){
@@ -298,5 +304,6 @@
 // }
 
 // name( role);
+
 
 
