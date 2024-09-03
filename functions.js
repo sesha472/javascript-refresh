@@ -9,6 +9,17 @@
 // // convertTo24HrsFormat("10:02PM") returns "22:02"
 // const time = '5:00AM';
 
+
+
+
+// function foo (){
+//     let x= (y=0);
+//     x++;
+//     y++;
+//     return {x,y}
+// }
+// console.log(foo(),typeof x, typeof y);
+
 // function convertTo24HrsFormat(time) {
 //    const slicedTime = time.split(/(PM|AM)/gm)[0];
 

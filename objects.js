@@ -6,19 +6,13 @@
 
 
 
-
-
-
-
-
-
-
-
 // const printName = (personObj) => {
 //     console.log(personObj.name);
 // }
+
 // printName({name: 'Max', age: 28}); // prints 'Max'
 
+ 
 // this is how distructuring works 
 // const printName = ({name}) => {
 //     console.log(name);
@@ -36,15 +30,44 @@
 
 // Object.freeze() cant add,,remove,update  properies from object 
 
+//  freez the object 
 // const obj={
 //     name:"sesha",
-//     age:31
+//     age:31,
+//     adress :{
+//         state:"ap"
+//     }
 // }
-
 // Object.freeze(obj)
 // obj.state="ap";
 // obj.age=40;
+// obj.adress.state="tn"
 // console.log(obj);
+
+
+// deeep freez the object no prevnet changing of nested object values 
+// const dataobj={
+//     name:"sesha",
+//     age:31,
+//     adress :{
+//         state:"ap"
+//     }
+// }
+
+    // function deepfreesz(obj){ 
+    //     const propNames = Object.keys(obj)
+    //      for(let item of propNames){
+    //          if(typeof obj[item] === "object" ){
+    //             deepfreesz(obj[item])
+    //          }
+    //      }
+    //      return  Object.freeze(obj);
+    // }
+    // console.log(dataobj);
+    // deepfreesz(dataobj)
+    // dataobj.adress.state="tn"
+    // console.log(dataobj);
+
 
 
 
@@ -64,7 +87,7 @@
 
 // The Object.fromEntries() static method transforms a list of key-value pairs into an object.
 
-// let users=[["name" ,'sesha'],["name2" ,'sesha2']]
+// let users=[["name",'sesha'],["name2" ,'sesha2']]
 // console.log(Object.fromEntries(users)); //{name: 'sesha', name2: 'sesha2'}
 
 
@@ -75,12 +98,15 @@
 
 // const myMap = new Map();
 
-// // Adding key-value pairs
+// Adding key-value pairs
 // myMap.set('name', 'John');
 // myMap.set('age', 30);
+// myMap.set('state', "Ap");
 
-// // Getting a value
+// // // Getting a value
 // console.log(myMap.get('name')); // 'John'
+// console.log(myMap.get('age')); // 'John'
+// console.log(myMap.get('state')); // 'John'
 
 // // Checking if a key exists
 // console.log(myMap.has('age')); // true
@@ -129,10 +155,54 @@
 // colour:"skyblur"
 // }];
 
+
 // let userswithhighweight=users.filter(item=>item.weight>50)
 // console.log(userswithhighweight);
 
+// convert array of indexes and their values as key value pair of obejct 
 // var arry=[1,9,4,5,6,7];
+//     let result = arry.reduce((acc,current,curentindex,array)=>{
+//         acc[curentindex] = current*2;
+//         return acc;
+//     },{});     
+//     console.log(result);
+    
+
+
+// let arr = [
+//   { language: "JavaScript" },
+//   { language: "JavaScript" },
+//   { language: "TypeScript" },
+//   { language: "C++" },
+// ];
+
+// let result = Object.values(
+//   arr.reduce((acc, current) => {
+//     let language = current.language;
+//     if (!acc[language]) {
+//       acc[language] = { language: language, count: 0 };
+//     }
+//     acc[language].count += 1;
+//     return acc;
+//   }, {})
+// );
+
+// console.log(result);  
+// output : [
+//     { language: 'JavaScript', count: 2 },
+//     { language: 'TypeScript', count: 1 },
+//     { language: 'C++', count: 1 }
+//   ]
+
+
+
+
+
+
+
+
+
+
 // var s=arry.reduce(function(a,b){
 //   a[b]=b*b;
 //   return a;

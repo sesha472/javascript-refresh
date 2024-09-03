@@ -123,6 +123,7 @@
 // console.log(factnum(3));
 
 
+
 //  is prime number or not
 // function findeprimenumbers(num) {
 //   if (num <= 1) return "not prime";

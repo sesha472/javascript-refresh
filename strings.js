@@ -120,3 +120,31 @@
 //  }
 //  console.log(largvalue)
 
+//  let str = "namsthey";
+//  let result = str.split("")
+// let output=   result.splice(0,1).join().toUpperCase();
+//  result.unshift(output)
+//   let final= result.join("")
+//  console.log(final);
+ 
+
+ 
+// "namsthey sai kumar" = > Namsthey Sai Kumar
+
+// function toTitleCase(str) { 
+//      let result = str.split(" ");
+//      let outputarr =[];
+//    for(let item of result){
+//     let str = item;
+//      let result = str.split("")
+//     let output=   result.splice(0,1).join().toUpperCase();
+//      result.unshift(output)
+//       let final= result.join("")
+//      outputarr.push(final)
+//    }
+//      return outputarr.join(" ") 
+//   } 
+//   console.log(toTitleCase("namsthey sai kumar"));//Namsthey Sai Kumar
+  
+
+// https://github.com/sudheerj/javascript-interview-questions/tree/master/coding-exercise/superArrayOfObjects

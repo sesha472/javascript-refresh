@@ -10,10 +10,33 @@
 
 // console.log(9);
 
-
+// largest element in array 
 // let arr= [1,2,3,4,2,2,3,4,5,9];
 // let result = Math.max(...arr);
 // console.log(result);
+
+
+
+// largest element in nested array 
+
+//  let a =[[2,3],[3,4],[85,7]];
+//   let result = a.flat().sort((a,b)=>a-b);
+//   let output = result[result.length-1]
+//   console.log(output);
+
+//    method 2 
+//  let a =[[2,993],[3,4],[850,7]];
+//     let largnum= a[0][0];
+
+//      for(let item of a){
+//         for(let val of item){
+//             if(largnum <= val){
+//              largnum= val;
+//             }
+//         }
+//      }
+//      console.log(largnum);
+     
 
 
 
@@ -284,7 +307,12 @@
 
 
 
+// let arr =[10, 15, 20, 25, 30];
+//  let result=[];
 
+//   for( let i=0; i<arr.length; i++){
+     
+//   }
 
 
 
@@ -295,6 +323,7 @@
 // console.log(found);
 
 // practice programs git hub page
+
 // https://github.com/MehedilslamRipon/Problem-solving-with-JavaScript/blob/master/problem-18.js
 
 

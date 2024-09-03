@@ -5,8 +5,22 @@
 
 // console.log(eval("3 + 4"));
 
+// console.log(5 > "15" < 5); //true
+// console.log(5 > "85" > 5); //false
 
 
+// for(var i =0; i<5; i++){
+//     setTimeout(()=>{
+//         console.log(i);
+//     },1000)
+// }
+     
+for(let i =0; i<5; i++){
+        setTimeout(()=>{
+            console.log(i);
+        },i*1000)
+    }
+    
 
 //  finde largets element in array
 // let mainarr= [1,4,3,9,2,9,994,7];
