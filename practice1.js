@@ -537,15 +537,15 @@
 
 // object freez method only freez the direct object properties not netsted object peoperties
 
-let obj={
-          name:"laptop",
-          price:"900",
-          colo:"yellow",
-          adress:{
-            state:"ap",
-            city:"nellore"
-          }
-      }
+// let obj={
+//           name:"laptop",
+//           price:"900",
+//           colo:"yellow",
+//           adress:{
+//             state:"ap",
+//             city:"nellore"
+//           }
+//       }
 
       // console.log(obj["adress"]);
       

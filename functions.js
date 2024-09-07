@@ -355,3 +355,20 @@
 //  }).catch((err)=>{
 //   console.log(err);
 //  })
+
+// function fun(){
+//     return 
+//       {
+//         msg:"hi"
+//     }
+// }
+
+// console.log(fun());
+
+// function fun1(){
+//     return   {
+//         msg:"hi"
+//     }
+// }
+
+// console.log(fun1());

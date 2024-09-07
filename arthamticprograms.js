@@ -49,6 +49,7 @@
 // flatarry(arr);
 // console.log(newarray);
 
+
 // finde duplicate numbers in  array ?
 // let arr = [1,2,4,5,2,4,8];
 // let duplicates=arr.filter((item,index ,arr)=>arr.indexOf(item)==index );//1,2,4,5,8

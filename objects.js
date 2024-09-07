@@ -4,8 +4,28 @@
 
 
 
+//  calculate  raju purchased order amounts 
 
+// let orders =[
+//   {name:"raju",
+//   purchased:30,
+//    },
+//    {name:"shiva",
+//   purchased:30,
+//   },
+//   {name:"vishnu",
+//   purchased:30,
+//   },
+//   {name:"raju",
+//   purchased:150,
+//    },
+//   {name:"hanuman",
+//   purchased:30,
+//   }
+// ];
 
+//   let result= orders.filter((item)=> item.name === "raju").map((item)=>item.purchased).reduce((acc,curvalue)=> acc+curvalue)
+//   console.log(result)
 // const printName = (personObj) => {
 //     console.log(personObj.name);
 // }
@@ -306,3 +326,38 @@
 
 //  }
 // console.log(output);
+
+
+//  let normalfunobj={
+//     name:"sesha",
+//     foo:function(){
+//         console.log(this.name);
+//     }
+//  }
+ 
+//   let output = normalfunobj.foo;
+//   output();
+// normalfunobj.foo();
+  
+// console.log(0.2+0.1 == 0.3);
+// console.log(0.3+0.6 == 0.9);
+
+ function* add (){
+     let count =0;
+
+      while (true){
+        yield count++;
+      }
+   
+ }
+
+  let result = add();
+
+  console.log(result.next().value);
+  console.log(result.next().value);
+  console.log(result.next().value);
+  console.log(result.next().value);
+
+  console.log(result.next().value);
+
+  

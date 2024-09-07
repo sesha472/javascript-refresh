@@ -15,12 +15,13 @@
 //     },1000)
 // }
      
-for(let i =0; i<5; i++){
-        setTimeout(()=>{
-            console.log(i);
-        },i*1000)
-    }
-    
+// for(let i =0; i<5; i++){
+//         setTimeout(()=>{
+//             console.log(i);
+//         },i*1000)
+//     }
+
+
 
 //  finde largets element in array
 // let mainarr= [1,4,3,9,2,9,994,7];
@@ -371,3 +372,78 @@ for(let i =0; i<5; i++){
 // let result =
 // console.log(null === null);
 // console.log(undefined === undefined);
+
+
+
+// function *count(){
+//       yield 1;
+//       yield 2;
+//       yield 3;
+//       yield 4;
+// }
+//    let gen = count ();
+//  console.log(gen.next().value);
+//  console.log(gen.next().value);
+//  console.log(gen.next().value);
+
+
+
+// let array=['s','a','i','k','u','m','a','r'];
+//  let result = array.reduce((acc,curntvalue,index)=>{
+//        acc[index] =curntvalue;
+//        return acc
+//  },{})
+//  console.log(result);
+ 
+
+
+// let array=['s','a','i','k','u','m','a','r'];
+//   let arrayobj={}
+//    for([key,value] of array.entries()){
+//       arrayobj[key]=value
+//    }
+//    console.log(arrayobj);
+   
+ 
+
+                //  async function fetchapis(){
+                //      try{
+
+                //     const responses= await Promise.all([
+                //         fetch("https://jsonplaceholder.typicode.com/users"),
+                //         fetch("https://jsonplaceholder.typicode.com/todos"),
+                //     ]);
+
+                //     const data= await Promise.all(responses.map(response=>response.json()))
+                //    console.log(data);
+                // }catch(error){
+                //   console.log( "thappu ochindi error : "+error);
+                  
+                //    }
+
+                // }
+                // fetchapis()
+
+
+
+
+
+
+                
+                async function fetchapis(){
+                    try{
+
+                   const responses= await Promise.any([
+                       fetch("https://jsonplaceholder.typicode.com/users"),
+                       fetch("https://jsonplaceholder.typicode.com/todos"),
+                   ]);
+
+                   const data= await responses.json()
+                  console.log(data);
+               }catch(error){
+                 console.log( "thappu ochindi error : "+error);
+                 
+                  }
+
+               }
+               fetchapis()

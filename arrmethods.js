@@ -19,12 +19,18 @@
 
 // largest element in nested array 
 
-//  let a =[[2,3],[3,4],[85,7]];
+//  let a =[[2,3],[3,4],[85,7]];t
 //   let result = a.flat().sort((a,b)=>a-b);
 //   let output = result[result.length-1]
 //   console.log(output);
 
+
+
+
+
+
 //    method 2 
+
 //  let a =[[2,993],[3,4],[850,7]];
 //     let largnum= a[0][0];
 
@@ -63,8 +69,14 @@
 // let result=array1.copyWithin(0,3);
 // console.log(result);
 
-// const array1 = [5, 12, 8, 130, 44];
+// let arr= [2,3,4,5,80,45,67,56,54];
+// let result= arr.copyWithin(0,3,4)
+// console.log(result)
+
+// finde the first elemnet in the array that passes test 
+// const array1 = [5, 12, 8, 7, 4400];
 // const found = array1.find((element) => element > 1000);
+// console.log(found);
 
 
 
@@ -108,6 +120,12 @@
 // let fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
 // let result =fruits.slice()//it create copy of that array
 
+// let  array=['s','a','i','k','u','m','a','r'];
+//  let copyarr= array.slice();
+//       copyarr[0]="ohm"
+// console.log(array)
+//  console.log(copyarr)
+
 
 
 // // checks evry elemnt in the array passed a test or not 
@@ -129,6 +147,7 @@
 
 // usange of filter map reduce method 
 // finde the raju purchased total amount 
+
 // let orders =[
 //     {name:"raju",
 //     purchased:30,
@@ -194,8 +213,8 @@
 
 // Array.from() 
 
-// let a="apple";
-// console.log(Array.from(a));//[ 'a', 'p', 'p', 'l', 'e' ]
+// let str="apple";
+// console.log(Array.from(str));//[ 'a', 'p', 'p', 'l', 'e' ]
 
 // let b=Array.from({length:2}); //if we put empty string 
 // console.log(b);//[ undefined, undefined ]
@@ -218,18 +237,22 @@
 //     name: 'Alice',
 //     friends: ['Bob', 'Charlie'],
 //     printFriends: function() {
-//         this.friends.forEach(friend => {
-//             console.log(`${friend} is friends with ${this.name}`);
-//         });
+//           return this.friends.forEach((item,index)=>{
+//              console.log(`${item} is friend of ${this.name}`)
+//           })
 //     }
 // };
-// obj.printFriends();
+// obj.printFriends(); 
+// output:
+// ob is friend of Alice
+// Charlie is friend of Alice
 
-    //   const obj = {
+
+    //  const obj = {
     //     name: "Alice",
-    //     greet:  ()=> {
+    //     greet: ()=> {
     //       setTimeout(() => {
-    //         console.log("this " + this); //undefinde
+    //          console.log("this " + this);  //undefinde
     //       }, 1000);
     //     },
     //   };
@@ -268,6 +291,8 @@
 // console.log(a.sort(function(a,b){
 //   return a-b;
 // }));
+
+
 
 
 // let array=['s','a','i','k','u','m','a','r'];
@@ -341,6 +366,27 @@
 
 
 
+//  let arr= [1,2,3,4,5];
+//  arr.length=3;
+
+//  console.log(arr);
+//  console.log(arr.length);
+
+// let dl= delete arr[0];
+
+//  for(item of arr){
+//     console.log( "value : "+item);
+    
+//  }
+// console.log(dl);
+// console.log(arr);
+// console.log(arr.length);
+
+
+//  let arr = [1,2,3];
+// console.log( arr == "1,2,3");
+
+ 
 
 
 
