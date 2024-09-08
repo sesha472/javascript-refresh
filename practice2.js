@@ -145,6 +145,82 @@
     
       
 
+// let arr = [1,2,3,4,5];
+//  let rotations = 2;
+
+//   function rotate (array,rotatetimes){
+//        for(let i=0; i<rotatetimes; i++){
+//            let item = array.pop();
+//            array.unshift(item);
+//        }
+//        return array;
+//   }
+
+//    console.log(rotate(arr,rotations));
+   
+  
 
 
+// let str1= "know";
+// let str2="nowk";
+    // function checkstrings1( string1,string2){
+    //    if (string1.length === string2.length){
+    //     let result = string1.split('');
+    //     let result2 = string2.split('');
+    //       let output= result.every((item)=> result2.includes(item) );
+    //       console.log(output);
+    //    }else{
+    //     console.log("notsame");
+    //    }
+      
+    // }
 
+    // checkstrings1(str1,str2)
+  
+
+    // let str1= "know";
+    // let str2="nowk";
+
+    //    if (str1.length === str2.length){
+    //      let res1= str1.split("").sort();
+    //      let res2= str2.split("").sort();
+    //       let result = res1.every((item)=>res1.includes(item) !== res2.includes(item))
+    //        let output= result ?"same charest ":"not same "
+    //         console.log(output);
+            
+    //    }else{
+    //     console.log("lengths are not same");
+        
+    //    }
+   
+
+    // let str= "namsthey      s e   s    h a      sai";
+    // //  let res= str.replaceAll(" ","");
+    // //  console.log(res);
+     
+    //   let out= str.split("");
+    //   let res=[];
+    //    for(let item of out){
+    //      if(item !== " "){
+    //        res.push(item)
+    //      }
+    //    }
+    //   console.log(out);
+    //   console.log(res.join(""))
+
+
+        
+
+     
+    // function ceratecounter (){
+    //   let counter =0 ;
+    //    return function (){
+    //     counter++;
+    //     return counter
+    //    }
+    //  }
+    //   let count= ceratecounter();
+    //   let count2= ceratecounter();
+    //   console.log(count());
+    //   console.log(count());
+    //   console.log(count2());
