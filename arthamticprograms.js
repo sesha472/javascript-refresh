@@ -23,6 +23,7 @@
 // console.log(findelargnum(mainarray));
 
 //  another way 
+
 // const mainarray=[[3,4,905],[5,2,4],[3,4,596],[67,88,9999]];
 // let result= mainarray.flat().sort((a,b)=>b-a)[0];
 // console.log(result);
@@ -213,7 +214,6 @@
 // console.log(fact(5))
 
 //  fibonassi program
-
 //  var n=10;
 // var a=0,b=1;
 // var c=0;
@@ -222,7 +222,6 @@
 // c=a+b;
 // a=b;
 // b=c;
-
 // }
 
 // var n=3;
