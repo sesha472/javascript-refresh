@@ -1,8 +1,11 @@
     
 
 
-
+// finde larg lement in netseted array 
 //  let a =[[2,3],[3,4],[85,7]];
+//  let res=a.flat(Infinity).sort((a,b)=>a-b)
+//   console.log(res[res.length-1]);
+
 //   let result= a.flat().sort((a,b)=>a-b);
 //   console.log(result[result.length-1]);
 
@@ -11,7 +14,7 @@
 //   let result= a.flat(2).sort((a,b)=>a-b);
 //   console.log(result[result.length-1]);
   
-    
+//   using for of loop 
 //  let a =[[2,3],[399,4],[85,7]];
 //   let largvalue= a[0][0];
 //   for( item of a){
@@ -23,12 +26,25 @@
 //   }
 //   console.log(largvalue);
   
+// uaing foor lopo
+// let a =[[2,3],[399,4],[985,7]];
+// let largval=a[0][0];
+// for(let i=0; i<a.length; i++){
+//   for (let j=0; j<a[i].length; j++){
+//        if(largval <=a[i][j]){
+//         largval=a[i][j]
+//        }
+//   }
+// } 
+// console.log(largval)
+
 
 
     
 //  let arr= [1,2,3,4,2,2,3,4,5,2];
   // let result = [...new Set(arr)];
   // console.log( result);
+   
 
   // let result = arr.filter((item,index)=>arr.indexOf(item) === index);
   // console.log(result);
@@ -40,6 +56,26 @@
     //     }
     //  }
     //  console.log(uniquearr);
+
+
+//     let arr= [1,2,3,4,2,23,2,9,9,3,4,5,2,2,2,5];
+//  let uniqitems= arr.filter((item,index)=>arr.indexOf(item) === index)
+//  let duplicates= arr.filter((item,index)=>arr.indexOf(item) !== index)
+// console.log(uniqitems)
+// console.log(duplicates)
+
+// let arr= [1,2,3,4,2,23,2,9,9,3,4,5,2,2,2,5];
+// let uniquearry=[];
+// let duplicates =[]
+//  for (let i=0; i<arr.length; i++){
+//      if(uniquearry.includes(arr[i])){
+//           duplicates.push(arr[i])
+//      }else{
+//       uniquearry.push(arr[i])
+//      }
+//  }
+//  console.log(uniquearry)
+//  console.log(duplicates)
 
 
     // let array=['s','a','i','k','u','m','a','r'];
@@ -96,7 +132,6 @@
 //         return num * fact(num-1)
 //      }
 //  }
-
 //  console.log(fact(5));
  
     // let num=9;
@@ -498,23 +533,23 @@
 //    }
 //    console.log(d);
 
-      function fib(n){    
-         if(  n === 0){
-            return 0;
-         }else if(n===1){
-            return 1;
-         }else{
-           return fib(n-1) + fib(n-2);
-      }}
+    //   function fib(n){    
+    //      if(  n === 0){
+    //         return 0;
+    //      }else if(n===1){
+    //         return 1;
+    //      }else{
+    //        return fib(n-1) + fib(n-2);
+    //   }}
 
-      function printfib(num){
-        for(i=0; i<=num; i++){
-            console.log(fib(i));
+    //   function printfib(num){
+    //     for(i=0; i<=num; i++){
+    //         console.log(fib(i));
             
-    }
-     }   
+    // }
+    //  }   
       
-     printfib(5)
+    //  printfib(5)
     
                
     // let arr = [
@@ -557,10 +592,18 @@
 
 
 // const addfloat1=(num1,num2)=> (parseFloat(num1)+parseFloat(num2)).toFixed(2);
-// console.log(addfloat1("4.564576","4.5")); //9.06 string 
+// console.log(addfloat1("4.564576","4.5")); //9.06 string
+
 // // if we want to convert that string into number use + unary operator
 // const addfloat2=(num1,num2)=> +(parseFloat(num1)+parseFloat(num2)).toFixed(2);
 // console.log(addfloat2("4.564576","4.5")); //9.06 number 
+
+// const adflotes=(num1,num2)=>{
+//     let res= parseFloat(num1)+parseFloat(num2)
+//     console.log(Number(res.toFixed(2)));
+//    }
+//     adflotes("1.2837258756" , "1.8")
+
 
 // const findenumbergroupe= num =>{
 //     if(num==0){
@@ -577,8 +620,9 @@
 // }
 // console.log(findenumbergroupe(9));
 
-// using ternary operator 
 
+
+// using ternary operator 
 // const findenumbersign1= num =>{
 //     let result= (num === 0) ? "numberis zero " : `${(num>0) ? "number is positive":"numberis nagative"}`
 //     return result;
@@ -587,9 +631,11 @@
 // console.log(findenumbersign1(-9)); //negative
 // console.log(findenumbersign1(0)); //zero
 
+
 // console.log(Math.sign(9)); //1
 // console.log(Math.sign(-9)); //-1
 // console.log(Math.sign(0)); //0
+
 
 // const findenumbersign=num=>{
 //     switch (Math.sign(num)) {
@@ -597,7 +643,6 @@
 //         return "number is positive"
 //             case -1:
 //                 return "number is negative"
-    
 //         default:0
 //         return "zero number"
 //     }
@@ -605,72 +650,316 @@
 // console.log(findenumbersign(0));
 
 
+// const mainarray=[[3,4,99],[999,2,4],[3,4,556],[67,88,89]];
+//  let res=mainarray.flat(Infinity).sort((a,b)=>a-b);
+//  let output= res[res.length-1]
+//  console.log( res);
+//  console.log( output);
+ 
 
-// linear serach in js 
-
-// let arraydata = [3, 4, 6, 8, 68, 4, 3, 5, 356, 78, 81];
-
-// const searchinglinrarly = (array, num) => {
-//   for (let index = 0; index < array.length; index++) {
-//     if (num === array[index]) {
-//       return `item found in ${index + 1} possition `;
+// const mainarray=[[3,4,99],[999,2,4],[3,4,556],[67,88,89]];
+// function findelarg(arr){
+//    let larg= arr[0][0];
+//    for(let i=0;i<arr.length; i++){
+//     for(let j=0; j<arr[i].length; j++){
+//         if(arr[i][j]>larg){
+//           larg =arr[i][j]
+//         }
 //     }
-//   }
-// };
-
-// const result = searchinglinrarly(arraydata, 6);
-// console.log(result);
-
-
-
-
-
-// binary search 
-
-// let data = [3, 4, 6, 8, 68, 5, 56, 78, 81];
-// let sortedarry=data.sort((a,b)=>a-b);
-// console.log(sortedarry);
-
-// const binarysearch=( array,element)=>{
-  
-//     let start=0;
-//     let end= array.length-1;
-
-
-//     while(start <= end){
-//     let mid =Math.floor((start+end)/2);
-//     if(element == array[mid]){
-//         return `elemnt found at possition ${mid+1}`
-//     }else if(element > array[mid]){
-//          start=mid+1;
-//     }else{
-//         end=mid-1;
-//     }
-//     }
-//     return "elamnt not found"
+//    }
+//     return larg
 // }
-
-// console.log(binarysearch([10,12,14,16,17,18],16));
-// console.log(binarysearch(sortedarry,8));
+// console.log(findelarg(mainarray));
 
 
 
+// const mainarray = [
+//     2,
+//     [34, [90, 98, [97, 90], 99], 44],
+//     [23, [87, 98], [36, 86, [32, 65, [43, 74]]]],
+//   ];
 
-// let a=[10,24,23,4,5,63,2,6,6,322,5,6,3];
-// let swap;
-// let bubblesortedarry=[];
-// for(i=0; i<a.length; i++){
-//   for(j=0;j<a.length; j++){
-//     if(a[j]>a[j+1]){
-//       swap=a[j];
-//       a[j]=a[j+1]; 
-//       a[j+1]=swap;
-//     }
+// const newarry=[];
+
+//   function flataray(arr){
+
+//       for(let i=0; i<arr.length; i++){
+//         if(Array.isArray(arr[i])){
+//            flataray(arr[i])
+//         }else{
+//         newarry.push(arr[i])
+//         }
+//       }
+//   }  
+
+// flataray(mainarray)
+// console.log(newarry);
+
+// let arr = [1,2,4,5,2,4,8];
+//  let res= arr.filter((item,index,arr)=>arr.indexOf(item)!==index);
+//  console.log(res);
+
+ 
+// const str = 'JavaScript is simple but not easy to master';
+// const wordLimit = 3;
+
+//  function trucateword(str,wordLimit){
+//         let res= str.split(" ").splice(0,wordLimit).join(" ");
+//         return res;
+//  }
+// console.log(
+//     trucateword(str,wordLimit)
+// );
+
+//  function isprime(n){
+//        if(n <=1){
+//         return "not prime"
+//        }
+//         for(let i=2; i<n /2; i++){
+//             if(n%i == 0){
+//                 return "not prime"
+//             }
+//         }
+//         return "prime"
+//  }
+//  console.log(isprime(18));
+ 
+//  finde prime numbers upto given number 10
+//   for (let i = 0; i < 10; i++) {
+//      if(isprime(i) === "prime"){
+//         console.log( `${i} is ${isprime(i)}`);
+//      }
 //   }
-// }
-// console.log(a);   //[2, 3,  4,  5,  5,  6,6, 6, 10, 23, 24, 63,  322]
-
-
        
-         
-               
+
+//  factorial 
+    // let n=5;
+    //  let val=1;
+    //  for (let i = 1; i <= n; i++) {
+    //         val= val*i;
+    //  }
+    //   console.log(val);
+      
+
+// const factorial =(n)=>{
+//        if (n<=1){
+//         return 1;
+//        }else{
+//         return n *factorial(n-1)
+//        }
+//  }
+// console.log(factorial(5));
+
+
+
+// var n=10;
+// var a=0,b=1;
+// var c=0;
+// for(i=0; i<=n;i++){
+//   console.log(c);
+// c=a+b;
+// a=b;
+// b=c;
+// }
+
+//   let num=10;
+//    let fiboseries=[0,1];
+//     for(let i=2; i<num; i++){
+//         fiboseries[i]=fiboseries[i-2]+fiboseries[i-1]
+//     }
+//     console.log(...fiboseries);
+
+
+    // let num =10 ;
+    // let a=0;
+    // let b=1;
+    //  let c
+    //  for(i=0; i <num ; i++){
+    //     console.log(a);
+    //     c=b+a;        
+    //     a=b;
+    //     b=c;
+    //  }
+
+    //  finde missing elment in given array upto given range 
+//    let arr = [1,2,4,5,7,8,3];
+//     let n=8;
+//     let sercelemt=[];
+//         for (let j = 1; j <= n; j++) {
+//               if(arr.includes(j)){
+//                 continue;
+//               }else{
+//                 sercelemt.push(j)
+//               }      
+//         }
+//      console.log(sercelemt.join(','));
+    
+
+//     const findenum= (arr,num)=>{
+//          let sum=0 ;
+//          for(item of arr){
+//             sum += item;
+//          }
+//          let actuvalval=  num *((num+1)/2);
+//          return actuvalval-sum;
+//     }
+
+//      console.log(findenum(arr,n));
+     
+
+//     for(let i=1; i<=5; i++){
+//             setTimeout(()=>console.log(i),i*1000)
+//         }
+
+// let x1= new Promise((res,req)=>{
+//     setTimeout(res,4000,"one")
+//   })
+ 
+//    let x2= new Promise((res,req)=>{
+//     setTimeout(res,1000,"two")
+ 
+//   })
+ 
+//   Promise.all([x1,x2]).then((responses)=>{
+//        console.log(responses)
+//   })
+ 
+//     Promise.race([x1,x2]).then((responses2)=>{
+//      console.log(responses2)
+//    })
+
+        //  let date= new Date();
+        //        console.log(date.toISOString().split("T")[0]);
+        // let year= date.getFullYear();
+        // console.log(year);
+        
+        //     let monnth=date.getMonth();
+        //     console.log(monnth+1);
+        //     console.log(date.getTime());
+            
+          
+        
+
+        //  const timer=()=>{
+        //     let date= new Date();
+
+        //     let day=date.getDay()
+        //     let arrday=["sun","mon","tue","wed","thu","fryday","saturdat"]
+
+        //      let hours= date.getHours();
+        //      let minits= date.getMinutes();
+        //      let sec=date.getSeconds();
+        //      let amorpm= (hours>=12)?"PM":"AM";
+            
+        //     console.log(`todat is : ${arrday[day]}`);
+        //     console.log(`current time is ${hours}:${minits}:${sec}${amorpm}`);   
+        //  }
+        //   setInterval(()=>{
+        //      timer()
+        //   },1000)
+
+    //  let date1= "1/1/2024"
+    //  let date2= "1/1/2023"
+
+    //  let fdate= new Date(date1)
+    //  let ldate= new Date(date2)
+      
+    //  let diffdate= (fdate-ldate)/(24*60*60*1000)
+    //  console.log(diffdate);
+
+
+
+
+
+// Promise.all()->
+
+//      let apis=[
+//         "https://jsonplaceholder.typicode.com/users",
+//         "https://jsonplaceholder.typicode.com/posts",
+//         "https://jsonplaceholder.typicode.com/todos"
+//      ];
+
+//       async function fetchapis(arraydata){
+//         try {
+//             let responses= await Promise.all(arraydata.map(url=>fetch(url)));
+//             let response=await Promise.all(responses.map((item)=>item.json()))
+//             console.log(response)
+//         } catch (error) {
+//             console.error("somthing got erroe : ",error);
+//         } 
+//        ;
+        
+//       }
+
+// fetchapis(apis)
+
+// Promise.any()-> retun   
+
+// let apis=[
+//     "https://jsonplaceholder.typicode.com/users",
+//     "https://jsonplaceholder.typicode.com/posts",
+//     "https://jsonplaceholder.typicode.com/todos"
+//  ];
+
+//   async function fetchany() {
+//      let responses = await Promise.any(apis.map(url=>fetch(url)));
+//      let data= await responses.json()
+//      console.log(data);
+     
+//   }
+
+// fetchany()
+
+// Promise.any in new way ->returns first resolved promise
+// let task1= new Promise ((resolve,reject)=>setTimeout(()=>resolve("completed1"),2000))
+//  let task2= new Promise ((resolve,reject)=>setTimeout(()=>resolve("completed2"),1000))
+//  let task3= new Promise ((resolve,reject)=>setTimeout(()=>reject("completed3"),3000))
+// let promisearray=[task1,task2,task3];
+//   async function ftechall(arraypromis) {
+//     try{
+//         let responses = await Promise.any(arraypromis);
+//         console.log(responses);
+//     }catch(err){
+//       console.error(err)
+//     }
+//   }
+
+//   ftechall(promisearray)
+
+
+// this Promise.race ->method take all promises and returns the result of the first promise that resolves or rejects
+// let task1= new Promise ((resolve,reject)=>setTimeout(()=>resolve("completed1"),2000))
+//  let task2= new Promise ((resolve,reject)=>setTimeout(()=>resolve("completed2"),1000))
+//  let task3= new Promise ((resolve,reject)=>setTimeout(()=>reject("completed3"),900))
+// let arraydata=[task1,task2,task3]
+//   async function fetchanypromis(arrpromis) {
+//     try {
+//         let responseofrace= await Promise.race(arrpromis)
+//         console.log(responseofrace);
+//     } catch (error) {
+//         console.log("promises is rejected : ",error);   
+//     }
+//   }
+//   fetchanypromis(arraydata) 
+
+// const promise1 = Promise.resolve('Success from promise 1');
+// const promise2 = Promise.reject('Error in promise 2');
+// const promise3 = Promise.resolve('Success from promise 3');
+
+// async function fetchPromises() {
+//   const results = await Promise.allSettled([promise1, promise2, promise3]);
+
+//   console.log(results);
+// }
+
+// fetchPromises();
+
+
+//  console.log("nam"+true);
+//  console.log(true == "5");
+
+console.log( 1 && "true text");
+
+ 
+ 
+  

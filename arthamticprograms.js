@@ -185,7 +185,6 @@
 
 
 // findnig factorial
-
 // var n=3;
 // var fact=1;
 // for(var i=1; i<=n; i++){
@@ -213,25 +212,22 @@
 // }
 // console.log(fact(5))
 
-//  fibonassi program
-//  var n=10;
-// var a=0,b=1;
-// var c=0;
-// for(i=0; i<=n;i++){
-//   console.log(c);
-// c=a+b;
-// a=b;
-// b=c;
-// }
 
-// var n=3;
-// var x=0,y=1,z=0
 
-// for(i=0; i<=n; i++){
-//   z=x+y;
-//   x=z;
+// let num =10 ;
+// let a=0;
+// let b=1;
+//  let c
+//  for(i=0; i <num ; i++){
+//     console.log(a);
+//     c=b+a;        
+//     a=b;
+//     b=c;
+//  }
 
-// }
+
+
+
 
 //
 //  function fibo(n){
@@ -257,6 +253,7 @@
 //  console.log(fib(9));
 
 // console.log(99);
+
 // let x=[1,2,3];
 // let y =x.indexOf(3)*2;
 // console.log(y);

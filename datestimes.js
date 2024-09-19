@@ -1,14 +1,15 @@
 
 // let date= Date.now()
 // let date2= new Date()
+
 // let milsec=date2.getTime()
 // console.log(date);
 // console.log(date2);
 // console.log(milsec);
 
 // write a function in JavaScript to get the current date in the format “YYYY-MM-DD”
-let date= new Date().toISOString().split("T")[0];
-console.log(date);
+// let date= new Date().toISOString().split("T")[0];
+// console.log(date);
    
 
 
