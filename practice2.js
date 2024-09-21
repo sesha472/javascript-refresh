@@ -1087,4 +1087,5 @@ let mainarr= [1,999,3,9,2,9,99,7];
 //   console.log(result[result.length-2]);
 
   
+  console.log(9);
   
