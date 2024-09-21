@@ -20,7 +20,7 @@
 //    }
 //    return largnum
 // }
-// console.log(findelargnum(mainarray));
+// console.log(findelargnum(mainarray)); 
 
 //  another way 
 
