@@ -9,10 +9,11 @@
 //      }
 //  }
 //   console.log(linearsearch(a,8));
+ 
 
+ 
 
-//fiding all possitions
-
+//fiding all possitions in linear search 
 // let a2 = [3, 4, 6, 8, 68, 6, 8, 5, 56, 7, 8, 81];
 // let possition = [];
 // function linearsearch(array, searchElement) {
@@ -31,22 +32,22 @@
 
 
 //  binary search 
-const arr = [1, 3, 5, 7, 9];
-function binarysearch(a, search) {
-  let left = 0;
-  let right = a.length - 1;
-  while (left <= right) {
-    let middle = Math.floor((left + right) / 2);
-    if (search === a[middle]) {
-      return middle;
-    } else if (search > arr[middle]) {
-      left = middle + 1;
-    } else {
-      right = middle - 1;
-    }
-  }
-  return -1;
-}
+// const arr = [1, 3, 5, 7, 9];
+// function binarysearch(a, search) {
+//   let left = 0;
+//   let right = a.length - 1;
+//   while (left <= right) {
+//     let middle = Math.floor((left + right) / 2);
+//     if (search === a[middle]) {
+//       return middle;
+//     } else if (search > arr[middle]) {
+//       left = middle + 1;
+//     } else {
+//       right = middle - 1;
+//     }
+//   }
+//   return -1;
+// }
 // console.log(binarysearch(arr, 7));
  
 

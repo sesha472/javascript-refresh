@@ -958,8 +958,133 @@
 //  console.log("nam"+true);
 //  console.log(true == "5");
 
-console.log( 1 && "true text");
+// console.log( 1 && "true text");
 
+
+//  function* genartorfun (){
+//        yield 1;
+//        yield 2;
+//        yield 3;
+//  }
+//      let fun = genartorfun();
+//      console.log(fun.next().value);
+//      console.log(fun.next().value);
+//      console.log(fun.next().value);
+//      console.log(fun.next().value);
+     
+// var country= {
+//     name: "india",
+//     language: "hindi",
+//     population: "130cr",
+//     capital_city:"delhi"
+// }
+// var countryname= country.name
+// var countrylang= country.language
+// console.log(countryname); //india
+// console.log(countrylang); // hindi 
+// var {name:countryname,language:countrylang} = country
+// console.log(countryname); //india
+// console.log(countrylang); //hindi
+
+
+
+//  function palidrome(str){
+//          let stringis=str.toUpperCase();
+//      let result = str.split("").reverse().join("").toUpperCase();
+//      let output= (stringis === result)?"yes its palidrome":"not palindroe"
+//      return output;
+//  }
+
+// console.log(palidrome("Mam"));
+
+// write recursive funtion that returns 1 to 5 numbers 
+
+//  function recursive (n){  
+//      if(n == 0){
+//         return "";
+//      }
+//         if( n >= 1 ){
+//             return `${recursive(n-1)} ${n} `;
+//         }
+//  }
+//   console.log(recursive(5)); // 1  2  3  4  5
+  
+// function pritnumbers (stratvalue){
+//     if (stratvalue > 5) {
+//         return '';
+//     }
+//     console.log(stratvalue);
+//         pritnumbers(stratvalue+1)
+    
+// }
+
+// pritnumbers(1)
+
+//  function fact(n){
+//     if( n<=0){
+//         return 1;
+//     }
+//       return n*fact(n-1)
+//  }
  
+//  console.log(fact(5));
+
+// console.log(9);
+
+//  fiding elment using lenear search all positions 
+// let a1 = [3, 4, 5, 8, 68, 5, 56, 7,5,8, 81];
+// let elm =5;
+// let position =[];
+//  for(i=0; i<a1.length; i++){
+//       if(elm === a1[i]){
+//         position.push(i);
+//       }
+//  }
+//  console.log(position.toString());
  
+// let a1 = [3, 4, 5, 8, 68, 56, 7,5,8, 81];
+//  let binarysearch=(array,elm)=>{
+//     let arr= array.sort((a,b)=>a-b);
+//     console.log(arr);
+    
+//     let left=0;
+//     let right =arr.length -1;
+    
+//       while(left <= right ){
+//           let middle= Math.floor((left+right)/2);
+
+//            if(arr[middle] === elm) {
+//             return middle;
+//            }  if(elm >arr[middle]){
+//             left=middle+1;
+//            } else{
+//             right=middle-1;
+//            }
+
+//     }
+// return "element not found";
+
+//  }
+
+// console.log(binarysearch(a1,7));
+
+// console.log(eval("3+6"));
+// console.log(6>"10" >="0");
+
+// for(var i =0; i<=5; i++){
+//         setTimeout(()=>{
+//             console.log(i);
+//         },i*1000)
+//     }
+
+// let mainarr= [1,999,3,9,2,9,99,7];
+//   let result = mainarr.sort((a,b)=>a-b);
+//   console.log(result[result.length-1]);
+
+let mainarr= [1,999,3,9,2,9,99,7];
+
+//   let result = mainarr.sort((a,b)=>a-b);
+//   console.log(result[result.length-2]);
+
+  
   
