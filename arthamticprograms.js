@@ -17,7 +17,7 @@
 //         largnum=item;
 //       }
 //     }
-//    }
+//    }n
 //    return largnum
 // }
 // console.log(findelargnum(mainarray)); 
@@ -289,6 +289,7 @@
 // b[1]=9;
 // console.log(a);
 // console.log(b);
+console.log(9);
 
 
 // function name (arg){
