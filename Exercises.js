@@ -126,6 +126,8 @@
 //  }
 //  console.log(arr);
 
+
+
 // 1.this arrow function
 // function foo(){
 //     console.log(this.name);
@@ -142,7 +144,7 @@
 // let normalstr="apple";
 // let objstr = new String ("bananna")
 
-// let objtypestr=objstr.valueOf()
+// let objtypestr=objstr.valueOf();
 
 // //converts objct typed string into primitive one
 // console.log(typeof normalstr);//string
@@ -221,21 +223,21 @@
 // console.log(duplicates);
 
 // print all numbers individuvally
-// let num =1836;
-// let num2 = "";
+let num =1836;
+let num2 = "";
 
-// // console.log(num%10);
-// // num=parseInt(num/10);
-// // console.log(num);
-//  while(num){
-//     console.log(num%10);
-//     let num3=num%10
-//     num2=num2+num3
+// console.log(num%10);
+// num=parseInt(num/10);
+// console.log(num);
+ while(num){
+    console.log(num%10);
+    let num3=num%10
+    num2=num2+num3
 
-//     num=parseInt(num/10);
-//  }
+    num=parseInt(num/10);
+ }
 
-//  console.log(Number(num2));
+ console.log(Number(num2));
 
 // while(num>0){
 
@@ -244,6 +246,8 @@
 //     num=parseInt(num/10)
 //     console.log(num);
 // }
+
+
 
 // let data="apple is goopd"//finde how many a's in this text
 // let result =data.split("p");

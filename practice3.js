@@ -463,5 +463,389 @@
 //   console.log(str.replace(/\s/g," "));
 
 
+// finde second largest elment in array 
+
+// let mainarr= [10,50,60,40,30];
+  
+// let larg= -Infinity;
+// let secondlarg=-Infinity
+
+//  for(i=0; i<mainarr.length; i++){
+//       if( mainarr[i] >larg){
+//          larg= mainarr[i];
+         
+//       }
+      
+//  }
+//  console.log(larg);
+ 
+ 
+
+//  let result = mainarr.sort((a,b)=>{return a-b});
+//  console.log(result[result.length-2]);
+ 
 
 
+// function x(){
+//    console.log(i);
+   
+//    var i=10;
+// }
+// x()
+
+// var data = [
+//         {
+//             "name":"Shaun",
+//             "age": 30
+//         },
+//         {
+//             "name":"Paul",
+//             "age" : 27
+//         }
+//     ]
+
+//      let result = data.map((item )=>item.name);
+//      console.log(result);
+     
+
+// const apikey = "https://jsonplaceholder.typicode.com/users";
+
+//  let fetchdata= fetch(apikey)
+//  .then((res)=>res.json())
+//  .then(data=>console.log(data))
+
+ 
+// let data = {
+//     name: "sachin",
+//     adress: {
+//       street: "number 1",
+//     },
+//   };
+  
+//   let { name, adress } = data;
+  
+//   let { street } = adress;
+//   console.log(name);
+//   console.log(street);
+  
+// let arrdata= [1,4,3,9,2,9,994,7];
+
+//   function findelarnumber(mainarr,nthelment){
+//     let res= mainarr.sort((a,b)=>a-b);
+//     console.log(res);
+//     let result= [...new Set(res)]
+//     console.log(result[result.length-nthelment]);
+//   }
+
+//   findelarnumber(arrdata,4)
+ 
+// let mainarr= [10,30,40,20,70,60,50];
+// let arr = mainarr.sort((a,b)=>a-b);
+// let larg = -Infinity
+// let thirdlarg;
+// let count=0;
+// for (let i=0; i<arr.length; i++){
+//    if(larg < arr[i]){
+//    larg= arr[i]
+//    }
+// }
+
+//   for(i= arr.length-1; i>= 0; i--){
+//     //  if( larg >arr[i]){
+//        count++
+//         thirdlarg= arr[i]
+//          if(count ===3){
+//            break;
+//          }
+
+//     //  }
+//   }
+// console.log(thirdlarg);
+
+
+//  finde first second third largest elemenst 
+// let array= [10,30,40,20,70,60,50];
+//   let largelemt= -Infinity ;
+//   let seconlarg= -Infinity ;
+//   let thirdlag=-Infinity
+
+//   for (let index = 0; index < array.length; index++) {
+//     const element = array[index];
+//     if(element >largelemt){
+//       seconlarg=largelemt;
+//       thirdlag =seconlarg;
+//       largelemt=element;
+//     }else  if( element>seconlarg && element<largelemt){
+//       seconlarg = element
+//     }
+//     else  if( element<seconlarg && largelemt > element && element > thirdlag){
+//       thirdlag = element
+//     }
+//   }
+//   console.log(largelemt);
+//   console.log(seconlarg);
+//   console.log(thirdlag);
+  
+  //  rotating arry by2 possitions 
+  
+// let array = [2, 4, 7, 6, 8, 9];
+
+// function rotate(arr, possitions) {
+//   let resultar = arr.splice(0, possitions);
+//   arr.push(...resultar);
+
+//   console.log(arr);
+// }
+
+// rotate(array, 2);
+
+// let arr = [2, 4, 7, 6, 8, 9];
+//    let possitions =2
+// for(let i=0; i<possitions; i++ ) {
+//       let temp= arr[i];
+//       for(j=0; j<arr.length-1; j++){
+//         arr[j]=arr[j+1]
+//       }
+//       arr[arr.length-1]=temp;
+
+// }
+
+// console.log(arr);
+
+
+//  let arr = [2, 4, 11, 6, 8, 9];
+//  let possitions = 2;
+//  for (let i = 0; i < possitions; i++) {
+//    let temp = arr[0];
+//    for (let j = 0; j < arr.length; j++) {
+//      console.log(j);
+//      arr[j] = arr[j + 1];
+//    }
+//    arr[arr.length - 1] = temp;
+//  }
+//  console.log(arr);
+
+
+  //   let fibonumbers=7;
+  //   let fibo=[0,1];
+  //    for(i=2; i<fibonumbers; i++){
+  //     fibo.push(fibo[i-1]+fibo[i-2])
+  //    }
+  //  console.log(fibo);
+
+    
+     
+// fine max and min valu ein array 
+//  let arr = [2, 4, 11, 6,1, 8, 99];
+
+//   let result = arr.reduce ((acc,curent,curnetindex)=>{
+//     return acc>curent ?acc :curent
+//   })
+//   console.log(result);
+  
+
+//   let result2 = arr.reduce ((acc,curent,curnetindex)=>{
+//     return acc<curent ?acc :curent
+//   })
+//   console.log(result2);
+
+
+//  let arr = [2, 4, 11, 6,1, 8, 99];
+//    let firstlarg=-Infinity;
+//    let secondlarg=-Infinity;
+//   for (let i=0; i<arr.length; i++  ){
+//    let element= arr[i];
+//         if(element> firstlarg){
+//           secondlarg=firstlarg;
+//           firstlarg=element;
+//         }else if(secondlarg <element && element<firstlarg ){
+//           secondlarg = element;
+//         }
+//   }
+//    console.log(firstlarg);
+//    console.log(secondlarg);
+
+   
+   
+  // let sortedarr=arr.sort((a,b)=>a-b);
+  // console.log(sortedarr[sortedarr.length-2]);
+
+  // let arr= [1,2,3,5,6,8,9,10];
+
+  //  let missingvarl=[];
+
+
+  //     for (let i=1; i<arr.length; i++){
+  //       if(!arr.includes(i)){
+  //           missingvarl.push(i);
+  //       }
+  //     }
+  //     console.log(...missingvarl);
+      
+  //   let missingvalue=[];
+  //  for (let i=1; i<10; i++){
+  //       if(!arr.includes(i)){
+  //         missingvalue.push(i)
+  //       }
+  //  }
+    
+  //  console.log(missingvalue);
+
+
+// let arr= [2,4,11,6,8,9];   
+//   for(i=0; i<2; i++){
+//       let temp= arr[0];
+//       for(let j=0;j<arr.length-1; j++){
+//               arr[j]=arr[j+1];
+//       }
+//       arr[arr.length-1]=temp;
+//   }
+//   console.log(arr);
+
+
+// let arr= [2,4,11,6,8,9,5,87,34,56,12,46,45];
+//  function roatateaarry (possitions){
+//   for(i=0; i<possitions; i++){
+//     let temp= arr[0];
+//     for(let j=0;j<arr.length-1; j++){
+//             arr[j]=arr[j+1];
+//     }
+//     arr[arr.length-1]=temp;
+// }
+// console.log(arr);
+//  }    
+//    roatateaarry (4)
+  
+
+// finde duplictes 
+// const arr = [1,2,3,4,5,2,4,2,4];
+//  let uniqurearry=[];
+//  let duplicatearry=[];
+// //  let result = [...new Set(arr)]
+// // let result = arr.filter((item,index)=>arr.indexOf(item) !==index);
+//  for(let i=0; i<arr.length; i++){
+//        if(uniqurearry.includes(arr[i])){
+//            duplicatearry.push(arr[i])
+//        }else{
+//         uniqurearry.push(arr[i])
+//        }
+//  }
+
+//  console.log(arr);
+//  console.log(uniqurearry);
+//  console.log(duplicatearry);
+ 
+
+// const arr = [1,2,3,4,5,2,4,2,4];
+//  convert numbers into indiviluvals 
+            // let num =1836;
+            // let allnums=[];
+            //  while(num){
+            //   let solonumber= num%10;
+            //    allnums.unshift(solonumber)
+            //   num= parseInt(num/10)
+            //  }
+            //  for (const element of allnums) {
+            //    console.log(element);
+               
+            //  }
+             
+            
+            
+            
+            
+            //   while (num){
+            //  log
+            //       let num3=num%10;
+            //        num2=num2+num3 
+            //        num=parseInt(num/10)
+            //        console.log(num);
+                   
+            //   }
+
+            
+                
+//  while(num){
+//     console.log(num%10);
+//     let num3=num%10
+//     num2=num2+num3
+
+//     num=parseInt(num/10);
+//  } 
+
+//  console.log(Number(num2));
+  
+// finde how many a's in string 
+// let data="apple is good aa and nice";
+// let count =0
+//   for(let i=0;i<data.length; i++){
+//      if (data[i] ==="a")
+//           count++
+//   }
+//    console.log( count);
+   
+
+//  let result = data.split("").filter((item,index)=>item === "a");
+
+//  console.log(result.length);
+ 
+
+// const data=[ ];
+//  console.log(Array.isArray(data) );
+    
+
+
+
+//  let data = 7;
+//   while (data) {
+//        if(data > 5){
+//           console.log(data);
+//           data--;
+//        }else {
+//         data--;
+//        }
+//   }
+
+
+
+
+// let data = 7;
+//   for(var i=data; i>=1; i--){
+//       if(i <=5){
+//         continue;
+//       } else if (i>=6){
+//         console.log(i);
+//       }
+//   }
+
+
+// let person2 = { firstName: "sesha", lastName: "sai", middleName: "kumar" };
+//       function fullname({firstName,lastName,middleName}){
+//         console.log(" my name is "+firstName +":"+ lastName+middleName); 
+//       }
+//       fullname(person2)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

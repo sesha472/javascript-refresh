@@ -1081,11 +1081,22 @@
 //   let result = mainarr.sort((a,b)=>a-b);
 //   console.log(result[result.length-1]);
 
-let mainarr= [1,999,3,9,2,9,99,7];
+// let mainarr= [1,999,3,9,2,9,99,7];
 
 //   let result = mainarr.sort((a,b)=>a-b);
 //   console.log(result[result.length-2]);
 
   
-  console.log(9);
+//   let promise= new Promise ((resolve,reject)=>{
+//     setTimeout(() => {
+//         resolve("resolved")
+//         reject("this is rejected")
+//     }, 1000);
+//   })
+//    promise.then ((data)=>console.log(data)
+//    ).catch((err)=>{
+//     console.error(err)
+//    })
   
+//  console.log(10+"abc");
+ 
