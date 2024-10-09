@@ -769,12 +769,13 @@
 //     console.log(num%10);
 //     let num3=num%10
 //     num2=num2+num3
-
 //     num=parseInt(num/10);
 //  } 
 
 //  console.log(Number(num2));
-  
+
+
+
 // finde how many a's in string 
 // let data="apple is good aa and nice";
 // let count =0
@@ -825,8 +826,112 @@
 //       }
 //       fullname(person2)
 
+            // class Human {
+            //   constructor(state) {
+            //     this.state = state;
+            //   }
+            //   adress() {
+            //     console.log("my state is :" + this.state);
+            //   }
+            // }
+            // class Person extends Human {
+            //   constructor(state, naam, age) {
+            //     super(state);
+            //     this.naam = naam;
+            //     this.age = age;
+            //   }
+            //   greet() {
+            //     console.log("my name is :" + this.naam);
+            //   }
+            // }
+
+            // let person1 = new Person("ap", "hara", 27);
+            // console.log(person1.age);
+            // person1.greet();
+            // person1.adress();
 
 
+            const obj={
+              name:"sai",
+              age:30,
+              adress:{
+                state:"ap",
+                city:"kavali"
+              }
+            }
+            const {name,age,adress:{state,city}}=obj
+             console.log(name);
+             console.log(age);
+             console.log(state);
+             console.log(city);
+             // let data = {
+//   name: "sachin",
+//   adress: {
+//     street: "number 1",
+//   },
+// };
+
+// let {
+//   name,
+// } = data;
+
+// console.log(name);
+// console.log(street);
+
+// let data = {
+//   name: "sachin",
+//   adress: {
+//     street: "number 1",
+//   },
+// };
+
+// let {
+//   name,
+//   adress: { street },
+// } = data;
+// console.log(name);
+
+// console.log(street);
+// console.log(adress);
+
+// function one() {
+//   console.log("one");
+// }
+
+// function two() {
+//   console.log("two");
+// }
+
+// setTimeout(() => one(), 1000);
+// setTimeout(() => two(), 2000);
+
+// setTimeout(() => {
+//   console.log("set");
+// }, 4000);
+
+// function mainfun(cb) {
+//   console.log("mainfn");
+//   cb();
+// }
+
+// function child1() {
+//   console.log("child1");
+// }
+
+// mainfun(child1);
+
+// let user = "namsthey sai";
+
+// user = user.concat("good");
+// console.log(user);
+
+// const arr = [1, 2, 3];
+// console.log(arr);
+
+             
+             
+             
+             
 
 
 
