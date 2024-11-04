@@ -9,8 +9,27 @@
 // // convertTo24HrsFormat("10:02PM") returns "22:02"
 // const time = '5:00AM';
 
+// const api1 = 'https://jsonplaceholder.typicode.com/users';
+// const api2 = 'https://jsonplaceholder.typicode.com/users';
+// const api3 = 'https://jsonplaceholder.typicode.com/users';
+// const api4 = 'https://jsonplaceholder.typicode.com/users';
+// const api5 = 'https://jsonplaceholder.typicode.com/users';
 
 
+//           async function fetchapis(){
+//                  let responses = await Promise.all([
+//                 fetch(api1),
+//                 fetch(api2),
+//                 fetch(api3),
+//                 fetch(api4),
+//                 fetch(api5),
+//               ])
+//                console.log(responses)    
+//           }
+//           fetchapis()
+
+    
+   
 
 // function foo (){
 //     let x= (y=0);

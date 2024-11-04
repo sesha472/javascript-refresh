@@ -851,19 +851,19 @@
             // person1.adress();
 
 
-            const obj={
-              name:"sai",
-              age:30,
-              adress:{
-                state:"ap",
-                city:"kavali"
-              }
-            }
-            const {name,age,adress:{state,city}}=obj
-             console.log(name);
-             console.log(age);
-             console.log(state);
-             console.log(city);
+            // const obj={
+            //   name:"sai",
+            //   age:30,
+            //   adress:{
+            //     state:"ap",
+            //     city:"kavali"
+            //   }
+            // }
+            // const {name,age,adress:{state,city}}=obj
+            //  console.log(name);
+            //  console.log(age);
+            //  console.log(state);
+            //  console.log(city);
              // let data = {
 //   name: "sachin",
 //   adress: {

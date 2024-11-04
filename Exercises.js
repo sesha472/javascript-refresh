@@ -3,7 +3,7 @@
 // console.log(b); //error
 // var  a = b = 5;
 
-// console.log(eval("3 + 4"));
+console.log(eval("3 + 4"));
 
 // console.log(5 > "15" < 5); //true
 // console.log(5 > "85" > 5); //false
@@ -29,6 +29,19 @@
 //  let largelment = result[result.length-1]
 //  console.log(largelment);
 
+// let mainarr= [1,4,3,9,2,9,994,7];
+
+// let largelmt=-Infinity;
+
+// for(let i=0; i<mainarr.length; i++){
+//    if(largelmt >mainarr[i]){
+//       largelmt=mainarr[i];
+//    }
+
+// }
+// console.log(largelmt);
+
+  
 
 
 
@@ -50,7 +63,6 @@
 
 
 //  method 2 
-
 //  let mainarr= [1,4,6,9,2,4,7];
 //  let arr=mainarr.sort();
 //  let larg=-Infinity
@@ -104,7 +116,6 @@
 
 // rotating array by2 possition left
 
-// let arr= [2,4,11,6,8,9];   // [11,6,8,9,2,4]
 // let rotatepositions=2;
 //  let result = arr.splice(0,rotatepositions);
 //  console.log(...result);
@@ -223,21 +234,21 @@
 // console.log(duplicates);
 
 // print all numbers individuvally
-let num =1836;
-let num2 = "";
+// let num =1836;
+// let num2 = "";
 
-// console.log(num%10);
-// num=parseInt(num/10);
-// console.log(num);
- while(num){
-    console.log(num%10);
-    let num3=num%10
-    num2=num2+num3
+// // console.log(num%10);
+// // num=parseInt(num/10);
+// // console.log(num);
+//  while(num){
+//     console.log(num%10);
+//     let num3=num%10
+//     num2=num2+num3
 
-    num=parseInt(num/10);
- }
+//     num=parseInt(num/10);
+//  }
 
- console.log(Number(num2));
+//  console.log(Number(num2));
 
 // while(num>0){
 
@@ -434,20 +445,20 @@ let num2 = "";
 
 
                 
-                async function fetchapis(){
-                    try{
+               //  async function fetchapis(){
+               //      try{
 
-                   const responses= await Promise.any([
-                       fetch("https://jsonplaceholder.typicode.com/users"),
-                       fetch("https://jsonplaceholder.typicode.com/todos"),
-                   ]);
+               //     const responses= await Promise.any([
+               //         fetch("https://jsonplaceholder.typicode.com/users"),
+               //         fetch("https://jsonplaceholder.typicode.com/todos"),
+               //     ]);
 
-                   const data= await responses.json()
-                  console.log(data);
-               }catch(error){
-                 console.log( "thappu ochindi error : "+error);
+               //     const data= await responses.json()
+               //    console.log(data);
+               // }catch(error){
+               //   console.log( "thappu ochindi error : "+error);
                  
-                  }
+               //    }
 
-               }
-               fetchapis()
+               // }
+               // fetchapis()
