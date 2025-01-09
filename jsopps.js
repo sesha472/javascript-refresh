@@ -176,47 +176,45 @@
   
 
 //  encapsulation  props ni hide chyedam, eyvna chnage chyalante set methods dwara matrame cheyali direct acces undadu
-class Bank {
-    constructor(name,accnum,acctype){
-        var name=name;
-        var accnum=accnum;
-        var acctype=acctype
+// class Bank {
+//     constructor(name,accnum,acctype){
+//         var name=name;
+//         var accnum=accnum;
+//         var acctype=acctype
 
-        this.getname=()=>{
-            return name;
-        }
-        this.getaccnum=()=>{
-            return accnum;
-        }
-        this.getacctype=()=>{
-            return acctype;
-        }
+//         this.getname=()=>{
+//             return name;
+//         }
+//         this.getaccnum=()=>{
+//             return accnum;
+//         }
+//         this.getacctype=()=>{
+//             return acctype;
+//         }
     
-        this.setname=(newname)=>{
-            name=newname
-        }
-        this.setaccnum=()=>{
-            accnum=Math.floor(Math.random()*900000)
-        }
-    }
-    }
+//         this.setname=(newname)=>{
+//             name=newname
+//         }
+//         this.setaccnum=()=>{
+//             accnum=Math.floor(Math.random()*900000)
+//         }
+//     }
+//     }
 
 
 
-    let  person1=new Bank("raju",null,"saving")
+//     let  person1=new Bank("raju",null,"saving")
     
-    console.log( person1.getname() );
-    person1.setname("newraju")
-    console.log( person1.getname() );
+//     console.log( person1.getname() );
+//     person1.setname("newraju")
+//     console.log( person1.getname() );
 
-    console.log( person1.getaccnum());
-     person1.setaccnum()
-    console.log( person1.getaccnum() );
+//     console.log( person1.getaccnum());
+//      person1.setaccnum()
+//     console.log( person1.getaccnum() );
 
-   person1.accnum=123;   //hacker can accecs our acount numbet and change soo we use encapsulation 
-   console.log( person1.getaccnum()); 
-
-
+//    person1.accnum=123;   //hacker can accecs our acount numbet and change soo we use encapsulation 
+//    console.log( person1.getaccnum()); 
 
 
 
@@ -224,6 +222,99 @@ class Bank {
 
 
 
+
+// class Bank{
+//   constructor(name,color){
+//     this.name=name;
+//     this.color=color;
+//   }
+//   getname(){
+//     console.log("the name is "+this.name)
+//   }
+//   getcolor(){
+//     console.log("the color is "+this.color)
+//   }
+//   setname(newname){
+//     this.name=newname
+//   }
+// }
+
+// let person1 = new Bank ("sai","white")
+// console.log(person1.name)
+// person1.getcolor()
+// person1.setname("sesha");
+// console.log(person1.name)
+
+
+// encapsulation is the processof binding datamebers and meber function into a single unit showing esential data to useser hiding unneseary data
+// and we can simoly say  privating properties ,it should hide all variable ,it can hide any method as well
+// class Bank {
+//   constructor(name, accnumber, acctype) {
+//     var name = name;
+//     var accnumber = accnumber;
+//     var acctype = acctype;
+
+//     this.getname = () => {
+//       return name;
+//     };
+//     this.getaccnumber = () => {
+//       return accnumber;
+//     };
+//     this.getacctype = () => {
+//       return acctype;
+//     };
+//      this.setname=(newname)=>{
+//              name=newname;
+//           }
+//         this.setaccnumer=()=>{
+//             accnumber=  Math.floor(Math.random() * 999999);
+//         }
+//         this.setacctype=(newacctype)=>{
+//             acctype=newacctype
+//         }
+//   }
+// }
+
+// let person1 = new Bank("sai", null, "current");
+
+// console.log(person1.getname());
+// person1.setname("sesha")
+// console.log(person1.getname());
+
+
+
+// console.log(person1.getaccnumber());
+// person1.setaccnumer()
+// console.log(person1.getaccnumber());
+
+// console.log(person1.getacctype());
+// person1.setacctype("good")
+// console.log(person1.getacctype());
+// // person1.setname("sesha");
+// console.log(person1.getname());
+
+
+
+ class Atm{
+    constructor(withdraw){
+        this.balence=1000;
+        this.withdraw=withdraw
+    }
+    getamount=()=>{
+        let minimum=500
+        if(this.balence-this.withdraw >=minimum ){
+            console.log("sucess");
+        }else {
+            console.log("failed ");
+            
+        }
+     }
+ }
+
+
+  let person1=new Atm(400);
+console.log(person1.balence);
+person1.getamount()
 
 
 

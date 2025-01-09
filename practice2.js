@@ -117,6 +117,7 @@
 //  let result = Math.floor(Math.random() * (max-min) +min);          
 //  console.log(result);
 
+ 
 
 // const str = 'JavaScript is simple but not easy to master';
 //  let result =str.split(" ").slice(0,3).join(" ");
@@ -811,23 +812,6 @@
 //             setTimeout(()=>console.log(i),i*1000)
 //         }
 
-// let x1= new Promise((res,req)=>{
-//     setTimeout(res,4000,"one")
-//   })
- 
-//    let x2= new Promise((res,req)=>{
-//     setTimeout(res,1000,"two")
- 
-//   })
- 
-//   Promise.all([x1,x2]).then((responses)=>{
-//        console.log(responses)
-//   })
- 
-//     Promise.race([x1,x2]).then((responses2)=>{
-//      console.log(responses2)
-//    })
-
         //  let date= new Date();
         //        console.log(date.toISOString().split("T")[0]);
         // let year= date.getFullYear();
@@ -871,88 +855,6 @@
 
 
 
-// Promise.all()->
-
-//      let apis=[
-//         "https://jsonplaceholder.typicode.com/users",
-//         "https://jsonplaceholder.typicode.com/posts",
-//         "https://jsonplaceholder.typicode.com/todos"
-//      ];
-
-//       async function fetchapis(arraydata){
-//         try {
-//             let responses= await Promise.all(arraydata.map(url=>fetch(url)));
-//             let response=await Promise.all(responses.map((item)=>item.json()))
-//             console.log(response)
-//         } catch (error) {
-//             console.error("somthing got erroe : ",error);
-//         } 
-//        ;
-        
-//       }
-
-// fetchapis(apis)
-
-// Promise.any()-> retun   
-
-// let apis=[
-//     "https://jsonplaceholder.typicode.com/users",
-//     "https://jsonplaceholder.typicode.com/posts",
-//     "https://jsonplaceholder.typicode.com/todos"
-//  ];
-
-//   async function fetchany() {
-//      let responses = await Promise.any(apis.map(url=>fetch(url)));
-//      let data= await responses.json()
-//      console.log(data);
-     
-//   }
-
-// fetchany()
-
-// Promise.any in new way ->returns first resolved promise
-// let task1= new Promise ((resolve,reject)=>setTimeout(()=>resolve("completed1"),2000))
-//  let task2= new Promise ((resolve,reject)=>setTimeout(()=>resolve("completed2"),1000))
-//  let task3= new Promise ((resolve,reject)=>setTimeout(()=>reject("completed3"),3000))
-// let promisearray=[task1,task2,task3];
-//   async function ftechall(arraypromis) {
-//     try{
-//         let responses = await Promise.any(arraypromis);
-//         console.log(responses);
-//     }catch(err){
-//       console.error(err)
-//     }
-//   }
-
-//   ftechall(promisearray)
-
-
-// this Promise.race ->method take all promises and returns the result of the first promise that resolves or rejects
-// let task1= new Promise ((resolve,reject)=>setTimeout(()=>resolve("completed1"),2000))
-//  let task2= new Promise ((resolve,reject)=>setTimeout(()=>resolve("completed2"),1000))
-//  let task3= new Promise ((resolve,reject)=>setTimeout(()=>reject("completed3"),900))
-// let arraydata=[task1,task2,task3]
-//   async function fetchanypromis(arrpromis) {
-//     try {
-//         let responseofrace= await Promise.race(arrpromis)
-//         console.log(responseofrace);
-//     } catch (error) {
-//         console.log("promises is rejected : ",error);   
-//     }
-//   }
-//   fetchanypromis(arraydata) 
-
-// const promise1 = Promise.resolve('Success from promise 1');
-// const promise2 = Promise.reject('Error in promise 2');
-// const promise3 = Promise.resolve('Success from promise 3');
-
-// async function fetchPromises() {
-//   const results = await Promise.allSettled([promise1, promise2, promise3]);
-
-//   console.log(results);
-// }
-
-// fetchPromises();
 
 
 //  console.log("nam"+true);

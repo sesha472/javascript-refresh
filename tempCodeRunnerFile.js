@@ -262,4 +262,6 @@
 //  counter2=createcounter();
 // console.log(counter2());
 
-console.log(9);
+// console.log(9);
+
+

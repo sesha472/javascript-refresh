@@ -478,9 +478,6 @@
       
 //  }
 //  console.log(larg);
- 
- 
-
 //  let result = mainarr.sort((a,b)=>{return a-b});
 //  console.log(result[result.length-2]);
  

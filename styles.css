@@ -1,8 +1,10 @@
 
 
 
-
-
+ body{
+    background-color: rgb(85, 84, 83);
+ }
+/* 
 body{
     margin: 0;
     padding: 0;
@@ -99,7 +101,7 @@ color: rgb(59, 101, 111);
 
 .parent .list-items ol li:nth-child(3){
     color: rgb(229, 71, 9);
-}
+} */
 
 
 /* .fruits{

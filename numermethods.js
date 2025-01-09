@@ -60,6 +60,7 @@
 // console.log(b);
 // console.log(typeof b); //number
 
+ 
 
 
 // let a='10';

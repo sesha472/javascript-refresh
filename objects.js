@@ -342,22 +342,22 @@
 // console.log(0.2+0.1 == 0.3);
 // console.log(0.3+0.6 == 0.9);
 
- function* add (){
-     let count =0;
+//  function* add (){
+//      let count =0;
 
-      while (true){
-        yield count++;
-      }
+//       while (true){
+//         yield count++;
+//       }
    
- }
+//  }
 
-  let result = add();
+//   let result = add();
 
-  console.log(result.next().value);
-  console.log(result.next().value);
-  console.log(result.next().value);
-  console.log(result.next().value);
+//   console.log(result.next().value);
+//   console.log(result.next().value);
+//   console.log(result.next().value);
+//   console.log(result.next().value);
 
-  console.log(result.next().value);
+//   console.log(result.next().value);
 
-  
+ 

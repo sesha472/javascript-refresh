@@ -16,6 +16,36 @@
 
 
 
+//   const welcome=()=>{
+//     setTimeout(()=>{
+//       console.log('welcome')
+    
+//     },1000)
+// }
+// const register=(fun)=>{
+//     setTimeout(()=>{
+//       console.log('register')
+//       fun();
+//     },5000)
+// }
+// const login=(fun)=>{
+//     setTimeout(()=>{
+//       console.log('login')
+//       fun()
+//     },2000)
+// }
+// const thankyou=()=>{
+//     setTimeout(()=>{
+//       console.log("thank you ")
+//     },1000)
+// }
+// welcome()
+// register(()=>{
+// console.log("this is text in fun" )
+// login( ()=>{
+// thankyou()
+// })
+// })
 
 
 

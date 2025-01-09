@@ -15,11 +15,27 @@
 // let result = Math.max(...arr);
 // console.log(result);
 
+//  finding largest elment in the array 
+// let arr= [1,2,3,4,2,2,36,4,5,9];
+
+//  let result = arr.sort((a,b)=>a-b);
+//  console.log(result[result.length-1]);
+ 
+
+//  let arr= [1,2,3,4,2,2,36,4,54,9];
+//   let larg= -Infinity
+//   for ( let i=0; i <arr.length; i++){
+//      let element = arr[i]
+//       if(element>larg){
+//         larg= element
+//       }
+//   }
+//    console.log(larg);
+   
 
 
 // largest element in nested array 
-
-//  let a =[[2,3],[3,4],[85,7]];t
+//  let a =[[2,3],[3,4],[85,7]];
 //   let result = a.flat().sort((a,b)=>a-b);
 //   let output = result[result.length-1]
 //   console.log(output);
@@ -30,10 +46,8 @@
 
 
 //    method 2 
-
 //  let a =[[2,993],[3,4],[850,7]];
 //     let largnum= a[0][0];
-
 //      for(let item of a){
 //         for(let val of item){
 //             if(largnum <= val){
@@ -218,7 +232,7 @@
 
 // let b=Array.from({length:2}); //if we put empty string 
 // console.log(b);//[ undefined, undefined ]
-// oe we can use this method to fill with index values 
+// we can use this method to fill with index values 
 // let c=Array.from({length:5},(value,index)=>index)
 // console.log(c);//[ 0, 1, 2, 3, 4 ]
 
@@ -270,13 +284,14 @@
 //    for (let [index,item] of arr1.entries()){
 //     console.log(index ,item);
 //    }
-
 //  console.log(result);
-     
+
+
 // for (const [key,value] in arr1) {
 //     arr2.push(key);
 // }
 // console.log(arr2);
+
 
 
 
@@ -299,6 +314,8 @@
 //    for (const iterator of array.keys()) {
 //     console.log(iterator);
 //    }
+
+
 
 
 
@@ -336,7 +353,7 @@
 //  let result=[];
 
 //   for( let i=0; i<arr.length; i++){
-     
+       
 //   }
 
 
