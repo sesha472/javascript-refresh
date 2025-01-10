@@ -127,6 +127,66 @@
 // }
 // person.details();
 
+// let arr= [1,2,3,4,2,2,3,94,5,9];
+// let result = arr.sort((a,b)=>a-b);
+// console.log(result);
+
+// let output = result[result.length-1];
+// console.log(output);
+
+//    let result = Math.max(...arr);
+//    console.log(result);
+
+
+// let larg=-Infinity;
+
+//  for(i=0; i<arr.length; i++){
+//       if(arr[i]>larg){
+//         larg=arr[i];
+//       }
+//       }
+//    console.log(larg);
+
+
+
+// let arr= [1,2,3,994,82,2,3,94,5,9];
+
+//  let larg=-Infinity;
+//  let secodlarg=-Infinity
+
+//  for(i=0; i<arr.length; i++){
+//       if(arr[i]>larg){
+//         secodlarg=larg;
+//         larg=arr[i];
+//       } if(secodlarg>arr[i] & larg< arr[i] ){
+//         secodlarg=arr[i]
+//       }
+//       }
+//    console.log(larg);
+//    console.log(secodlarg);
+
+
+//  let a =[[2,3],[3,4],[85,7]];
+//  let larg= -Infinity;
+//  for(i=0;i<a.length;i++ ){
+//     for(j=0;j<a[i].length; j++){
+//         if(a[i][j]>larg){
+//             larg=a[i][j]
+//         }
+//     }
+//  }
+//  console.log(larg);
+ 
+   
+//  let arr= [1,2,3,4,2,2,3,4,5,2];
+//   let result= arr.filter((item,index,arr)=>arr.indexOf(item)===index);
+//   console.log(result);
+  
+
+   
+
+
+
 
 
 
