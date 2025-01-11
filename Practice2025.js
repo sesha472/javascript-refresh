@@ -181,9 +181,135 @@
 //  let arr= [1,2,3,4,2,2,3,4,5,2];
 //   let result= arr.filter((item,index,arr)=>arr.indexOf(item)===index);
 //   console.log(result);
+
+// function user(name,...rest){
+//     console.log(...rest);
+//       console.log(name +":"+rest);
+// }
+// user("dora","32",33,"kavali");
+
+//  let str= "namsthey";
+//   console.log(str.padStart(18,"*"));
+
+
+
+// class Bank{
+//     constructor(withdraw){
+//         this.withdraw=withdraw
+//         this.totalbalance=1000
+//         this.min=500;
+//     }
+//      cashwithdraw(){
+//         let balance =this.totalbalance-this.withdraw
+//         if(balance<this.min){
+//             console.log("failed ");
+            
+//         }else{
+//             console.log("sucess");     
+//         }        
+//      }
+//  }
+//   let user=new Bank(600);
+// user.min=0;
+//   user.cashwithdraw()
+
+// abstaction =>showing esential info and hiding implimentaion details 
+
+
+//  class Bank {
+//     constructor(withdraw){
+//         this.withdraw=withdraw
+//         this.totalbalance=1000
+       
+//     }
+//      cashwithdraw(){
+//         let min=500
+//         let balance =this.totalbalance-this.withdraw
+//         if(balance<500){
+//             console.log("failed ");
+            
+//         }else{
+//             console.log("sucess");     
+//         }        
+//      }
+//  }
+//   let user=new Bank(600);
+//   user.cashwithdraw();
+
+// Encapsulation is the procedure of binding both data members and member functions into a single unit 
+
+
+// function created with name and assigned to variable is afunction expresssion 
+// function without name is assigned to variable is anonymus function 
+
+
+
+//  let array=["cricket","football"];
+//  let result = array.push("tennis");
+
+//  console.log(result);
+//  console.log(array);
+
+//  let str = "namsthey ";
+
+// //  console.log(str.padStart(20,"918"));
+
+
+//  let ammount=100;
+//  let days=30;
+//  let intrest=2;
+
+//   for(let i=1; i<=days; i++){
+//     if(i%4 === 0){
+//         ammount += intrest
+//     }
+//     document.write(`your amount for ${i} days with intrest ${intrest} is ${ammount} </br>`);
+
+//   }
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//   let name= prompt("Please enter your name");
+//   let marks = Number( prompt("enter your marks"));
+//    switch(true){
+//     case marks>=75: 
+//     result="you got first class"
+//     break;
+//     case marks>=60 && marks<75:
+//     result="YPU GOT SECOND CLASS"
+//     break;
+//     case marks>=35 && marks <60:result="you got 3 rd class";
+//     break;
+//     default:
+//       result ="your pass";
+//     break;
+//    } 
+//   console.log(result);
   
 
-   
 
 
 
