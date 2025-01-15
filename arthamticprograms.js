@@ -153,16 +153,16 @@
 //     }
 //   }
 //   console.log("\n");
-
 //   return c>2?`${n}'is not prime'`:`${n}"is prime"`;
 // }
 
 
 // findeprimenumbers(7);
-
 // for (let i = 0; i < 10; i++) { 
 //   console.log(findeprimenumbers(i));
 // }
+
+
       
 
  
@@ -262,7 +262,7 @@
 // let a=10;
 
 // for(let i=1; i<=5; i++){
-//     setTimeout(()=>console.log(i),i*1000)
+//     setTimeout(()=>console.log(i),i*1000);
 // }
 
 // for(var i=1; i<=5; i++){
@@ -289,7 +289,7 @@
 // b[1]=9;
 // console.log(a);
 // console.log(b);
-console.log(9);
+// console.log(9);
 
 
 // function name (arg){
@@ -303,6 +303,7 @@ console.log(9);
 // }
 
 // name( role);
+
 
 
 

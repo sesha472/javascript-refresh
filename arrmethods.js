@@ -62,7 +62,7 @@
 
 
 
-// removie duplicare eelmnst from array 
+// removie duplicare elemnst from array 
 //  let arr= [1,2,3,4,2,2,3,4,5,2];
 //   let result = [...new Set(arr)]
 //   console.log(result );
@@ -226,18 +226,14 @@
 
 
 // Array.from() 
-
 // let str="apple";
 // console.log(Array.from(str));//[ 'a', 'p', 'p', 'l', 'e' ]
-
 // let b=Array.from({length:2}); //if we put empty string 
-// console.log(b);//[ undefined, undefined ]
-// we can use this method to fill with index values 
+// console.log(b);//[ undefined, undefined]
+// // we can use this method to fill with index values 
 // let c=Array.from({length:5},(value,index)=>index)
 // console.log(c);//[ 0, 1, 2, 3, 4 ]
-
 // console.log(typeof c );//objbect
-
 // console.log( Array.isArray(c)); //true
 
 
@@ -331,9 +327,6 @@
 // console.log(r);
 
 
-
-
-
 // var fruits = ["Banana", "Orange", "Apple", "Mango"];
 // console.log(fruits.constructor); 
 
@@ -344,19 +337,12 @@
 
 
 
-
-
-
-
-
 // let arr =[10, 15, 20, 25, 30];
 //  let result=[];
 
 //   for( let i=0; i<arr.length; i++){
        
 //   }
-
-
 
 
 

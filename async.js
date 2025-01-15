@@ -37,32 +37,32 @@
     // })
 
      
-     function rigister (){
-        return new Promise ((res,rej)=>{
-            setTimeout(() => {
-                console.log("rigister");
-                res("sucess")
-            },2000);
-        })
-     }
-     function login (){
-        return new Promise ((res,rej)=>{
-            setTimeout(() => {
-                console.log("login");
-                rej(err)
-            },1000);
-        })
-     }
-     function thankyou (){
-        return new Promise ((res,rej)=>{
-            setTimeout(() => {
-                console.log("thank you ");
-                res();
-            },2000);
-        })
-    }       
+    //  function rigister (){
+    //     return new Promise ((res,rej)=>{
+    //         setTimeout(() => {
+    //             console.log("rigister");
+    //             res("sucess")
+    //         },2000);
+    //     })
+    //  }
+    //  function login (){
+    //     return new Promise ((res,rej)=>{
+    //         setTimeout(() => {
+    //             console.log("login");
+    //             rej(err)
+    //         },1000);
+    //     })
+    //  }
+    //  function thankyou (){
+    //     return new Promise ((res,rej)=>{
+    //         setTimeout(() => {
+    //             console.log("thank you ");
+    //             res();
+    //         },2000);
+    //     })
+    // }       
      
-     rigister().then(login).then(thankyou).catch(err=>console.log("this is err",err))
+    //  rigister().then(login).then(thankyou).catch(err=>console.log("this is err",err))
 
       
        

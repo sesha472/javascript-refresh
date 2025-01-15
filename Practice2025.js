@@ -266,53 +266,401 @@
 //     document.write(`your amount for ${i} days with intrest ${intrest} is ${ammount} </br>`);
 
 //   }
+
+
+  
+// function foo(x,y=5){
+//     return [x,y];
+// }
+// console.log(foo(7));
+
+// function foo(x=5,y){
+//     return [x,y];
+// }
+
+// let res=foo(3);
+// console.log(res);
+
+
+//  let arr= [1,2,3,4,2,2,3,4,5,7,7,2];
+//  let resu= arr.filter((item,index,array)=>arr.indexOf(item)===index);
+//  console.log(resu);
+
+
+   
+//  let arr= [1,2,3,4,2,2,3,4,5,7,7,2];
+//  let res= [...new Set(arr)];
+//  console.log(res);
  
+
+//    let array1 = ['a', 'b', 'c', 'd', 'e'];
+// let result=array1.copyWithin(1,3,5);
+// console.log(result);
+
+//  var array=['s','a','i','k','u','m','a','r'];
+// console.log(array.join());
+// console.log(array.toString());
+
+  
+  
+// let ten= 10;
+// console.log(ten +++ ten,ten);
+
+
  
+// let orders =[
+    //     {name:"raju",
+    //     purchased:30,
+    //      },
+    //      {name:"shiva",
+    //     purchased:30,
+    //     },
+    //     {name:"vishnu",
+    //     purchased:30,
+    //     },
+    //     {name:"raju",
+    //     purchased:150,
+    //      },
+    //     {name:"hanuman",
+    //     purchased:30,
+    //     }
+    // ];
+    // let res= orders.filter((item,index)=>item.name=== "raju").map((item,index)=>item.purchased).reduce((acc,curr,currindex,arrr)=>acc+curr,10);
+    // console.log(res);
  
+//  let arr = [1, 2, 3];
+// console.log(arr.toSource());
+     
+
+// let str="apple";
+// console.log(str.split(""));
 
 
 
+//  let res= Array.from(str);
+//  console.log(res);
+ 
+     
+//   let a= Array.from({length:5}).map((item,index)=>index+1)
+//   console.log(a);
 
+//  let date= new Date();
+//   console.log(date);
+//   console.log(date.toString());
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//   let name= prompt("Please enter your name");
-//   let marks = Number( prompt("enter your marks"));
-//    switch(true){
-//     case marks>=75: 
-//     result="you got first class"
-//     break;
-//     case marks>=60 && marks<75:
-//     result="YPU GOT SECOND CLASS"
-//     break;
-//     case marks>=35 && marks <60:result="you got 3 rd class";
-//     break;
-//     default:
-//       result ="your pass";
+  // let name= prompt("Please enter your name");
+  // let marks = Number( prompt("enter your marks"));
+  //  switch(true){
+  //   case marks>=75: 
+  //   result="you got first class"
+  //   break;
+  //   case marks>=60 && marks<75:
+  //   result="YPU GOT SECOND CLASS"
+  //   break;
+  //   case marks>=35 && marks <60:result="you got 3 rd class";
+  //   break;
+  //   default:
+  //     result ="your pass";
 //     break;
 //    } 
 //   console.log(result);
   
 
 
+// const obj = {
+//     name: 'Alice',
+//     friends: ['Bob', 'Charlie'],
+//     printFriends: function() {
+//           return this.friends.forEach((item,index)=>{
+//              console.log(`${item} is friend of ${this.name}`)
+//           })
+//     }
+// };
+// console.log(obj.printFriends());
+
+// ob is friend of Alice
+// Charlie is friend of Alice
+
+
+    //  const obj2 = {
+    //     name: "Alice",
+    //     greet: ()=> {
+    //       setTimeout(() => {
+    //          console.log("this " + obj2);  //undefinde
+    //       }, 1000);
+    //     },
+    //   };
+    //   obj2.greet();
+  
+// let arr1=[10,20,30,40];
+// let  res= Object.entries(arr1);
+// console.log(res);
+//  let out= Object.fromEntries(res);
+//  console.log(out);
+ 
+  
+// let arr1 = [10, 20, 30, 40];
+// let arr2 = [];
+
+// for (let [index, item] of arr1.entries()) {
+//   console.log(index, item);
+// }
+
+// for (const keyindex in arr1) {
+//   console.log(arr1[keyindex]);
+// }
+ 
+// let obj={fname:"sachin",lname: "tendulkar",age:"27"};
+//  for(let key in obj){
+//  console.log(key,obj[key]);
+//  }
+
+// let array=['s','a','i','k','u','m','a','r'];
+//    for (const [index,item] of array.entries()) {
+//     console.log(index,item);
+//    }
+//    for ( let item of array.values()){
+//     console.log(item);
+
+//         }
 
 
 
 
 
+//  let arr= [1,2,3,4,5];
+//  arr.length=3;
+//  console.log(arr);
+//  console.log(arr.length);
+
+// let dl= delete arr[0];
+// console.log(arr);
+// console.log(arr.length);
+
+
+
+//  for(item of arr){
+//     console.log( "value : "+item);
+    
+//  }
+// console.log(dl);
+// console.log(arr);
+// console.log(arr.length);
+
+
+//  let arr = [1,2,3];
+// console.log( arr === "1,2,3");
+
+//  const mainarray=[[3,4,9],[5,2,4],[3,4,54],[67,88,8]];
+// let res= mainarray.flat(Infinity);
+// console.log(res);
+//  let output = res.sort((a,b)=>a-b);
+// console.log(output);
+
+//  let larg=output[output.length-1];
+//  console.log(larg);
+ 
+
+
+//  const mainarray=[[3,4,99],[5,2,77],[3,66,54],[6,88,8]];
+//  let larg=-Infinity;
+//  let secondlarg=-Infinity
+//  let thirdlarg=-Infinity;
+//  let fourthlarg=-Infinity
+//    for(let arrayitem of mainarray){
+//        for(let val of arrayitem){
+//            if(val>larg){
+//             fourthlarg=thirdlarg;
+//             thirdlarg=secondlarg;
+//             secondlarg=larg
+//             larg=val;
+//            }else if(val>secondlarg && val<larg){
+//             fourthlarg=thirdlarg;
+//             thirdlarg=secondlarg
+//              secondlarg=val;
+//            }else if(val>thirdlarg && val<secondlarg){
+//             thirdlarg=val
+//            }
+//            else if(val>fourthlarg && val>thirdlarg){
+//             fourthlarg=val
+//            }
+//        }
+       
+//    }
+//     console.log(larg);
+//     console.log(secondlarg);
+//     console.log(thirdlarg);
+//     console.log(fourthlarg);
+
+// flatening the arry using recursive method 
+// const arr = [
+//   2,
+//   [3, 4],
+//   [34, [90, 98, [97, 90], 99], 44],
+//   [23, [87, 98], [36, 86, [32, 65, [43, 74]]]],
+// ];
+// let flatarray = (arrargument) => {
+//   let newarry = [];
+//   let innerflatfunction = (arrargument) => {
+//     for (let arayitem of arrargument) {
+//       if (Array.isArray(arayitem)) {
+//         innerflatfunction(arayitem);
+//       } else {
+//         newarry.push(arayitem);
+//       }
+//     }
+//   };
+//   innerflatfunction(arrargument);
+//   return newarry;
+// };
+
+// console.log(flatarray(arr));
+
+// let arr = [10,20,30,10,40,20,10,90,40,10];
+// let removieditems=[]
+//     for(let i=0; i<arr.length; i++){
+//        if(arr.indexOf(arr[i]) !== i){
+//         removieditems.push(arr[i]);
+//         arr.splice(i,1);
+//         i--;
+//        }
+//     }
+//      console.log(arr);
+//      console.log(removieditems);
+     
+
+// const str = 'JavaScript is simple but not easy to master';
+
+//  let limit=3;
+//   let result= str.split(" ").splice(0,3).join(" ");
+//   console.log(result);
+  
+     
+// const arr=[2,3,2,1,2,,6,7,4,32,2,7,9,3,42,342,2,9];
+
+//  let newarry=[]; 
+//  for (const element of arr) {
+//    if(element %2 ===0){
+//     newarry.push(element)
+//    }
+//  }
+//  console.log(newarry);
+ 
+
+  //  let fact=(n)=>{
+  //        if(n ===0 || n===1 || n >-Infinity){
+  //         return 1;
+  //        } else{
+  //          return n*fact(n-1);
+  //        }
+  //  }
+  //   console.log(fact(-9));
+
+  //  let num =7;
+  //   if(num <=1){
+  //     console.log("not a prime");
+  //   }if(num ===2 || num ===3){
+  //     console.log("prime number");
+      
+  //   }
+  //    for(let i=2; i<=Math.sqrt(num); i++){
+  //      if(num %2 === 0){
+  //       console.log ("not prime")
+  //      } else{
+  //       console.log("prime");
+         
+  //      }
+  //    }
+
+
+//      function findeprimenumbers(num) {
+//   if (num <= 1) return "not prime";
+//   console.log(Math.sqrt(num));
+//   for (let i = 2; i <= Math.sqrt(num); i++){
+//     if (num % i === 0) return "not prime";
+//   }
+//   return "prime";
+// }
+// console.log(findeprimenumbers(2));
+
+
+
+    
+ 
+ 
+
+// let num =10 ;
+// let a=0;
+// let b=1;
+//  let c
+//  for(i=0; i <num ; i++){
+//     console.log(a);
+//     c=b+a;        
+//     a=b;
+//     b=c;
+//  }
+
+//  let num =10;
+
+//  let a=0;
+//  let b=1;
+
+//  for( let i =0; i<num; i++){
+
+//      console.log(a);
+//       let c=b+a;
+//        a=b;
+//        b=c;
+      
+//  }
+ 
+// for(let i=1; i<=5; i++){
+//       setTimeout(() => {
+//         console.log(i);   
+//       }, 1000*i);
+//   }
+
+
+  // function rigister(arg1){
+  // console.log("rigister");
+  // arg1();
+  // }
+  // function login(){
+  // console.log("login");
+  // }
+  // function thankyou(arg2){
+  // arg2();
+  // console.log("thankyou");
+  // }
+  // thankyou(()=>{
+  // rigister(login);
+  // })
+   
+
+
+
+  // function rigister(arg1) {
+  //   setTimeout(() => {
+  //     console.log("rigister");
+  //     arg1();
+  //   }, 3000);
+  // }
+
+  // function login() {
+  //   setTimeout(() => {
+  //     console.log("login");
+  //   }, 2000);
+  // }
+
+  // function thankyou(arg2) {
+  //   setTimeout(() => {
+  //     arg2();
+  //     console.log("thankyou");
+  //   }, 1000);
+  // }
+
+  // rigister(() => {
+  //   login(thankyou);
+  // });
+
+  
