@@ -664,3 +664,282 @@
   // });
 
   
+
+  //  function mainfun (cbfn){
+  //    console.log(('operation started'));
+  //    setTimeout(() => {
+  //      cbfn("operation complted")
+  //    }, 2000);
+  //  }
+
+  //   function callbackfn(arg){
+  //       console.log("result : "+arg);
+        
+  //   }
+  //  mainfun(callbackfn)
+
+
+  //  function factorial(a, b, cb) {
+  //    setTimeout(() => {
+  //      cb(a * b);
+  //    }, 200);
+  //  }
+
+  //  factorial(6, 5, function (val1) {
+  //    console.log(val1);
+  //    factorial(val1, 4, function (val2) {
+  //      console.log(val2);
+  //      factorial(val2, 3, (val3) => {
+  //        console.log(val3);
+  //        factorial(val3, 2, (val4) => {
+  //          console.log(val4);
+  //        });
+  //      });
+  //    });
+  //  });
+
+
+
+
+  //  using promises 
+  //  function factorila(a,b){
+  //    return new Promise ((resolve,rej)=>{
+  //     setTimeout(() => {
+  //       resolve(a*b);
+  //     }, 200);
+  //    })
+  //  }
+
+  //   factorila(6,5)
+  //   .then((response1)=>factorila(response1,4))
+  //   .then((res2)=>factorila(res2,3))
+  //   .then((res3)=>factorila(res3,2))
+  //   .then((res4)=>factorila(res4,1))
+  //   .then(res=>console.log(res))
+  //   .catch(err=>console.log("this is : what  "+err))
+    
+
+
+  //   function factorial(a,b){
+  //    return new Promise ((resolve,rej)=>{
+  //     setTimeout(() => {
+  //       resolve(a*b);
+  //     }, 200);
+  //    })
+  //  }
+
+  //  let  factfun = async ()=>{
+  //    let res1= await factorial(6,5);
+  //    let res2= await factorial(res1,4)
+  //    let res3= await factorial(res2,3)
+  //    let res4= await factorial(res3,2)
+  //    console.log(res4);     
+  //   }
+  //    factfun();
+
+  //  function merg(str1,str2){
+       
+  //  }
+
+
+
+// merging twi strings alternatively 
+
+  //  function merargstrings(str1, str2) {
+  //    let st1arr = str1.split("");
+  //    let st2arr = str2.split("");
+  //    let maxlength = str1.length > str2.length ? str1.length : str2.length;
+  //    let mergarr = [];
+  //    for (let i = 0; i < maxlength; i++) {
+  //      if (st1arr[i] !== undefined) {
+  //        mergarr.push(st1arr[i]);
+  //      }
+  //      if (st2arr[i] !== undefined) {
+  //        mergarr.push(st2arr[i]);
+  //      }
+  //    }
+  //    let result = mergarr.join("");
+  //    return result;
+  //  }
+
+  //  console.log(merargstrings("sai", "hruday"));
+
+
+
+
+
+  // function merargstrings(str1, str2) {
+  //   let maxlength = str1.length > str2.length ? str1.length : str2.length;
+  //   let mergarr = [];
+  //   for (let i = 0; i < maxlength; i++) {
+  //     if (str1[i] !== undefined) {
+  //       mergarr.push(str1[i]);
+  //     }
+  //     if (str2[i] !== undefined) {
+  //       mergarr.push(str2[i]);
+  //     }
+  //   }
+  //   let result = mergarr.join("");
+  //   return result;
+  // }
+
+  // console.log(merargstrings("saiku", "hruday"));
+
+
+  // //  another way 
+  //  function mergstrings(s1,s2){
+  //   let s3="";
+  //      let l1=s1.length;
+  //      let l2=s2.length;
+  //       let max= Math.max(l1,l2);
+  //       let j=0;
+  //       let k=0;
+  //      for(let i =0; i<max; i++){
+  //         if(l1>j){
+  //           s3=s3+s1[i];
+  //           j++;
+  //         } 
+  //         if(l2>k){
+  //            s3=s3+s2[i];
+  //            k++;
+  //         }
+  //      }
+  //      return s3;
+  //     }
+  //   console.log(mergstrings("saikumar",'hruday'));
+
+
+//  finding the longest word in sentence 
+  //  let word = "seshasai sai is arrived1";
+  //   let result = word.split(" ");
+  //   let len=0;
+  //   let ind= 0;
+  //   console.log(result);
+
+  //    for(let [indexpossition,item] of result.entries()){
+  //            console.log(indexpossition,item);
+  //     if( item.length >len){
+  //        len=item.length
+  //           ind= indexpossition;
+  //         }   
+  //    }
+  //     let output = result[ind]
+  //     console.log(output);
+  //   // console.log(result);
+          
+  // let word = "seshasaikumar sai is arrived1";
+  //   let result = word.split(" ");
+  //   let output= result.reduce((acc,currentvalue)=> (acc.length > currentvalue.length )? acc:currentvalue,"");
+  //   console.log(output);
+
+  // console.log(2-"2");
+
+
+
+  // flatening the array 
+//  const mainarray=[[3,4],[2,7],[3,6,],[6,8]];
+
+//   let arr=[];
+//   for(mainitem of mainarray){
+//       for(inneritem of mainitem){
+//        arr.push(inneritem);
+//       }
+//   }
+// console.log(arr);
+
+
+
+
+//  function multiply(x){
+//    return function (y){
+//     console.log(y);
+    
+//     return x*y;
+//    }
+//  }
+
+//   let multiplybytwo= multiply(3);
+//   console.log(multiplybytwo(2));
+  
+// in finite currying 
+//  function add(a){
+//    return function (b){
+//      if ( b!== undefined){
+//       return add(a+b);
+//      }else{
+//       return a
+//      }
+//    }
+//  }
+//   console.log(add(2)(3)(4)());
+
+// let arr= [1,2,3,4,1,2];
+//  let result = arr.filter((item,index)=>arr.indexOf(item) !== index);
+//   console.log(result);
+  
+//  function abc(){
+//    console.log(abc.xyz);
+
+//  }
+// console.log(abc.xyz=10);
+
+//  abc();
+//  console.log(abc);
+ 
+//   abc.xyz=400;
+//   abc()
+
+//  console.log(a);
+//  var a;
+ 
+
+//  async function foo() {
+//   let out= await "namsthey" ;
+//   return out;
+//  }
+//   let result =  foo();
+//    result.then(response=>console.log(response));
+
+//  let str= "hruday is my name"
+
+//   let result = str.split(" ");
+//   console.log(result);
+  
+//   let output=result.map((item)=>item[0].toUpperCase()+item.slice(1)).join(' ')
+//    console.log(output);
+
+
+//  let arr= ["a","b","c"];
+// let n=[]
+//  for (const [index,element] of arr.entries()) {
+//   n.push([element,element]);
+//  }
+//   console.log(n);
+//    console.log(Object.fromEntries(n));
+
+
+//  let arr= ["a","b","c"];
+//  let out= arr.reduce((acc,crr,crrindex)=>({...acc,[crr]:crr}),{});
+//  console.log(out);
+ 
+
+ 
+
+   
+  
+  
+   
+  
+
+
+  
+
+
+   
+  
+    
+    
+   
+
+
+

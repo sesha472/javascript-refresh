@@ -290,3 +290,62 @@
 //  })
 
 
+
+
+  //  function factorial(a, b, cb) {
+  //    setTimeout(() => {
+  //      cb(a * b);
+  //    }, 200);
+  //  }
+
+  //  factorial(6, 5, function (val1) {
+  //    console.log(val1);
+  //    factorial(val1, 4, function (val2) {
+  //      console.log(val2);
+  //      factorial(val2, 3, (val3) => {
+  //        console.log(val3);
+  //        factorial(val3, 2, (val4) => {
+  //          console.log(val4);
+  //        });
+  //      });
+  //    });
+  //  });
+
+
+
+
+  //  using promises 
+  //  function factorila(a,b){
+  //    return new Promise ((resolve,rej)=>{
+  //     setTimeout(() => {
+  //       resolve(a*b);
+  //     }, 200);
+  //    })
+  //  }
+
+  //   factorila(6,5)
+  //   .then((response1)=>factorila(response1,4))
+  //   .then((res2)=>factorila(res2,3))
+  //   .then((res3)=>factorila(res3,2))
+  //   .then((res4)=>factorila(res4,1))
+  //   .then(res=>console.log(res))
+  //   .catch(err=>console.log("this is : what  "+err))
+    
+
+
+  //   function factorial(a,b){
+  //    return new Promise ((resolve,rej)=>{
+  //     setTimeout(() => {
+  //       resolve(a*b);
+  //     }, 200);
+  //    })
+  //  }
+
+  //  let  factfun = async ()=>{
+  //    let res1= await factorial(6,5);
+  //    let res2= await factorial(res1,4)
+  //    let res3= await factorial(res2,3)
+  //    let res4= await factorial(res3,2)
+  //    console.log(res4);     
+  //   }
+  //    factfun();
