@@ -919,11 +919,12 @@
 
 
 //  let arr= ["a","b","c"];
-//  let out= arr.reduce((acc,crr,crrindex)=>({...acc,[crr]:crr}),{});
+//  let out = arr.reduce((acc,crr,crrindex)=>({...acc,[crr]:crr}),{});
 //  console.log(out);
- 
 
- 
+
+
+
 
    
   
