@@ -27,6 +27,32 @@
 // console.log(mobile2.mobilename());
 // console.log(mobile3.mobilename());
 
+
+//    class Mobile {
+//      constructor(name, color) {
+//        this.name = name;
+//        this.color = color;
+//      }
+//      getname() {
+//        console.log(this.name);
+//      }
+//      setname(newname) {
+//        this.name = newname;
+//      }
+
+//      getcolor() {
+//        console.log(this.color);
+//      }
+//    }
+
+//    let mobile1 = new Mobile("apple", "white");
+//    mobile1.getname();
+//    mobile1.getcolor();
+//    mobile1.setname("samsung");
+//    mobile1.getname();
+
+
+
 //  ***ABSTARCTION***
 
 // ABSTARCTION is the process of hiding internal data and showing essential data to user
@@ -34,6 +60,8 @@
 //  the below code is normal class in this,the minimum balance is available to outside ,
 // so anyone can access it and over ride to minum 0 so we have to keep to hide private
 //  so we can write this minimum balance in get amount function that has local scope
+
+
 //   class Atm {
 //   constructor(withdraw) {
 //     this.balnce = 1000;
@@ -52,7 +80,7 @@
 //    const person1 = new Atm(600);
 //    person1.getamount()
 //    person1.minbalence=100;
-// // we can acces and we can over ride varibale in class so we use abstraction method keep it hide in method
+// // we can acces and we can override varibale in class so we use abstraction method keep it hide in method
 //  person1.getamount();
 
 // // abstarction applied to class
@@ -79,6 +107,10 @@
 //    person1.minbalence=100;
 // // we can over ride varibale in class so we use abstraction method keep it hide in method
 //  person1.getamount();
+    
+
+    
+
 
 //  ENCAPSULATION :encapsulation is binding data members and functions into single unit  hiding data from outside,
 // to make function and variable avilable we have to use "this" or ,private we haveto use var let const in constructior function 
@@ -246,7 +278,8 @@
 // console.log(person1.name)
 
 
-// encapsulation is the processof binding datamebers and meber function into a single unit showing esential data to useser hiding unneseary data
+// encapsulation is the processof binding datamebers and meber function into a single unit
+//  showing esential data to useser hiding unneseary data
 // and we can simoly say  privating properties ,it should hide all variable ,it can hide any method as well
 // class Bank {
 //   constructor(name, accnumber, acctype) {
@@ -295,26 +328,33 @@
 
 
 
- class Atm{
-    constructor(withdraw){
-        this.balence=1000;
-        this.withdraw=withdraw
-    }
-    getamount=()=>{
-        let minimum=500
-        if(this.balence-this.withdraw >=minimum ){
-            console.log("sucess");
-        }else {
-            console.log("failed ");
+//  class Atm{
+//     constructor(withdraw){
+//         this.balence=1000;
+//         this.withdraw=withdraw
+//     }
+//     getamount=()=>{
+//         let minimum=500
+//         if(this.balence-this.withdraw >=minimum ){
+//             console.log("sucess");
+//         }else {
+//             console.log("failed ");
             
-        }
-     }
- }
+//         }
+//      }
+//  }
 
 
-  let person1=new Atm(400);
-console.log(person1.balence);
-person1.getamount()
+//   let person1=new Atm(400);
+// console.log(person1.balence);
+// person1.getamount()
+
+
+
+console.log(__dirname);
+
+
+ 
 
 
 

@@ -3,7 +3,7 @@
 // console.log(b); //error
 // var  a = b = 5;
 
-console.log(eval("3 + 4"));
+// console.log(eval("3 + 4"));
 
 // console.log(5 > "15" < 5); //true
 // console.log(5 > "85" > 5); //false
@@ -153,7 +153,7 @@ console.log(eval("3 + 4"));
 // 2.valueOf() method
 
 // let normalstr="apple";
-// let objstr = new String ("bananna")
+// let objstr = new String ("bananna");
 
 // let objtypestr=objstr.valueOf();
 

@@ -221,3 +221,96 @@
    // }
    // var a=(Math.floor(Math.random()*6)+1);
    // console.log(a);
+
+
+    // let result= Math.floor(Math.random()*100)+1 //1-100;
+    // console.log(result);      
+    
+    
+
+    //  function isleapyear(year){
+    //   if((year%4 === 0) && (( year%400 ==0 )|| (year%100 !==0 ))){
+    //     console.log("its leap");
+    //   }else{
+    //     console.log("not leap");
+    //   }
+    //  }
+    //  isleapyear(2008);
+
+//      let arr=[];
+//      let val=1;
+//      function addelment (){ 
+
+//        if(val%3==0 && (val%5 ===0)){
+//          arr.push("fizzbuzz");
+//        }else if(val%3===0){
+//             arr.push("fizz")
+//            }else if(val%5 ===0){
+//             arr.push("buzz")
+//          }else{
+//             arr.push(val);
+//            }
+//           val++;
+//      }
+      
+// let i=1
+//      while(i<=100){
+//        addelment()
+//       i++;
+//      }
+
+
+//      console.log(arr);
+
+
+
+//  let i=100;
+
+//   while (i>1){
+//    let bot = (i==2) ?"bottle":"bottles"
+//    console.log(
+//       `${i-1} ${bot} of beer on the wall, ${i-1} ${bot} of beer.
+// Take one down and pass it around, ${i-2} bottles of beer on the wall.`
+//    );
+   
+   
+//     i--;
+//   }
+
+
+//  function fibo(n) {
+//    let arr = [];
+//    if (n === 0) {
+//      arr.push(0);
+//    } else if (n === 1) {
+//      arr.push(0, 1);
+//    } else {
+//      arr.push(0, 1);
+//      for (var i = 2; i < n; i++) {
+//        arr.push(arr[arr.length - 2] + arr[arr.length - 1]);
+//      }
+//    }
+//    return arr;
+//  }
+//  console.log(fibo(6));
+
+
+
+
+//  function fibo(n){
+//    if(n==0 || n==1){
+//     return [0];
+//    } else {
+//     let ab=[0,1];
+//      for( let i=2; i<n;i++){
+//         ab.push(ab[ab.length-1]+ab[ab.length-2]);
+//      }
+//      return ab;
+//    }
+//  }
+//   console.log(fibo(9));
+
+   
+
+    
+    

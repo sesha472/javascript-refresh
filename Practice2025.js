@@ -926,18 +926,270 @@
 
 
 
+//  let date= new Date();
+ 
+// let arrday=["sun","mon","tue","wed","thur","fryday","saturdat"];
+   
+//   console.log(`today is : ${arrday[date.getDay()]}`);
+
+//   let hours= date.getHours();
+//   let minutes= date.getMinutes();
+//   let seconds= date.getSeconds();
+
+//     let trimmedseconds= seconds<10? `0${seconds}`:seconds
+//    let result = `current time is ${hours>12? hours-12:hours}:${minutes}:${trimmedseconds}:${hours>12 ? "PM":"AM"}`
+//   console.log(result);
+  
+
+
+
+    // let date1= new Date("2025/01/18");
+    // let date2= new Date();
+
+    //  let diffdate= Math.abs( date2-date1);
+    //  console.log( Math.floor(diffdate/(24*60*60*1000)));
+     
+
+    //  console.log(date1);
+
+
+    //  let date= new Date().toLocaleString()
+    //  let date2= new Date().toLocaleDateString()
+    //  let date3= new Date().toLocaleTimeString()
+    //  console.log(date);
+    //  console.log(date2);
+    //  console.log(date3);
+
+
+    
+          
+     
+     
+    
+  
+  
+
+  
+// let mainarr= [1,4,3,999,2,9,99,7];
+
+//    let larg= -Infinity;
+//    let secodlarg=-Infinity
+//     for ( let item of mainarr){
+//         if( item >larg){
+//           secodlarg=larg;
+//            larg=item;
+//         } else if ( item <larg && item >secodlarg){
+//            secodlarg= item;
+//         }
+//     }
+//      console.log(larg);
+//      console.log(secodlarg);
+     
+     
+
+//  let result = Math.max(...mainarr)
+//  console.log(result);
+ 
+ 
+
+
+
+//  for ( let i=0; i<2; i++){   
+//       let temp= arr[0];
+
+//        for(j=0; j<arr.length-1; j++){
+//             arr[j]=arr[j+1];
+//        }
+
+//        arr[arr.length-1]=temp;
+//  }
+//  console.log(arr);
+
+
+
+//  let obj= {
+//    val:function (){
+//      return 90;
+//    }
+//  } 
+
+// console.log( typeof( obj.val()));
+// console.log(( typeof( obj.val().valueOf())));
+
+//  let names= ["hruday",22,true,23];
+// let result = names.valueOf();
+// console.log(result);
+
+//   console.log( typeof(names));
+
+
+//  console.log(["A","d"]+["b","c"]);
+//  console.log([1,2,4]+[4,5,6])
+ 
+//  console.log([] + ![]);
+//  ;
+
+// const api1 = 'https://jsonplaceholder.typicode.com/users';
+// const api2 = 'https://jsonplaceholder.typicode.com/users';
+// const api3 = 'https://jsonplaceholder.typicode.com/users';
+// const api4 = 'https://jsonplaceholder.typicode.com/users';
+// const api5 = 'https://jsonplaceholder.typicode.com/users';
+
+
+//   async function  promisetest (){
+//      try{
+//      let responses = await Promise.all([fetch(api1),
+//       fetch(api2),
+//       fetch(api3),
+//       fetch(api4),
+//       fetch(api5),
+//      ]);
+//     let result = await Promise.all(responses.map((response)=>{
+//       return  response.json();
+//     }))
+//       console.log(result);
+      
+//   }catch(err){
+//     console.log(err +"has occured");
+    
+//   }
+
+//   }
+ 
+//    promisetest();
+
+
+// let apis=[
+//       "https://jsonplaceholder.typicode.com/users",
+//       "https://jsonplaceholder.typicode.com/albums",
+//       "https://jsonplaceholder.typicode.com/todos"
+//    ];
+
+//    async function  fetchapi(apis){
+//     try {
+//       let responses= await Promise.all(apis.map(api=>fetch(api)));
+//          let result=await Promise.all(responses.map(item=>item.json()));
+//          console.log(result);
+//     } catch (error) {
+//       console.log("the error has came: "+ error);
+      
+//     }
+         
+         
+//     }
+//  fetchapi(apis)
+
+// let apis=[
+//       "https://jsonplaceholder.typicode.com/users",
+//       "https://jsonplaceholder.typicode.com/albums",
+//       "https://jsonplaceholder.typicode.com/todos"
+//    ];
+
+
+//      Promise.all(apis)
+//      .then(fetingapis=>Promise.all(fetingapis.map(api=>fetch(api))))
+//      .then(response=>Promise.all(response.map(item=>item.json())))
+//      .then(result=>console.log(result))
+//      .catch(err=>console.log("error came : "+err))
+  
+
+   
+
+//  let promise1=new Promise((resolve,reject)=>{(setTimeout(()=>{resolve("completed1")},2000))})
+//  let promise2=new Promise((resolve,reject)=>{(setTimeout(()=>{resolve("completed2")},1000))})
+//  let promise3=new Promise((resolve,reject)=>{(setTimeout(()=>{resolve("completed3")},3000))})
+ 
+//  let arr= ([promise1,promise2,promise3])
+//   async function testpromise(promisearray) {
+//          let response =await Promise.race(promisearray);
+//          console.log(response);
+//   }
+//   testpromise(arr);
+  
+
+
+//  console.log("welcome");
+
+//   const rigister=(cb)=>{
+   
+//     setTimeout(() => {
+//       console.log("rigister");
+//       cb();
+//     }, 3000);
+
+//   }
+
+//   const login=(cb1)=>{
+//     setTimeout(() => {
+//       console.log("login");
+//       cb1();
+//     }, 2000);
+//   }
+
+//   const thankyou=()=>{
+ 
+//     setTimeout(() => {
+     
+//       console.log("thankyou");
+//     }, 1000);
+//   }
+ 
+//  rigister(()=>login(()=>thankyou()));
    
   
+
+
+
+
+//  const rigister =()=>{
+//    return new Promise ((resolve,reject)=>{
+//     setTimeout(() => {
+//       console.log("rigister");
+//       resolve("rigister resolved")
+      
+//     }, 3000);
+//    })
+//  }
+
+
+//  const login =()=>{
+//   return new Promise ((resolve,reject)=>{
+//    setTimeout(() => {
+//      console.log("login");
+//      resolve("login resolved")
+     
+//    }, 2000);
+//   })
+// }
+
+
+// const thankyou =()=>{
+//   return new Promise ((resolve,reject)=>{
+//    setTimeout(() => {
+//      console.log("thank you ");
+//      resolve("thank you resolved")
+     
+//    }, 1000);
+//   })
+// }
+
+
+//   rigister().then(login).then(thankyou);
+
   
+
+
+
+// function reversestring(){
+//  let userinput= document.getElementById("inputstring").value
+//   console.log(userinput);
+
+//    let result= userinput.split("").reverse().join("");
+//    console.log(result);
+//    document.getElementById("show").innerHTML=`<h1>${result}</h1>`
    
-  
-
-
-  
-
-
-   
-  
+// }
+ 
     
     
    
