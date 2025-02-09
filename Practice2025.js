@@ -1178,21 +1178,126 @@
 
   
 
+// function firstcapital(str){
+//    let first = str.slice(0,1);
+//    let second= str.slice(1)
+//    let out= first.toUpperCase()+second;
+//    return out
+// }
 
+//  function firstallcapital(str){
+//   let val= str.split(" ");
+//   let result= val.map((item)=> firstcapital(item));
+//   let out= result.join(" ");
+//   return out
+//  }
+
+// function largnumfinde(str){
+//   let result = str.split(",");
+//   let out= result.map(Number);
+//   let finalresult= Math.max(...out);
+//   return finalresult;
+// }
 
 // function reversestring(){
 //  let userinput= document.getElementById("inputstring").value
 //   console.log(userinput);
 
-//    let result= userinput.split("").reverse().join("");
+//   //  let result= userinput.split("").reverse().join("");
+//    let result= largnumfinde(userinput);
 //    console.log(result);
 //    document.getElementById("show").innerHTML=`<h1>${result}</h1>`
    
 // }
+    
+let obj1 = { name: "Rahul", address: { city: "Delhi" } };
+
+// let obj2=obj1; //its acts as reference
+// let obj2= Object.assign({},obj1)  //shallowcopy
+
+// let obj2= JSON.parse(JSON.stringify(obj1)); //deepcopy
+
+//  obj2.name="hruday";
+//  obj2.address.city="hyd";
+
+//  console.log(obj1);
+//  console.log(obj2);
  
+
+   
+// const obj = {
+//   name: "Amit",
+//   date: new Date(),
+//   numbers: [1, 2, 3],
+// };
+
+// // Using structuredClone()
+// const clonedObj = structuredClone(obj);
+
+// console.log(clonedObj); 
+// console.log(clonedObj !== obj);  // true (deep copy)
+// console.log(clonedObj.date === obj.date); // false (new Date object)
+
+
+// const obj={
+//       name:"sesha",
+//       age:31,
+//       adress :{
+//           state:"ap"
+//       }
+//   }
+
+//   console.log(Array.from(obj));
+  
+
+
+  // Object.freeze(obj);
+  // Object.seal(obj)
+
+  // obj.name="h";
+  // delete obj.age
+  // obj.color="white"
+  // console.log(obj);
+  
+
+  let arr=[
+    {name:"sai"},
+    {name:"nagi"},
+    {name:"sai"},
+    {name:"nagi"},
+    {name:"0111"},
+  ]; 
+  let uniquevalues = new Set;
+ 
+   let result = arr.filter((item)=>{
+
+    if(!uniquevalues.has(item.name)){
+       uniquevalues.add(item.name)
+       return true
+    }
+      return false
     
-    
+   })
+
+   console.log(uniquevalues);
    
 
 
 
+  // let result = [... new Map(arr.map((item)=>[item.name,item])).values()];
+  // console.log(result);
+
+
+  // let mymap=  new Map();
+  //   mymap.set("key","value")
+  //   mymap.set(true,"yes")
+  // // console.log(mymap);
+  // for (const [key,val] of mymap) {
+  //   console.log(key);
+    
+  // }
+  // let myMap = new Map();
+  // myMap.set("name", "Amit"); myMap.set(1, "One"); myMap.set(true, "Boolean Value"); 
+  // console.log(myMap); // Output: Map(3) { 'name' => 'Amit', 1 => 'One', true => 'Boolean Value' }
+  
+  
