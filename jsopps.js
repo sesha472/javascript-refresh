@@ -21,11 +21,37 @@
 
 // const mobile2= new Mobile('redmi2','yellow');
 // const mobile3= new Mobile('redmi3','gold');
-// console.log(mobile1.mobilename());
+// mobile1.mobilename();
 // console.log(mobile2.mobilename());
 // mobile2.setname("sesha")
 // console.log(mobile2.mobilename());
 // console.log(mobile3.mobilename());
+
+// encapsulation
+// class Mobile{
+//     constructor(name,age){
+//         let _name= name;
+//          let _age=age;
+//    this. getname=()=>{
+//         console.log("name is "+_name);
+//     }
+//     this.getage=()=>{
+//         console.log(_age);   
+//     }
+
+//      this.setname=(newname)=>{
+//         _name= newname
+//      }
+//     }
+
+//  }
+
+//   let m1= new Mobile("sesha",32);
+
+//   m1.getname()
+//   m1.setname("sai");
+//   m1.getname()
+  
 
 
 //    class Mobile {
@@ -109,7 +135,33 @@
 //  person1.getamount();
     
 
-    
+//  class Atm{
+//     constructor(withdraw){
+//         this.balance=1000;
+//         this.withdraw=withdraw;
+       
+//     }
+//      drawamount=()=>{
+//         this.minbalance=500;
+//         if(this.balance-this.withdraw >= this.minbalance){
+//             console.log("sucess");
+//         }else{
+//             console.log("fail");
+            
+//         }
+//      }
+//  }
+//      let person1= new Atm(500);
+//      console.log(person1.balance);
+//      console.log(person1.minbalance);
+//      person1.drawamount()
+
+//      person1.minbalance=100;
+//      console.log(person1.balance);
+//      console.log(person1.minbalance);
+//      person1.drawamount()     
+//      person1.drawamount()
+
 
 
 //  ENCAPSULATION :encapsulation is binding data members and functions into single unit  hiding data from outside,
@@ -163,7 +215,35 @@
 // person1.getaccounttype();
 
 
+// class Bank{
+//     constructor(accname,acctype,accnum){
+//         let _accname=accname;
+//         var _acctype=acctype;
+//         var _accnum=accnum;
 
+//       this.getnam =()=>{
+//             console.log(_accname);
+            
+//         }
+//         this.getacctype=()=>{
+//             console.log(_acctype);
+            
+//         }
+//         this.getaccnum=()=>{
+//             console.log(_accnum);
+            
+//         }
+//         this.setaccnum=()=>{
+//             _accnum=Math.floor( Math.random()*1000)
+//         }
+
+//     }
+// }
+
+
+//   let p= new Bank("sesha","savings",null);
+//   p.setaccnum()
+//   p.getaccnum();
 
 // class Bank {
 //     constructor(name,accnum,acctype){
@@ -228,7 +308,7 @@
 //             name=newname
 //         }
 //         this.setaccnum=()=>{
-//             accnum=Math.floor(Math.random()*900000)
+//             accnum=Math.floor(Math.random()*900000);
 //         }
 //     }
 //     }
@@ -351,7 +431,6 @@
 
 
 
-console.log(__dirname);
 
 
  

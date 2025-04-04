@@ -93,21 +93,6 @@
 
 
 
- // how to finde diffrence betwin dates 
-    // let date1=new Date('6/9/2024');
-    // let date2=new Date()
-    // let diffdate=Math.abs((date2-date1))
-    // let days=diffdate/(1000*60*60*24)
-    // console.log(date1);
-    // console.log(date2);
-    // console.log(diffdate);
-    // console.log(Math.ceil(days));
-
-
-    // let dt=new Date ();
-    // console.log(dt.toUTCString());
-
-
 // let date=new Date();
 // date.setDate(1);
 

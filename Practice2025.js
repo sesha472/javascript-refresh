@@ -1210,7 +1210,7 @@
    
 // }
     
-let obj1 = { name: "Rahul", address: { city: "Delhi" } };
+// let obj1 = { name: "Rahul", address: { city: "Delhi" } };
 
 // let obj2=obj1; //its acts as reference
 // let obj2= Object.assign({},obj1)  //shallowcopy
@@ -1260,26 +1260,28 @@ let obj1 = { name: "Rahul", address: { city: "Delhi" } };
   // console.log(obj);
   
 
-  let arr=[
-    {name:"sai"},
-    {name:"nagi"},
-    {name:"sai"},
-    {name:"nagi"},
-    {name:"0111"},
-  ]; 
-  let uniquevalues = new Set;
+  // let arr=[
+  //   {name:"sai"},
+  //   {name:"nagi"},
+  //   {name:"sai"},
+  //   {name:"nagi"},
+  //   {name:"0111"},
+  // ]; 
+  // let uniquevalues = new Set;
  
-   let result = arr.filter((item)=>{
+  //  let result = arr.filter((item)=>{
 
-    if(!uniquevalues.has(item.name)){
-       uniquevalues.add(item.name)
-       return true
-    }
-      return false
+  //   if(!uniquevalues.has(item.name)){
+  //     console.log(uniquevalues);
+      
+  //      uniquevalues.add(item.name);
+  //      return true;
+  //   }
+  //     return false
     
-   })
+  //  })
 
-   console.log(uniquevalues);
+  //  console.log(uniquevalues);
    
 
 
@@ -1301,3 +1303,294 @@ let obj1 = { name: "Rahul", address: { city: "Delhi" } };
   // console.log(myMap); // Output: Map(3) { 'name' => 'Amit', 1 => 'One', true => 'Boolean Value' }
   
   
+    //  function rigester(cbfn){
+    //     setTimeout(() => {
+    //          console.log("rigester");  
+    //          cbfn();
+    //     }, 3000);
+    //  }
+    //  function login(fn){
+    //     setTimeout(() => {
+    //          console.log("login"); 
+    //          fn();
+    //     }, 2000);
+    //  }
+    //  function thankyou(){
+    //     setTimeout(() => {
+    //          console.log("thank you");  
+    //     }, 1000);
+    //  }
+
+    //    rigester(()=>{
+    //     login(thankyou)
+    // })
+
+
+
+    // let apis=[
+    //       "https://jsonplaceholder.typicode.com/users",
+    //       "https://jsonplaceholder.typicode.com/albums",
+    //       "https://jsonplaceholder.typicode.com/todos"
+    //    ];
+    
+// Promise.all( apis.map((url)=>fetch(url)))
+// .then(res=>  Promise.all(res.map(item=>item.json())))
+// .then(out=>console.log(out))
+
+      //   using promises 
+        // Promise.all(apis)
+        // .then((item)=>Promise.all(item.map(url=>fetch(url))))
+        // .then((res)=>Promise.all(res.map(data=>data.json())))
+        // .then(result=> console.log(result))
+        // .catch(err=>console.log("oka err",err))
+        
+
+        // async function   fetchdata (){
+        //      try {
+        //       let response= await Promise.all(apis.map((url)=>fetch(url)))
+        //       let result= await Promise.all(response.map((item)=>item.json()))
+        //       console.log(result);
+        //       let onedata= result[1].map((item=>item.title));
+        //       console.log(onedata);       
+        //      } catch (error) {
+        //       console.log("error came: ",error);
+              
+        //      }
+        //  }
+        //  fetchdata();
+
+
+        // async function   fetchdata (){
+        //        try {
+        //         let response= await Promise.any(apis.map((url)=>fetch(url)))
+        //         console.log(response);
+                
+        //         let result= await response.json()
+        //         console.log(result);
+                 
+        //        } catch (error) {
+        //         console.log("error came: ",error);
+                
+        //        }
+        //    }
+        //    fetchdata();
+
+
+        //  let p1= new Promise((res,rej)=>setTimeout(() => {res("one") }, 3000));
+        //  let p2= new Promise((res,rej)=>setTimeout(() => {res("two") }, 2000));
+        //  let p3= new Promise((res,rej)=>setTimeout(() => {res("three") }, 4000));
+   
+        // //  Promise.allSettled([p1,p2,p3])
+        // //  .then((res)=>console.log(res)
+        // //  )
+        // //  .catch(err=>console.log("promise is rejcted ra: ",err)
+        // //  )
+
+        //  async function fetchdata(apis) {
+        //   let one= await Promise.allSettled(apis.map((item=>item)));
+        //   console.log(one);
+          
+        //  }
+        //  fetchdata([p1,p2,p3])
+
+// fetch("https://jsonplaceholder.typicode.com/todos/1")
+//   .then((response) => response.json())
+//   .then((data) => console.log("Data:", data))
+//   .catch((error) => console.log("Error:", error))
+//   .finally(() => console.log("Hide loading spinner"));
+         
+
+
+//  function fact(a,b,cb){
+
+//   setTimeout(() => {
+//      cb(a*b);
+//   }, 1000);
+//  }
+
+//   fact(2,4,(result1)=>{
+//     console.log(result1)
+//     fact(result1,2,function(val2){
+//       console.log(val2);
+//       fact(val2,2,function(val3){
+//         console.log(val3);
+        
+//       })
+//     })
+//   })
+
+
+  //  usng promises 
+    // function fact(a,b){
+    //   return new Promise((res,rej)=>{
+    //     setTimeout(() => {
+    //      res(a*b);
+    //     }, 100);
+    //   })
+    // }
+
+    //  fact(2,3)
+    //  .then((result)=>fact(result,2))
+    //  .then((result2)=>fact(result2,2))
+    //  .then(res=>console.log(res))
+
+
+
+// let p1= new Promise((resolve,reject)=> setTimeout(()=>resolve("one"),2000));
+// let p2= new Promise((resolve,reject)=> setTimeout(()=>resolve("two"),1000));
+// let p3= new Promise((resolve,reject)=> setTimeout(()=>resolve("three"),3000));
+// let p4= new Promise((resolve,reject)=> setTimeout(()=>resolve("four"),4000));
+// // let p2= new Promise((resolve,reject)=>resolve("two"));
+// // let p3= new Promise((resolve,reject)=>resolve("three"));
+
+
+
+
+
+//    async function fetchresult (){
+//       let result = await Promise.race([p1,p2,p3,p4]);
+//       console.log(result);
+      
+//    }
+
+//    fetchresult();
+
+
+//   function rigister(){
+//      return new Promise((resolve,reject)=>{
+//       setTimeout(() => {
+//         console.log("rigiser");
+//          resolve("suc");
+//         }, 3000);
+//      })
+    
+     
+//   }
+
+
+//   function login (){
+//     return new Promise((resolve,reject)=>{
+//       setTimeout(() => {
+//         console.log("login");
+//          resolve("e");
+//         }, 2000);
+//      })
+    
+//  }
+
+
+//  function thankyou () {
+//   return new Promise((resolve,reject)=>{
+//     setTimeout(() => {
+//       console.log("thankyou");
+//        resolve();
+//       }, 500);
+//    })
+// }
+
+
+//  rigister().then(login).then(thankyou)
+
+//  let apis=[
+//       "https://jsonplaceholder.typicode.com/users",
+//       "https://jsonplaceholder.typicode.com/albums",
+//       "https://jsonplaceholder.typicode.com/todos"
+//    ];
+
+    //  Promise.all(apis)
+    // .then((req)=>Promise.all(req.map(item=>fetch(item))))
+    // .then(res=>Promise.all(res.map(item=>item.json())))
+    // .then(result=>console.log(result)
+    // )
+
+    //  async function  fetchdata() {
+    //    try {
+    //     let response= await Promise.all(apis.map(url=>fetch(url)))
+    //     let result= await Promise.all(response.map(url=>(url.json())));
+    //       let out= await result[0].map(name=>name.name)
+    //     console.log(out);
+    //    } catch (error) {
+    //     console.log(error,"Came");
+        
+    //    }
+    //  }
+    //  fetchdata();
+
+    // async function  fetchdata() {
+    //   try {
+    //    let response= await Promise.race(apis)
+    //    let result= await fetch(response);
+    //    let out= await result.json();
+    //    console.log(out);
+      
+    //   } catch (error) {
+    //    console.log(error,"Came");
+       
+    //   }
+    // }
+    // fetchdata();
+
+
+      // function factorial (a,b,cb){
+      //   setTimeout(() => {
+      //      cb(a*b);
+      //   }, 200);
+      // }
+
+      //  factorial (2,3,(val1)=>{
+      //   console.log(val1);
+      //    factorial (val1,4,(val2)=>{
+      //     console.log(val2);
+      //    })
+      //  })
+
+      //  function factorial(a,b){
+      //   return new Promise ((res,rej)=>{
+      //     setTimeout(() => {
+      //       res(a*b)
+      //     }, 200);
+      //   })
+      //  }
+
+      //  factorial(2,3)
+      //  .then((response1)=>factorial(response1,4))
+      //    .then((res2)=>factorial(res2,3))
+      //    .then((res3)=>factorial(res3,2))
+      //    .then((res4)=>factorial(res4,1))
+      //    .then(res=>console.log(res))
+      //    .catch(err=>console.log("this is : what  "+err))
+       
+
+
+
+      // function factorial(a, b, cb) {
+      //      setTimeout(() => {
+      //        cb(a * b);
+      //      }, 200);
+      //    }
+      
+      //    factorial(6, 5, function (val1) {
+      //      console.log(val1);
+      //      factorial(val1, 4, function (val2) {
+      //        console.log(val2);
+      //        factorial(val2, 3, (val3) => {
+      //          console.log(val3);
+      //          factorial(val3, 2, (val4) => {
+      //            console.log(val4);
+      //          });
+      //        });
+      //      });
+      //    });
+      
+
+
+ 
+
+ 
+
+
+
+ 
+
+
+

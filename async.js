@@ -76,7 +76,8 @@
 //         res("one")
 //      },2000)
 //   })
- 
+
+
 //    let x2= new Promise((res,req)=>{
 //     setTimeout(res,1000,"two")
  
@@ -251,7 +252,7 @@
                // fetchapis()
 
 
-               // const api1 = 'https://jsonplaceholder.typicode.com/users';
+ // const api1 = 'https://jsonplaceholder.typicode.com/users';
 // const api2 = 'https://jsonplaceholder.typicode.com/users';
 // const api3 = 'https://jsonplaceholder.typicode.com/users';
 // const api4 = 'https://jsonplaceholder.typicode.com/users';

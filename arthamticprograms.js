@@ -53,10 +53,10 @@
 
 // finde duplicate numbers in  array ?
 // let arr = [1,2,4,5,2,4,8];
-// let duplicates=arr.filter((item,index ,arr)=>arr.indexOf(item)==index );//1,2,4,5,8
-// let nonduplicates=arr.filter((item,index ,arr)=>arr.indexOf(item)!==index );//2,4
+// let unique=arr.filter((item,index ,arr)=>arr.indexOf(item)==index );//1,2,4,5,8
+// let duplicates=arr.filter((item,index ,arr)=>arr.indexOf(item)!==index );//2,4
+// console.log(unique);
 // console.log(duplicates);
-// console.log(nonduplicates);
 
 // removie duplicates from arry 
 // let arr = [2,4,5,6,4,3,9,94,2,5];
